@@ -1,0 +1,792 @@
+{
+  "updatedAt": "2026-10-13",
+  "prefPage": "https://www.pref.nagano.lg.jp/kyoiku/koko/saiyo-nyuushi/shiken/ko/r9/r9naiyo.html",
+  "pdfs": {
+    "chushin": {
+      "url": "https://www.pref.nagano.lg.jp/kyoiku/koko/saiyo-nyuushi/shiken/ko/r9/documents/r9-1-04.pdf",
+      "label": "学校別実施内容一覧（中信地区・PDF）"
+    },
+    "toshin": {
+      "url": "https://www.pref.nagano.lg.jp/kyoiku/koko/saiyo-nyuushi/shiken/ko/r9/documents/r9-1-02.pdf",
+      "label": "学校別実施内容一覧（東信地区・PDF）"
+    },
+    "tabu": {
+      "url": "https://www.pref.nagano.lg.jp/kyoiku/koko/saiyo-nyuushi/shiken/ko/r9/documents/r9-1-06.pdf",
+      "label": "学校別実施内容一覧（定時制 多部制・単位制・PDF）"
+    }
+  },
+  "publicSchedule": {
+    "zenki": [
+      {
+        "d": "2027-01-29",
+        "end": "2027-02-02",
+        "t": "前期選抜 志願受付",
+        "n": "締切は2/2(火)正午",
+        "k": "apply"
+      },
+      {
+        "d": "2027-02-08",
+        "t": "前期選抜 学力検査・面接等",
+        "n": "2/9(火)は面接等の実施日（学校による）",
+        "k": "exam"
+      },
+      {
+        "d": "2027-02-17",
+        "t": "前期選抜 入学予定者発表",
+        "n": "13時以降",
+        "k": "result"
+      }
+    ],
+    "koki": [
+      {
+        "d": "2027-02-24",
+        "end": "2027-02-26",
+        "t": "後期選抜 志願受付",
+        "n": "締切は2/26(金)正午",
+        "k": "apply"
+      },
+      {
+        "d": "2027-03-01",
+        "end": "2027-03-03",
+        "t": "後期選抜 志望変更受付",
+        "n": "締切は3/3(水)正午",
+        "k": "apply"
+      },
+      {
+        "d": "2027-03-09",
+        "t": "後期選抜 学力検査等",
+        "n": "3/10(水)は対面面接の実施日（学校による）",
+        "k": "exam"
+      },
+      {
+        "d": "2027-03-15",
+        "t": "後期選抜 追検査",
+        "n": "病気などで受検できなかった人",
+        "k": "exam"
+      },
+      {
+        "d": "2027-03-18",
+        "t": "後期選抜 入学予定者発表",
+        "n": "",
+        "k": "result"
+      }
+    ],
+    "zenkiContent": [
+      "調査書・志願理由書（出願時に提出）",
+      "学力検査：検査Ⅰ（国語・社会・英語）、検査Ⅱ（数学・理科）",
+      "面接：全員",
+      "学校・学科により 作文・小論文・実技検査",
+      "募集枠：定員のうち前期で募集する上限（学科ごとに％で公表）"
+    ],
+    "kokiContent": [
+      "学力検査：国語・数学・社会・理科・英語の5教科",
+      "面接：全員（学校ごとに「紙上面接」か「対面面接」）",
+      "調査書",
+      "一部の学科で傾斜配点（例：英語1.5倍）",
+      "同じ学校内の別の学科を第2志望にできる場合あり"
+    ]
+  },
+  "publicSchools": [
+    {
+      "id": "matsumoto-fukashi",
+      "name": "松本深志",
+      "pdf": "chushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし（要確認）",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "agatagaoka",
+      "name": "松本県ケ丘",
+      "pdf": "chushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし（要確認）",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接（要確認）",
+          "note": ""
+        },
+        {
+          "dept": "探究科",
+          "zenki": "80%（要確認）",
+          "zenkiTest": "小論文B（60分）・個人面接（5分程度）",
+          "kokiInterview": "要確認",
+          "note": "自然探究科・国際探究科"
+        }
+      ]
+    },
+    {
+      "id": "misuzugaoka",
+      "name": "松本美須々ケ丘",
+      "pdf": "chushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし（要確認）",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "arigasaki",
+      "name": "松本蟻ケ崎",
+      "pdf": "chushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし（要確認）",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "chikuma",
+      "name": "松本筑摩",
+      "pdf": "tabu",
+      "note": "定時制（多部制・単位制）の学校です。日程や検査内容が全日制と異なる場合があるので、必ず原本で確認してください。",
+      "depts": [
+        {
+          "dept": "午前部・午後部",
+          "zenki": "50%（要確認）",
+          "zenkiTest": "個人面接（10〜15分程度）",
+          "kokiInterview": "要確認",
+          "note": "普通科（単位制）"
+        },
+        {
+          "dept": "夜間部",
+          "zenki": "要確認",
+          "zenkiTest": "個人面接（20〜30分程度）",
+          "kokiInterview": "要確認",
+          "note": "普通科（単位制）"
+        }
+      ]
+    },
+    {
+      "id": "tagawa",
+      "name": "田川",
+      "pdf": "chushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分以内）",
+          "kokiInterview": "対面面接（10分以内）",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "azusagawa",
+      "name": "梓川",
+      "pdf": "chushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "matsukou",
+      "name": "松本工業",
+      "pdf": "chushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "機械科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "電気科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "電子工業科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "shiojiri",
+      "name": "塩尻志学館",
+      "pdf": "chushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "総合学科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（自己PR・志望動機など）",
+          "kokiInterview": "要確認",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "toyoshina",
+      "name": "豊科",
+      "pdf": "chushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし（要確認）",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "akashina",
+      "name": "明科",
+      "pdf": "chushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "50%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "minaminou",
+      "name": "南安曇農業",
+      "pdf": "chushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "グリーンサイエンス科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（15分程度）",
+          "kokiInterview": "対面面接",
+          "note": ""
+        },
+        {
+          "dept": "環境クリエイト科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（15分程度）",
+          "kokiInterview": "対面面接",
+          "note": ""
+        },
+        {
+          "dept": "生物工学科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（15分程度）",
+          "kokiInterview": "対面面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "hotakasho",
+      "name": "穂高商業",
+      "pdf": "chushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "商業科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": "学科構成は要確認"
+        }
+      ]
+    },
+    {
+      "id": "ikedakou",
+      "name": "池田工業",
+      "pdf": "chushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "機械・電気学科",
+          "zenki": "60%（要確認）",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "要確認",
+          "note": ""
+        },
+        {
+          "dept": "建築学科",
+          "zenki": "60%（要確認）",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "要確認",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "omachi",
+      "name": "大町岳陽",
+      "pdf": "chushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "40%",
+          "zenkiTest": "個人面接（10分以内）",
+          "kokiInterview": "要確認",
+          "note": ""
+        },
+        {
+          "dept": "学究科",
+          "zenki": "70%",
+          "zenkiTest": "個人面接（10分以内）",
+          "kokiInterview": "要確認",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "hakuba",
+      "name": "白馬",
+      "pdf": "chushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "50%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        },
+        {
+          "dept": "国際観光科",
+          "zenki": "75%",
+          "zenkiTest": "個人面接（10分程度・日本語と英語）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "kisoseiho",
+      "name": "木曽青峰",
+      "pdf": "chushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "要確認",
+          "zenkiTest": "要確認",
+          "kokiInterview": "要確認",
+          "note": ""
+        },
+        {
+          "dept": "理数科",
+          "zenki": "75%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "森林環境科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "インテリア科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "sonan",
+      "name": "蘇南",
+      "pdf": "chushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "総合学科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "komorogijuku",
+      "name": "小諸義塾",
+      "pdf": "toshin",
+      "note": "東信地区の学校です。",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "要確認",
+          "zenkiTest": "個人面接（7分程度）（要確認）",
+          "kokiInterview": "要確認",
+          "note": ""
+        },
+        {
+          "dept": "音楽科",
+          "zenki": "要確認",
+          "zenkiTest": "個人面接（7分程度）、実技検査：受検型Aは基礎楽典・聴音・コールユーブンゲン・専攻実技・共通ピアノ／受検型Bは専攻実技",
+          "kokiInterview": "要確認",
+          "note": ""
+        },
+        {
+          "dept": "ビジネス科",
+          "zenki": "要確認",
+          "zenkiTest": "個人面接（7分程度）（要確認）",
+          "kokiInterview": "要確認",
+          "note": ""
+        }
+      ]
+    }
+  ],
+  "privateSchools": [
+    {
+      "id": "matsusho",
+      "name": "松商学園",
+      "depts": [
+        "普通科",
+        "商業科"
+      ],
+      "status": "ok",
+      "statusText": "令和9年度要項で確認済",
+      "src": {
+        "label": "松商学園 公式サイト",
+        "url": "https://www.matsusho-h.ed.jp/"
+      },
+      "exams": [
+        {
+          "name": "推薦入試",
+          "sub": "学校長推薦（普通科・商業科・クラブ）／自己推薦（併願推薦）",
+          "ev": [
+            {
+              "d": "2026-12-19",
+              "end": "2027-01-07",
+              "t": "推薦 ネット出願",
+              "n": "書類提出は12/21〜1/8",
+              "k": "apply"
+            },
+            {
+              "d": "2027-01-13",
+              "t": "推薦入試",
+              "k": "exam"
+            },
+            {
+              "d": "2027-01-19",
+              "t": "推薦 合格発表",
+              "n": "15:00",
+              "k": "result"
+            },
+            {
+              "d": "2027-01-22",
+              "t": "推薦 入学手続締切",
+              "n": "15:00",
+              "k": "apply"
+            }
+          ],
+          "content": [
+            "集団面接",
+            "書類審査"
+          ]
+        },
+        {
+          "name": "一般入試 A日程",
+          "sub": "専願・併願",
+          "ev": [
+            {
+              "d": "2027-01-08",
+              "end": "2027-01-21",
+              "t": "一般A ネット出願",
+              "n": "書類提出は1/12〜1/22",
+              "k": "apply"
+            },
+            {
+              "d": "2027-01-26",
+              "t": "一般入試A日程",
+              "k": "exam"
+            },
+            {
+              "d": "2027-01-29",
+              "t": "一般A 合格発表",
+              "n": "15:00",
+              "k": "result"
+            },
+            {
+              "d": "2027-02-04",
+              "t": "一般A 手続締切（専願／併願1次）",
+              "n": "併願の最終締切は3/18 15:00",
+              "k": "apply"
+            }
+          ],
+          "content": [
+            "学力検査（記述）：国語・数学・社会・理科・英語（リスニングあり）",
+            "書類審査"
+          ]
+        },
+        {
+          "name": "一般入試 B日程",
+          "sub": "",
+          "ev": [
+            {
+              "d": "2027-03-19",
+              "t": "一般入試B日程",
+              "n": "出願3/18〜3/19、当日15:30発表",
+              "k": "exam"
+            }
+          ],
+          "content": [
+            "個人面接",
+            "書類審査"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kokusai",
+      "name": "松本国際",
+      "depts": [
+        "普通科"
+      ],
+      "status": "ok",
+      "statusText": "令和9年度要項で確認済",
+      "src": {
+        "label": "松本国際 令和9年度募集要項",
+        "url": "https://m-kokusai.ac.jp/schedule/"
+      },
+      "exams": [
+        {
+          "name": "特待奨学生入試 アドバンストA",
+          "sub": "専願・併願",
+          "ev": [
+            {
+              "d": "2026-12-01",
+              "end": "2026-12-15",
+              "t": "アドバンスト ネット入力",
+              "n": "中学校からの書類提出は12/15〜12/21",
+              "k": "apply"
+            },
+            {
+              "d": "2026-12-23",
+              "t": "特待奨学生入試 アドバンストA",
+              "k": "exam"
+            },
+            {
+              "d": "2026-12-25",
+              "t": "アドバンスト 合格発表",
+              "n": "9:00",
+              "k": "result"
+            }
+          ],
+          "content": [
+            "筆記：国語・数学・社会・理科・英語（リスニングあり）",
+            "手続締切：専願1/15、併願3/18"
+          ]
+        },
+        {
+          "name": "特待奨学生入試 アドバンストB",
+          "sub": "専願・併願",
+          "ev": [],
+          "content": [
+            "書類審査のみ（一定以上の学習成績が出願基準）",
+            "発表はアドバンストAと同じ12/25"
+          ]
+        },
+        {
+          "name": "推薦入試",
+          "sub": "学校長推薦・自己推薦（専願）",
+          "ev": [
+            {
+              "d": "2027-01-04",
+              "end": "2027-01-19",
+              "t": "推薦 ネット入力",
+              "n": "書類提出は1/18〜1/21",
+              "k": "apply"
+            },
+            {
+              "d": "2027-01-23",
+              "t": "推薦入試",
+              "k": "exam"
+            },
+            {
+              "d": "2027-01-27",
+              "t": "推薦 合格発表",
+              "n": "9:00／手続は2/5まで",
+              "k": "result"
+            }
+          ],
+          "content": [
+            "学校長推薦：面接（5〜10分）",
+            "自己推薦：作文600字（60分）＋面接",
+            "マンガ・イラスト専攻はイラスト試験あり"
+          ]
+        },
+        {
+          "name": "一般入試",
+          "sub": "専願・併願",
+          "ev": [
+            {
+              "d": "2027-01-26",
+              "end": "2027-02-05",
+              "t": "一般 ネット入力",
+              "n": "書類提出は2/4〜2/9",
+              "k": "apply"
+            },
+            {
+              "d": "2027-02-12",
+              "t": "一般入試",
+              "k": "exam"
+            },
+            {
+              "d": "2027-02-17",
+              "t": "一般 合格発表",
+              "n": "9:00",
+              "k": "result"
+            }
+          ],
+          "content": [
+            "筆記：国語・数学・英語（リスニングあり）",
+            "面接（5〜10分）",
+            "手続：専願3/4、併願は残額3/18まで"
+          ]
+        },
+        {
+          "name": "特別選抜入試",
+          "sub": "IB・特進コース",
+          "ev": [
+            {
+              "d": "2027-03-19",
+              "t": "特別選抜入試",
+              "n": "出願も同日午前、16:30発表",
+              "k": "exam"
+            }
+          ],
+          "content": [
+            "面接（5〜10分）"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "daiichi",
+      "name": "松本第一",
+      "depts": [
+        "普通科",
+        "食物科"
+      ],
+      "status": "warn",
+      "statusText": "令和9年度要項 未確認",
+      "src": {
+        "label": "松本第一 入試情報",
+        "url": "https://www.matsumoto1-h.ed.jp/admissions/"
+      },
+      "exams": [
+        {
+          "name": "入試区分（昨年度の例）",
+          "sub": "奨学生（専願）・推薦（専願）・特別（併願）・一般・再募集",
+          "ev": [],
+          "content": [
+            "奨学生入試（昨年度）：面接、作文約800字（事前提出）、美術工芸系列は鉛筆デッサン",
+            "令和9年度の日程は公式サイトに掲載され次第追加"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tcu",
+      "name": "東京都市大学塩尻",
+      "depts": [
+        "普通科"
+      ],
+      "status": "warn",
+      "statusText": "令和9年度要項 未確認",
+      "src": {
+        "label": "東京都市大学塩尻 公式サイト",
+        "url": "https://www.tcu-shiojiri.ed.jp/"
+      },
+      "exams": [
+        {
+          "name": "入試区分（以前の年度の例）",
+          "sub": "特別入試BSⅠ・BSⅡ／推薦／一般",
+          "ev": [],
+          "content": [
+            "特別入試BSⅠ：書類選考",
+            "特別入試BSⅡ：国語・数学・社会・理科・英語（リスニングあり）",
+            "推薦入試：面接",
+            "一般入試：国語・数学・英語（リスニングあり）＋面接",
+            "以前は推薦が1月下旬、一般が2月下旬"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "excellent",
+      "name": "エクセラン",
+      "depts": [
+        "普通科",
+        "美術科",
+        "福祉科"
+      ],
+      "status": "warn",
+      "statusText": "令和9年度要項は公開済・未反映",
+      "src": {
+        "label": "エクセラン 入試情報",
+        "url": "https://www.excellent.ed.jp/entrance-examination-information/"
+      },
+      "exams": [
+        {
+          "name": "前期選抜（昨年度の例）",
+          "sub": "学校推薦・自己推薦",
+          "ev": [],
+          "content": [
+            "書類審査・面接",
+            "自己推薦は作文（約400字、福祉科は約600字）",
+            "美術科は実技（デッサン・水彩）",
+            "昨年度は1月下旬に実施"
+          ]
+        },
+        {
+          "name": "後期選抜（昨年度の例）",
+          "sub": "一般",
+          "ev": [],
+          "content": [
+            "書類審査・面接",
+            "基礎学力検査：国語・数学・英語",
+            "美術科はデッサン",
+            "昨年度は2月中旬に実施"
+          ]
+        }
+      ]
+    }
+  ]
+}

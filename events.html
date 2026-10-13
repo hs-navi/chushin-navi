@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>中信 高校イベントナビ</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap">
+<style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>
+/* Layout: Chromebook（約1366×768）想定。左に絞り込み、右に月ごとの行事リスト。狭い画面では1列 */
+:root{
+  --bg:#f4f6f5; --paper:#ffffff; --ink:#1d2a33; --sub:#5a6872; --line:#d9e1e4;
+  --accent:#1f5f8b; --accent-soft:#e3eef6;
+  --pub:#1f5f8b; --priv:#8a4f2a; --pref:#4f6a2f;
+  --warn:#8a5a00; --warn-bg:#fff4dc; --ok:#2f6b3f; --ok-bg:#e4f2e7; --muted-bg:#eef1f2; --danger:#a33a2a;
+  --f-display:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",sans-serif;
+  --f-body:"BIZ UDPGothic","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12181c; --paper:#1a2227; --ink:#e6ecef; --sub:#9aa9b2; --line:#2e3a41;
+  --accent:#7db7e0; --accent-soft:#1d3141; --pub:#7db7e0; --priv:#e3a37c; --pref:#a9cc86;
+  --warn:#f0c46a; --warn-bg:#3a2f15; --ok:#8fd19e; --ok-bg:#1b3222; --muted-bg:#222c32; --danger:#f08f7e; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12181c; --paper:#1a2227; --ink:#e6ecef; --sub:#9aa9b2; --line:#2e3a41;
+  --accent:#7db7e0; --accent-soft:#1d3141; --pub:#7db7e0; --priv:#e3a37c; --pref:#a9cc86;
+  --warn:#f0c46a; --warn-bg:#3a2f15; --ok:#8fd19e; --ok-bg:#1b3222; --muted-bg:#222c32; --danger:#f08f7e; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.7}
+a{color:var(--accent)}
+h1,h2,h3{font-family:var(--f-display);margin:0;line-height:1.35;text-wrap:balance}
+.topbar{background:var(--paper);border-bottom:1px solid var(--line)}
+.topbar-in{max-width:1280px;margin:0 auto;padding-inline:20px;padding-block:12px;display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px}
+.brand{display:grid;gap:0}
+.brand h1{font-size:1.45rem;font-weight:900}
+.brand p{margin:0;color:var(--sub);font-size:.85rem}
+.apps{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap}
+.apps a{font-size:.9rem;font-weight:700;text-decoration:none;padding:8px 14px;border-radius:999px;border:1px solid var(--line);color:var(--ink)}
+.apps a[aria-current="page"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.wrap{max-width:1280px;margin:0 auto;padding-inline:20px;padding-block:20px 48px;display:grid;gap:20px;grid-template-columns:280px minmax(0,1fr);align-items:start}
+@media (max-width:900px){.wrap{grid-template-columns:1fr;padding-inline:16px}}
+aside{position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px);background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;gap:16px;max-height:calc(100vh - 24px);overflow:auto}
+@media (max-width:900px){aside{position:static;max-height:none}}
+fieldset{border:0;margin:0;padding:0;display:grid;gap:6px}
+legend{font-size:.78rem;font-weight:700;color:var(--sub);letter-spacing:.08em;margin-bottom:4px;padding:0}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:4px;background:var(--muted-bg);padding:4px;border-radius:10px}
+.seg label{display:block;text-align:center;padding:6px 4px;border-radius:7px;cursor:pointer;font-size:.88rem;font-weight:700;color:var(--sub)}
+.seg input{position:absolute;opacity:0;pointer-events:none}
+.seg input:checked+span{color:var(--ink)}
+.seg label:has(input:checked){background:var(--paper);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+.seg label:has(input:focus-visible){outline:3px solid var(--accent)}
+.chk{display:flex;align-items:center;gap:8px;font-size:.9rem;cursor:pointer;padding:2px 0}
+.chk input{width:18px;height:18px;accent-color:var(--accent);flex:none}
+.grp-head{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:6px}
+.grp-head span{font-size:.8rem;font-weight:700}
+.linkbtn{font:inherit;font-size:.78rem;background:none;border:0;color:var(--accent);cursor:pointer;padding:2px 4px;text-decoration:underline}
+.cols2{display:grid;grid-template-columns:1fr 1fr;gap:0 8px}
+input[type=search]{font:inherit;width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+main{display:grid;gap:18px;min-width:0}
+.notice{background:var(--warn-bg);border:1px solid color-mix(in srgb,var(--warn) 35%,transparent);border-radius:12px;padding:10px 14px;font-size:.86rem}
+.notice b{color:var(--warn)}
+.summary{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px}
+.summary h2{font-size:1.2rem}
+.summary .meta{color:var(--sub);font-size:.85rem}
+.month{display:grid;gap:8px}
+.month h3{font-size:1rem;color:var(--sub);font-weight:700;border-bottom:2px solid var(--line);padding-bottom:4px}
+.ev{background:var(--paper);border:1px solid var(--line);border-radius:12px;display:grid;grid-template-columns:5.8rem minmax(0,1fr);overflow:hidden}
+.ev.past{opacity:.6}
+.ev .d{border-right:1px solid var(--line);padding:12px 8px;text-align:center;font-family:var(--f-display);font-variant-numeric:tabular-nums;display:grid;align-content:start;gap:2px}
+.ev .d .md{font-size:1.35rem;font-weight:900;line-height:1.1}
+.ev .d .wd{font-size:.8rem;color:var(--sub)}
+.ev .d .wd.sat{color:var(--pub)} .ev .d .wd.sun{color:var(--danger)}
+.ev .d .to{font-size:.75rem;color:var(--sub)}
+.ev .b{padding:10px 14px;display:grid;gap:4px;min-width:0}
+.row{display:flex;flex-wrap:wrap;align-items:center;gap:6px}
+.school{font-weight:700;font-size:.9rem}
+.tag{font-size:.72rem;font-weight:700;border-radius:999px;padding:1px 9px;border:1px solid var(--line);color:var(--sub);white-space:nowrap}
+.tag.kind{background:var(--accent-soft);border-color:transparent;color:var(--accent)}
+.tag.sec{background:var(--warn-bg);border-color:transparent;color:var(--warn)}
+.title{font-weight:700;font-size:1.02rem}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;font-size:.86rem;margin:2px 0 0}
+.facts dt{color:var(--sub)}
+.facts dd{margin:0;min-width:0}
+.dl{font-weight:700}
+.dl.soon{color:var(--danger)}
+.dl.closed{color:var(--sub);font-weight:400}
+.src{font-size:.78rem;color:var(--sub)}
+.src a{word-break:break-all}
+.empty{background:var(--paper);border:1px dashed var(--line);border-radius:12px;padding:20px;text-align:center;color:var(--sub)}
+.dir{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.dir h2{font-size:1.05rem;padding:12px 16px;border-bottom:1px solid var(--line)}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.86rem;min-width:560px}
+th,td{padding:8px 12px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-size:.75rem;color:var(--sub);white-space:nowrap}
+td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px;vertical-align:1px}
+footer{font-size:.8rem;color:var(--sub);display:grid;gap:4px}
+@media (prefers-reduced-motion:no-preference){.ev{transition:border-color .15s}.ev:hover{border-color:var(--accent)}}
+</style>
+</head>
+<body>
+
+
+<div class="topbar"><div class="topbar-in">
+  <div class="brand"><h1><a href="./" style="color:inherit;text-decoration:none">中信 高校イベントナビ</a></h1><p>中学生向けの学校説明会・体験入学・公開授業など</p></div>
+  <nav class="apps" aria-label="アプリの切り替え">
+    <a href="nyushi.html">入試ナビ</a>
+    <a href="#" aria-current="page">イベントナビ</a>
+  </nav>
+</div></div>
+
+<div class="wrap">
+  <aside aria-label="絞り込み">
+    <fieldset>
+      <legend>表示する期間</legend>
+      <div class="seg">
+        <label><input type="radio" name="when" id="when-up" value="up" checked><span>これから</span></label>
+        <label><input type="radio" name="when" id="when-all" value="all"><span>終了も表示</span></label>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend>キーワード</legend>
+      <input type="search" id="q" placeholder="例：探究科、部活動">
+    </fieldset>
+    <fieldset id="kinds"><legend>種類</legend></fieldset>
+    <fieldset id="schools">
+      <legend>学校</legend>
+      <div class="row"><button type="button" class="linkbtn" id="all-on">すべて選ぶ</button><button type="button" class="linkbtn" id="all-off">すべて外す</button></div>
+    </fieldset>
+  </aside>
+
+  <main>
+    <div class="notice"><b>参加の前に必ず学校の案内を確認してください。</b>日程は変わることがあります。申込が「中学校を通して」の行事は、担任の先生に相談してください。<span class="tag sec">二次情報</span> は学校の公式サイトで日付を確認できなかった行事です。</div>
+    <div class="summary"><h2 id="count">これからの行事</h2><span class="meta" id="checked"></span></div>
+    <div id="list" style="display:grid;gap:18px"></div>
+
+    <section class="dir" aria-labelledby="dir-h">
+      <h2 id="dir-h">学校ごとの中学生向けページ</h2>
+      <div class="tbl"><table><thead><tr><th>学校</th><th>地域</th><th>これからの行事</th><th>メモ</th></tr></thead><tbody id="dir"></tbody></table></div>
+    </section>
+
+    <footer>
+      <div>出典は各行事に記載した長野県教育委員会・各高校の公式ページです。公立高校の授業公開は <a href="https://www.pref.nagano.lg.jp/kyoiku/kyogaku/gyose/zenpan/tokei/gakuryoku/documents/r03koukai.html" target="_blank" rel="noopener">県教委「令和8年度公立高等学校における授業公開日程一覧」</a> にもまとまっています。</div>
+      <div>この情報は毎日自動で確認・更新しています。</div>
+    </footer>
+  </main>
+</div>
+
+
+<script>
+(async()=>{
+let DATA;
+try{ DATA=await (await fetch("data/events.json",{cache:"no-cache"})).json(); }
+catch(e){ document.getElementById("list").innerHTML='<div class="empty">データを読み込めませんでした。ページを再読み込みしてください。</div>'; return; }
+const byId = Object.fromEntries(DATA.schools.map(s=>[s.id,s]));
+const WD = ["日","月","火","水","木","金","土"];
+const today = new Date(); today.setHours(0,0,0,0);
+const parse = d=>{const [y,m,dd]=d.split("-").map(Number);return new Date(y,m-1,dd)};
+const md = d=>{const x=parse(d);return `${x.getMonth()+1}/${x.getDate()}`};
+const wd = d=>WD[parse(d).getDay()];
+const esc = s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const days = d=>Math.round((parse(d)-today)/864e5);
+const typeColor = t=>t==="私立"?"var(--priv)":t==="県教委"?"var(--pref)":"var(--pub)";
+
+document.getElementById("checked").textContent = `情報の確認日：${DATA.checkedAt.replace(/-/g,"/")}`;
+
+// 絞り込みUI
+const kindsEl=document.getElementById("kinds");
+kindsEl.insertAdjacentHTML("beforeend", DATA.kinds.map((k,i)=>`<label class="chk"><input type="checkbox" id="k${i}" value="${esc(k)}" checked>${esc(k)}</label>`).join(""));
+const schoolsEl=document.getElementById("schools");
+for(const type of ["公立","私立","県教委"]){
+  const list=DATA.schools.filter(s=>s.type===type);
+  schoolsEl.insertAdjacentHTML("beforeend",`<div class="grp-head"><span><span class="dot" style="background:${typeColor(type)}"></span>${type}</span></div><div class="cols2">${list.map(s=>`<label class="chk"><input type="checkbox" id="s-${s.id}" value="${s.id}" checked>${esc(s.name)}</label>`).join("")}</div>`);
+}
+const schoolBoxes=()=>[...schoolsEl.querySelectorAll("input[type=checkbox]")];
+document.getElementById("all-on").onclick=()=>{schoolBoxes().forEach(b=>b.checked=true);render()};
+document.getElementById("all-off").onclick=()=>{schoolBoxes().forEach(b=>b.checked=false);render()};
+
+// #学校ID で開いたらその学校だけ表示
+function applyHash(){
+  const h=decodeURIComponent(location.hash.slice(1));
+  if(h && byId[h]){ schoolBoxes().forEach(b=>b.checked=(b.value===h)); document.getElementById("when-all").checked=false; document.getElementById("when-up").checked=true; }
+}
+applyHash();
+window.addEventListener("hashchange",()=>{applyHash();render()});
+document.querySelector("aside").addEventListener("input",render);
+
+function deadlineHtml(e){
+  if(!e.deadline) return "";
+  const n=days(e.deadline);
+  const t=`${md(e.deadline)}(${wd(e.deadline)})${e.deadlineTime?" "+e.deadlineTime:""}`;
+  if(n<0) return `<span class="dl closed">${t}（締切済み）</span>`;
+  const left=n===0?"今日まで":`あと${n}日`;
+  return `<span class="dl${n<=7?" soon":""}">${t}（${left}）</span>`;
+}
+
+function evHtml(e){
+  const s=byId[e.school]; const end=e.end||e.date; const past=days(end)<0;
+  const w=parse(e.date).getDay();
+  const facts=[
+    e.time&&["時間",esc(e.time)],
+    e.place&&["場所",esc(e.place)],
+    e.target&&["対象",esc(e.target)],
+    e.apply&&["申込",esc(e.apply)],
+    e.deadline&&["締切",deadlineHtml(e)],
+  ].filter(Boolean).map(([k,v])=>`<dt>${k}</dt><dd>${v}</dd>`).join("");
+  return `<article class="ev${past?" past":""}">
+    <div class="d"><span class="md">${md(e.date)}</span><span class="wd${w===6?" sat":w===0?" sun":""}">${wd(e.date)}曜</span>${e.end?`<span class="to">〜${md(e.end)}(${wd(e.end)})</span>`:""}</div>
+    <div class="b">
+      <div class="row"><span class="school" style="color:${typeColor(s.type)}">${esc(s.name)}${s.type==="県教委"?"":"高校"}</span><span class="tag kind">${esc(e.kind)}</span>${e.secondary?'<span class="tag sec">二次情報</span>':""}${past?'<span class="tag">終了</span>':""}</div>
+      <div class="title">${esc(e.title)}</div>
+      ${facts?`<dl class="facts">${facts}</dl>`:""}
+      <div class="src">出典：<a href="${esc(e.src)}" target="_blank" rel="noopener">${esc(e.srcLabel)}</a></div>
+    </div></article>`;
+}
+
+function render(){
+  const showAll=document.getElementById("when-all").checked;
+  const q=document.getElementById("q").value.trim();
+  const kinds=new Set([...kindsEl.querySelectorAll("input:checked")].map(i=>i.value));
+  const schools=new Set(schoolBoxes().filter(b=>b.checked).map(b=>b.value));
+  let evs=DATA.events.filter(e=>kinds.has(e.kind)&&schools.has(e.school)&&(showAll||days(e.end||e.date)>=0));
+  if(q) evs=evs.filter(e=>[e.title,e.kind,e.target,e.apply,byId[e.school].name].join(" ").includes(q));
+  evs.sort((a,b)=>a.date.localeCompare(b.date)||a.school.localeCompare(b.school));
+  document.getElementById("count").textContent=`${showAll?"すべての行事":"これからの行事"}　${evs.length}件`;
+  const list=document.getElementById("list");
+  if(!evs.length){list.innerHTML=`<div class="empty">条件に合う行事はありません。学校や種類の選び方を変えるか、下の「学校ごとの中学生向けページ」を見てください。</div>`;}
+  else{
+    const groups={};
+    evs.forEach(e=>{const k=e.date.slice(0,7);(groups[k]=groups[k]||[]).push(e)});
+    list.innerHTML=Object.entries(groups).map(([k,arr])=>{const [y,m]=k.split("-");return `<section class="month"><h3>${y}年${Number(m)}月</h3>${arr.map(evHtml).join("")}</section>`}).join("");
+  }
+  // 学校一覧
+  document.getElementById("dir").innerHTML=DATA.schools.filter(s=>schools.has(s.id)).map(s=>{
+    const up=DATA.events.filter(e=>e.school===s.id&&days(e.end||e.date)>=0).sort((a,b)=>a.date.localeCompare(b.date));
+    const nx=up.length?`${up.length}件（次：${md(up[0].date)} ${esc(up[0].title)}）`:"—";
+    return `<tr><td><span class="dot" style="background:${typeColor(s.type)}"></span><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}${s.type==="県教委"?"":"高校"}</a></td><td>${esc(s.area)}</td><td>${nx}</td><td>${esc(s.note)}</td></tr>`;
+  }).join("");
+}
+render();
+})();
+</script>
+
+</body>
+</html>
