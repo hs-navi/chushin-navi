@@ -23,7 +23,7 @@ function doGet(e) {
   const t = HtmlService.createTemplateFromFile(conf.file);
   t.baseUrl = ScriptApp.getService().getUrl();
   t.school = /^[a-z0-9-]{1,40}$/.test(params.school || '') ? params.school : '';
-  t.dataJson = conf.data ? safeJson_(loadData_(conf.data)) : 'null';
+  t.dataJson = conf.data ? (loadData_(conf.data) || 'null') : 'null'; // ページ側でBase64にして渡すので加工しない
 
   return t.evaluate()
     .setTitle(conf.title)
@@ -50,10 +50,4 @@ function loadData_(name) {
     console.error(name + ' の読み込みに失敗: ' + err);
   }
   return props.getProperty('last_' + name); // 予備のデータ（なければ null）
-}
-
-/** HTMLの中に安全に埋め込める形にする */
-function safeJson_(text) {
-  if (!text) return 'null';
-  return text.replace(/</g, '\\u003c').replace(/ /g, '\\u2028').replace(/ /g, '\\u2029');
 }
