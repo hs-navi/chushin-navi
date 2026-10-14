@@ -27,6 +27,22 @@ function replaceOrFail(s, from, to, label) {
 }
 const link = (page) => `<?= baseUrl ?>${page ? `?page=${page}` : ""}`;
 
+// 画面の組み立てで止まったとき、原因をページ上に表示する（GASの中では開発者ツールを見にくいため）
+const ERROR_BOX = `<script>
+(function(){
+  function show(msg){
+    var box=document.getElementById("gas-error");
+    if(!box){box=document.createElement("div");box.id="gas-error";
+      box.style.cssText="margin:12px 16px;padding:12px 14px;border:2px solid #a33a2a;border-radius:10px;background:#fff;color:#a33a2a;font:14px/1.6 sans-serif;white-space:pre-wrap";
+      (document.body||document.documentElement).insertBefore(box,(document.body||document.documentElement).firstChild);}
+    box.textContent+= (box.textContent?"\\n":"")+"表示中にエラーが起きました（この文を管理者に伝えてください）："+msg;
+  }
+  window.addEventListener("error",function(e){show((e.message||"")+" ["+(e.lineno||"")+":"+(e.colno||"")+"]");});
+  window.addEventListener("unhandledrejection",function(e){var r=e.reason;show(r&&r.stack?String(r.stack).split("\\n").slice(0,3).join(" / "):String(r));});
+})();
+</script>
+`;
+
 // ---- 入口 ----
 let top = strip(read("index.html"));
 top = replaceOrFail(top, 'href="nyushi.html"', `href="${link("nyushi")}" target="_top"`, "index→入試ナビ");
@@ -43,7 +59,7 @@ ny = replaceOrFail(ny,
   "入試データの読み込み");
 ny = replaceOrFail(ny, 'const EVENTS_URL="events.html";', 'const EVENTS_URL=<?!= JSON.stringify(baseUrl + "?page=events&school=") ?>;', "EVENTS_URL");
 ny = replaceOrFail(ny, 'href="${EVENTS_URL}#${s.id}"', 'href="${EVENTS_URL}${s.id}" target="_top"', "学校カード→イベントナビ");
-write("gas/nyushi.html", ny);
+write("gas/nyushi.html", ERROR_BOX + ny);
 
 // ---- イベントナビ ----
 let ev = strip(read("events.html"));
@@ -54,6 +70,6 @@ ev = replaceOrFail(ev,
   "try{ DATA=<?!= dataJson ?>; if(!DATA) throw new Error(\"no data\"); }",
   "行事データの読み込み");
 ev = replaceOrFail(ev, 'const h=decodeURIComponent(location.hash.slice(1));', 'const h=<?!= JSON.stringify(school) ?>;', "学校の絞り込み");
-write("gas/events.html", ev);
+write("gas/events.html", ERROR_BOX + ev);
 
 console.log("gas/ に top.html・nyushi.html・events.html を作りました");
