@@ -1,0 +1,278 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=BIZ+UDPGothic:wght@400;700&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap">
+<style>html{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<style>
+/* Layout: Chromebook（約1366×768）想定。上部バー＋学校選択の横並び、下は左に日程（固定）、右に入試内容カード。狭い画面では1列 */
+:root{
+  --bg:#f5f7f6; --paper:#ffffff; --ink:#1d2a33; --sub:#5a6872; --line:#d9e1e4;
+  --accent:#1f5f8b; --accent-soft:#e3eef6;
+  --c1:#1f5f8b; --c2:#b0532a; --c3:#4f7a3a;
+  --warn:#8a5a00; --warn-bg:#fff4dc; --ok:#2f6b3f; --ok-bg:#e4f2e7; --muted-bg:#eef1f2;
+  --f-display:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",sans-serif;
+  --f-body:"BIZ UDPGothic","Hiragino Sans","Yu Gothic",Meiryo,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12181c; --paper:#1a2227; --ink:#e6ecef; --sub:#9aa9b2; --line:#2e3a41;
+  --accent:#7db7e0; --accent-soft:#1d3141;
+  --c1:#7db7e0; --c2:#e39a74; --c3:#9cc584;
+  --warn:#f0c46a; --warn-bg:#3a2f15; --ok:#8fd19e; --ok-bg:#1b3222; --muted-bg:#222c32; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12181c; --paper:#1a2227; --ink:#e6ecef; --sub:#9aa9b2; --line:#2e3a41;
+  --accent:#7db7e0; --accent-soft:#1d3141;
+  --c1:#7db7e0; --c2:#e39a74; --c3:#9cc584;
+  --warn:#f0c46a; --warn-bg:#3a2f15; --ok:#8fd19e; --ok-bg:#1b3222; --muted-bg:#222c32; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:15px;line-height:1.7}
+.topbar{background:var(--paper);border-bottom:1px solid var(--line)}
+.topbar-in{max-width:1280px;margin:0 auto;padding-inline:20px;padding-block:12px;display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px}
+.topbar h1{font-size:1.45rem}
+.apps{margin-left:auto;display:flex;gap:6px;flex-wrap:wrap}
+.apps a{font-size:.9rem;font-weight:700;text-decoration:none;padding:8px 14px;border-radius:999px;border:1px solid var(--line);color:var(--ink)}
+.apps a[aria-current="page"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.wrap{max-width:1280px;margin:0 auto;padding-inline:20px;padding-block:20px 48px;display:flex;flex-direction:column;gap:20px}
+.picker{grid-template-columns:repeat(3,minmax(0,1fr))}
+.picker #rules{grid-column:1/-1}
+.cols{display:grid;grid-template-columns:400px minmax(0,1fr);gap:20px;align-items:start}
+.cols>section:first-child{position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px);max-height:calc(100vh - 24px);overflow:auto}
+@media (max-width:960px){.cols{grid-template-columns:1fr}.cols>section:first-child{position:static;max-height:none}}
+@media (max-width:700px){.picker{grid-template-columns:1fr}.wrap,.topbar-in{padding-inline:16px}}
+.evlink{display:inline-flex;align-items:center;gap:6px;font-size:.86rem;font-weight:700;text-decoration:none;color:var(--accent);border:1px solid var(--accent);border-radius:999px;padding:4px 12px;justify-self:start}
+.evlink:hover{background:var(--accent-soft)}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;line-height:1.35}
+h1{font-size:1.6rem;font-weight:900;letter-spacing:.02em}
+h2{font-size:1.15rem;font-weight:700}
+h3{font-size:1.05rem;font-weight:700}
+.lead{color:var(--sub);margin:4px 0 0;font-size:.92rem}
+.notice{background:var(--warn-bg);color:var(--ink);border-radius:10px;padding:10px 14px;font-size:.85rem;border:1px solid color-mix(in srgb,var(--warn) 35%,transparent)}
+.notice b{color:var(--warn)}
+.picker{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:16px;display:grid;gap:12px}
+.field{display:grid;gap:4px}
+.field label{font-size:.8rem;font-weight:700;color:var(--sub);letter-spacing:.06em;display:flex;align-items:center;gap:8px}
+.dot{width:10px;height:10px;border-radius:50%;display:inline-block;flex:none}
+select{font:inherit;font-size:1rem;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--paper);color:var(--ink);width:100%}
+select:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.rule{font-size:.82rem;color:var(--sub);background:var(--muted-bg);border-radius:10px;padding:10px 12px}
+.rule ul{margin:4px 0 0;padding-left:1.2em}
+section{display:grid;gap:12px}
+.timeline{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:6px 0}
+.ev{display:grid;grid-template-columns:5.2rem 1fr;gap:12px;padding:10px 16px;border-top:1px solid var(--line)}
+.ev:first-child{border-top:0}
+.ev.past{opacity:.5}
+.date{font-family:var(--f-display);font-weight:700;font-variant-numeric:tabular-nums;line-height:1.25}
+.date .md{font-size:1.15rem;display:block}
+.date .wd{font-size:.78rem;color:var(--sub)}
+.ev-body{min-width:0;display:grid;gap:2px}
+.ev-school{font-size:.78rem;font-weight:700;display:flex;align-items:center;gap:6px}
+.ev-title{font-weight:700}
+.ev-note{font-size:.82rem;color:var(--sub)}
+.ev.exam .ev-title::before{content:"試験";font-size:.7rem;background:var(--ink);color:var(--paper);border-radius:4px;padding:1px 6px;margin-right:6px;vertical-align:2px}
+.ev.result .ev-title::before{content:"発表";font-size:.7rem;border:1px solid var(--ink);border-radius:4px;padding:0 6px;margin-right:6px;vertical-align:2px}
+.countdown{font-size:.75rem;color:var(--accent);font-weight:700}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.card-head{padding:14px 16px;display:grid;gap:6px;border-bottom:1px solid var(--line)}
+.card-head .row{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.role{font-size:.72rem;font-weight:700;color:var(--paper);border-radius:999px;padding:2px 10px}
+.pill{font-size:.72rem;font-weight:700;border-radius:999px;padding:2px 10px;background:var(--muted-bg);color:var(--sub)}
+.pill.ok{background:var(--ok-bg);color:var(--ok)}
+.pill.warn{background:var(--warn-bg);color:var(--warn)}
+.depts{font-size:.85rem;color:var(--sub)}
+.exam{padding:12px 16px;border-top:1px solid var(--line);display:grid;gap:6px}
+.exam:first-of-type{border-top:0}
+.exam h3{display:flex;flex-wrap:wrap;gap:8px;align-items:baseline}
+.exam h3 small{font-family:var(--f-body);font-weight:400;font-size:.78rem;color:var(--sub)}
+dl{margin:0;display:grid;grid-template-columns:5.5rem 1fr;gap:4px 10px;font-size:.88rem}
+dt{color:var(--sub);font-size:.8rem;padding-top:2px}
+dd{margin:0;min-width:0}
+.content ul{margin:0;padding-left:1.2em;font-size:.9rem}
+.tbl-wrap{overflow-x:auto}
+table{border-collapse:collapse;font-size:.84rem;width:100%;min-width:420px}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{font-size:.75rem;color:var(--sub);font-weight:700;white-space:nowrap}
+td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
+.src{padding:10px 16px;font-size:.78rem;color:var(--sub);border-top:1px solid var(--line);background:var(--muted-bg)}
+.src a{color:var(--accent)}
+.empty{color:var(--sub);font-size:.9rem;padding:16px;text-align:center}
+footer{font-size:.78rem;color:var(--sub)}
+footer a{color:var(--accent)}
+@media (max-width:420px){dl{grid-template-columns:1fr}dt{padding-top:6px}}
+</style>
+<div class="topbar"><div class="topbar-in">
+  <div><h1><a href="<?= baseUrl ?>" target="_top" style="color:inherit;text-decoration:none">中信 入試ナビ</a></h1><p class="lead">令和9年度（2027年4月入学）入試</p></div>
+  <nav class="apps" aria-label="アプリの切り替え">
+    <a href="#" aria-current="page">入試ナビ</a>
+    <a href="<?= baseUrl ?>?page=events" target="_top">イベントナビ</a>
+  </nav>
+</div></div>
+
+<div class="wrap">
+
+  <div class="notice"><b>試作版・確認前のデータです。</b>県教委・各校の公表資料から作成しました。公立高校の学校別の内容（前期の募集枠・面接方法など）は資料の読み取りに不確かな部分があり「要確認」と表示しています。出願前は必ず各校の募集要項で確認してください。</div>
+
+  <div class="picker" role="group" aria-label="学校を選ぶ">
+    <div class="field">
+      <label for="sel0"><span class="dot" style="background:var(--c1)"></span>第一希望の高校</label>
+      <select id="sel0"></select>
+    </div>
+    <div class="field">
+      <label for="sel1"><span class="dot" style="background:var(--c2)"></span>併願校 1</label>
+      <select id="sel1"></select>
+    </div>
+    <div class="field">
+      <label for="sel2"><span class="dot" style="background:var(--c3)"></span>併願校 2</label>
+      <select id="sel2"></select>
+    </div>
+    <div id="rules" class="rule" hidden></div>
+  </div>
+
+  <div class="cols">
+  <section aria-labelledby="h-tl">
+    <h2 id="h-tl">① 入試日程（日付順）</h2>
+    <div id="timeline" class="timeline"></div>
+  </section>
+
+  <section aria-labelledby="h-ct">
+    <h2 id="h-ct">② 入試内容</h2>
+    <div id="cards" style="display:grid;gap:14px"></div>
+  </section>
+  </div>
+
+  <footer>
+    出典：<a href="https://www.pref.nagano.lg.jp/kyoiku/koko/saiyo-nyuushi/shiken/ko/r9/r9naiyo.html" target="_blank" rel="noopener">長野県教育委員会「令和9年度 学校別実施内容」</a>、各私立高校の募集要項。<span id="updated"></span>時点の情報です。毎日自動で確認・更新しています。
+  </footer>
+</div>
+
+<script>
+(async()=>{
+let D;
+try{ D=<?!= dataJson ?>; if(!D) throw new Error("no data"); }
+catch(e){ document.getElementById("cards").innerHTML='<div class="card"><div class="empty">データを読み込めませんでした。ページを再読み込みしてください。</div></div>'; return; }
+const PREF_PAGE=D.prefPage;
+const PREF_PDF=D.pdfs.chushin.url;
+const PDF_LABEL=Object.fromEntries(Object.values(D.pdfs).map(p=>[p.url,p.label]));
+const EVENTS_URL=<?!= JSON.stringify(baseUrl + "?page=events&school=") ?>;
+const PUB_ZENKI=D.publicSchedule.zenki, PUB_KOKI=D.publicSchedule.koki;
+const PUB_ZENKI_CONTENT=D.publicSchedule.zenkiContent, PUB_KOKI_CONTENT=D.publicSchedule.kokiContent;
+const PUB=D.publicSchools.map(s=>[s.id,s.name,s.depts.map(x=>[x.dept,x.zenki,x.zenkiTest,x.kokiInterview,x.note]),D.pdfs[s.pdf].url,s.note]);
+const PRIV=D.privateSchools;
+{const [y,m,d]=D.updatedAt.split("-").map(Number);document.getElementById("updated").textContent=`${y}年${m}月${d}日`;}
+/* ---------- 共通処理 ---------- */
+const SCHOOLS = [
+  ...PUB.map(([id,name,depts,pdf,note])=>({id,name,type:"公立",depts,pdf:pdf||PREF_PDF,note:note||""})),
+  ...PRIV.map(p=>({...p,type:"私立"})),
+];
+const byId = Object.fromEntries(SCHOOLS.map(s=>[s.id,s]));
+const deptName = (s,k)=>s.type==="公立"?s.depts[k][0]:s.depts[k];
+/* 選択肢：学科が複数あれば「校名（学科）」に分ける。値は "学校ID|学科番号" */
+const OPTIONS = SCHOOLS.flatMap(s=>s.depts.length>1
+  ? s.depts.map((_,k)=>({value:`${s.id}|${k}`,s,k,label:`${s.name}（${deptName(s,k)}）`}))
+  : [{value:`${s.id}|0`,s,k:0,label:s.name}]);
+const byValue = Object.fromEntries(OPTIONS.map(o=>[o.value,o]));
+const COLORS = ["var(--c1)","var(--c2)","var(--c3)"];
+const ROLES = ["第一希望","併願校 1","併願校 2"];
+const WD = ["日","月","火","水","木","金","土"];
+const today = new Date(); today.setHours(0,0,0,0);
+
+function parse(d){const [y,m,dd]=d.split("-").map(Number);return new Date(y,m-1,dd)}
+function md(d){const x=parse(d);return `${x.getMonth()+1}/${x.getDate()}`}
+function wd(d){return WD[parse(d).getDay()]}
+function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+
+function fillSelects(){
+  ["sel0","sel1","sel2"].forEach((id,i)=>{
+    const el=document.getElementById(id);
+    let h=`<option value="">${i===0?"選んでください":"（なし）"}</option>`;
+    for(const type of ["公立","私立"]){
+      h+=`<optgroup label="${type}">`;
+      OPTIONS.filter(o=>o.s.type===type).forEach(o=>h+=`<option value="${o.value}">${esc(o.label)}</option>`);
+      h+=`</optgroup>`;
+    }
+    el.innerHTML=h;
+  });
+}
+
+function hasZenki(s,k){return !/^実施なし/.test(s.depts[k][1])}
+
+function eventsFor(s,k){
+  if(s.type==="公立") return [...(hasZenki(s,k)?PUB_ZENKI:[]),...PUB_KOKI].map(e=>({...e}));
+  return s.exams.flatMap(x=>x.ev.map(e=>({...e})));
+}
+
+function render(){
+  const picks=["sel0","sel1","sel2"].map(id=>document.getElementById(id).value);
+  try{localStorage.setItem("nyushi-picks",JSON.stringify(picks))}catch(e){}
+  const chosen=[]; const seen=new Set();
+  picks.forEach((v,i)=>{ if(v&&byValue[v]&&!seen.has(v)){seen.add(v);const o=byValue[v];chosen.push({s:o.s,k:o.k,label:o.label,i})} });
+
+  // ルール注意
+  const pubs=chosen.filter(c=>c.s.type==="公立");
+  const rules=document.getElementById("rules");
+  if(pubs.length>=2){
+    rules.hidden=false;
+    rules.innerHTML=`<b>公立高校を2つ以上選んでいます</b><ul><li>前期選抜に出願できるのは1校・1学科です。前期で合格すると入学が確約され、後期選抜には出願できません。</li><li>後期選抜に出願できるのも1校です（同じ学校内の別学科を第2志望にできる場合あり）。</li><li>前期と後期で別の公立高校を受けることはできます。</li></ul>`;
+  } else rules.hidden=true;
+
+  // タイムライン
+  const tl=document.getElementById("timeline");
+  let evs=[];
+  chosen.forEach(({s,k,label,i})=>eventsFor(s,k).forEach(e=>evs.push({...e,school:label,i})));
+  evs.sort((a,b)=>a.d.localeCompare(b.d)||a.i-b.i);
+  if(!chosen.length){tl.innerHTML=`<div class="empty">上で学校を選ぶと、日程がここに日付順で並びます。</div>`}
+  else if(!evs.length){tl.innerHTML=`<div class="empty">選んだ学校の令和9年度の日程はまだ確認できていません。②の内容と公式サイトを見てください。</div>`}
+  else tl.innerHTML=evs.map(e=>{
+    const day=parse(e.end||e.d); const start=parse(e.d);
+    const past=day<today;
+    const diff=Math.round((start-today)/864e5);
+    const cd=(e.k==="exam"&&diff>=0)?`<span class="countdown">あと${diff}日</span>`:"";
+    const range=e.end?`<span class="wd">〜${md(e.end)}(${wd(e.end)})</span>`:"";
+    return `<div class="ev ${e.k}${past?" past":""}">
+      <div class="date"><span class="md">${md(e.d)}<small style="font-size:.75rem">(${wd(e.d)})</small></span>${range}</div>
+      <div class="ev-body">
+        <div class="ev-school"><span class="dot" style="background:${COLORS[e.i]}"></span><span style="color:${COLORS[e.i]}">${esc(e.school)}</span>${cd}</div>
+        <div class="ev-title">${esc(e.t)}</div>
+        ${e.n?`<div class="ev-note">${esc(e.n)}</div>`:""}
+      </div></div>`;
+  }).join("");
+
+  // カード
+  const cards=document.getElementById("cards");
+  if(!chosen.length){cards.innerHTML=`<div class="card"><div class="empty">学校を選ぶと入試内容が表示されます。</div></div>`;return}
+  cards.innerHTML=chosen.map(c=>c.s.type==="公立"?pubCard(c):privCard(c)).join("");
+}
+
+function head(s,k,i,pill){
+  const dept=s.depts.length>1?`（${esc(deptName(s,k))}）`:"";
+  return `<div class="card-head"><div class="row"><span class="role" style="background:${COLORS[i]}">${ROLES[i]}</span><span class="pill">${s.type}</span>${pill}</div><h3 style="font-size:1.25rem">${esc(s.name)}高校${dept}</h3>${s.note?`<div class="depts">${esc(s.note)}</div>`:""}<a class="evlink" href="${EVENTS_URL}${s.id}" target="_top">この学校の説明会・見学会を見る →</a></div>`;
+}
+
+function pubCard({s,k,i}){
+  const d=s.depts[k];
+  const z=hasZenki(s,k);
+  return `<article class="card">${head(s,k,i,`<span class="pill warn">学科別の内容は要確認</span>`)}
+    <div class="exam"><h3>この学科のポイント</h3>
+      <dl><dt>学科</dt><dd>${esc(d[0])}${d[4]?`（${esc(d[4])}）`:""}</dd><dt>前期 募集枠</dt><dd>${esc(d[1])}</dd><dt>前期の検査</dt><dd>${esc(d[2])}</dd><dt>後期の面接</dt><dd>${esc(d[3])}</dd></dl></div>
+    <div class="exam"><h3>前期選抜（自己推薦型） <small>${z?"検査日 2/8(月)":"この学科は実施なし（要確認）"}</small></h3>
+      ${z?`<div class="content"><ul>${PUB_ZENKI_CONTENT.map(c=>`<li>${esc(c)}</li>`).join("")}</ul></div>`:""}</div>
+    <div class="exam"><h3>後期選抜（一般） <small>検査日 3/9(火)</small></h3>
+      <div class="content"><ul>${PUB_KOKI_CONTENT.map(c=>`<li>${esc(c)}</li>`).join("")}</ul></div></div>
+    <div class="src">原本：<a href="${s.pdf}" target="_blank" rel="noopener">${PDF_LABEL[s.pdf]}</a>／<a href="${PREF_PAGE}" target="_blank" rel="noopener">県教委 入試情報ページ</a></div>
+  </article>`;
+}
+
+function privCard({s,k,i}){
+  const pill=`<span class="pill ${s.status}">${esc(s.statusText)}</span>`;
+  const ex=s.exams.map(x=>{
+    const exam=x.ev.find(e=>e.k==="exam");
+    const res=x.ev.find(e=>e.k==="result");
+    const dl=(exam||res)?`<dl>${exam?`<dt>試験日</dt><dd>${md(exam.d)}(${wd(exam.d)})</dd>`:""}${res?`<dt>合格発表</dt><dd>${md(res.d)}(${wd(res.d)})${res.n?` ${esc(res.n)}`:""}</dd>`:""}</dl>`:"";
+    return `<div class="exam"><h3>${esc(x.name)}${x.sub?` <small>${esc(x.sub)}</small>`:""}</h3>${dl}<div class="content"><ul>${x.content.map(c=>`<li>${esc(c)}</li>`).join("")}</ul></div></div>`;
+  }).join("");
+  return `<article class="card">${head(s,k,i,pill)}${ex}<div class="src">確認先：<a href="${s.src.url}" target="_blank" rel="noopener">${esc(s.src.label)}</a></div></article>`;
+}
+
+fillSelects();
+let init=["agatagaoka|1","matsusho|0","kokusai|0"];
+try{const v=JSON.parse(localStorage.getItem("nyushi-picks")||"null");if(Array.isArray(v)&&v.some(x=>x&&byValue[x]))init=v}catch(e){}
+["sel0","sel1","sel2"].forEach((id,i)=>{const el=document.getElementById(id);if(init[i]&&byValue[init[i]])el.value=init[i];el.addEventListener("change",render)});
+render();
+
+})();
+</script>

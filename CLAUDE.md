@@ -11,6 +11,15 @@
 
 ビルドは不要。HTML は `fetch()` で JSON を読む。ふだんの更新は JSON だけを書き換える。
 
+## Google Apps Script（GAS）版
+
+学校のフィルタリングで github.io が開けない環境向けに、同じ画面を GAS のWebアプリとしても公開する。
+
+- `gas/Code.gs` と `gas/top.html`・`gas/nyushi.html`・`gas/events.html` を、先生の個人Googleアカウントの GAS プロジェクトに貼って「全員」に公開する。
+- GAS は `raw.githubusercontent.com/hs-navi/chushin-navi/main/data/*.json` をサーバー側で読む（10分キャッシュ）。そのため JSON の毎日の更新だけなら GAS 側の作業は不要。
+- `index.html`・`nyushi.html`・`events.html` のデザインや機能を変えたら、`node scripts/build-gas.mjs` で `gas/*.html` を作り直してコミットし、先生に GAS への貼り直しを頼む（自動では反映されない）。
+- GAS 版ではページ間リンクは `?page=nyushi|events`、学校の絞り込みは `?page=events&school=学校id`。build-gas.mjs の置き換え対象の文字列を HTML 側で変えると build が失敗するので、合わせて直す。
+
 ## 対象校
 
 中信地区の公立：松本深志、松本県ケ丘、松本美須々ケ丘、松本蟻ケ崎、松本筑摩（定時制 多部制・単位制／通信制）、田川、梓川、松本工業、塩尻志学館、豊科、明科、南安曇農業、穂高商業、池田工業、大町岳陽、白馬、木曽青峰、蘇南
