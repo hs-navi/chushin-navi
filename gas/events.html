@@ -151,10 +151,12 @@ footer{font-size:.8rem;color:var(--sub);display:grid;gap:4px}
 </div>
 
 
+<script type="application/json" id="gas-data">{"baseUrl":<?!= JSON.stringify(baseUrl) ?>,"school":<?!= JSON.stringify(school) ?>,"data":<?!= dataJson ?>}</script>
 <script>
 (async()=>{
 let DATA;
-try{ DATA=<?!= dataJson ?>; if(!DATA) throw new Error("no data"); }
+const G=JSON.parse(document.getElementById("gas-data").textContent);
+try{ DATA=G.data; if(!DATA) throw new Error("データが空です"); }
 catch(e){ document.getElementById("list").innerHTML='<div class="empty">データを読み込めませんでした。ページを再読み込みしてください。</div>'; return; }
 const byId = Object.fromEntries(DATA.schools.map(s=>[s.id,s]));
 const WD = ["日","月","火","水","木","金","土"];
@@ -182,7 +184,7 @@ document.getElementById("all-off").onclick=()=>{schoolBoxes().forEach(b=>b.check
 
 // #学校ID で開いたらその学校だけ表示
 function applyHash(){
-  const h=<?!= JSON.stringify(school) ?>;
+  const h=G.school;
   if(h && byId[h]){ schoolBoxes().forEach(b=>b.checked=(b.value===h)); document.getElementById("when-all").checked=false; document.getElementById("when-up").checked=true; }
 }
 applyHash();

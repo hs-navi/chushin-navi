@@ -28,6 +28,10 @@ function replaceOrFail(s, from, to, label) {
 const link = (page) => `<?= baseUrl ?>${page ? `?page=${page}` : ""}`;
 
 // 画面の組み立てで止まったとき、原因をページ上に表示する（GASの中では開発者ツールを見にくいため）
+// 画面に必要な値は、プログラムの中ではなくデータ用の箱にまとめて入れ、プログラム側で読み取る
+const DATA_BOX = `<script type="application/json" id="gas-data">{"baseUrl":<?!= JSON.stringify(baseUrl) ?>,"school":<?!= JSON.stringify(school) ?>,"data":<?!= dataJson ?>}</script>
+`;
+const READ_BOX = 'const G=JSON.parse(document.getElementById("gas-data").textContent);';
 const ERROR_BOX = `<script>
 (function(){
   function show(msg){
@@ -55,11 +59,11 @@ ny = replaceOrFail(ny, '<a href="./" style=', `<a href="${link("")}" target="_to
 ny = replaceOrFail(ny, '<a href="events.html">', `<a href="${link("events")}" target="_top">`, "入試ナビ→イベントナビ");
 ny = replaceOrFail(ny,
   'try{ D=await (await fetch("data/nyushi.json",{cache:"no-cache"})).json(); }',
-  "try{ D=<?!= dataJson ?>; if(!D) throw new Error(\"no data\"); }",
+  READ_BOX + "\ntry{ D=G.data; if(!D) throw new Error(\"データが空です\"); }",
   "入試データの読み込み");
-ny = replaceOrFail(ny, 'const EVENTS_URL="events.html";', 'const EVENTS_URL=<?!= JSON.stringify(baseUrl + "?page=events&school=") ?>;', "EVENTS_URL");
+ny = replaceOrFail(ny, 'const EVENTS_URL="events.html";', 'const EVENTS_URL=G.baseUrl+"?page=events&school=";', "EVENTS_URL");
 ny = replaceOrFail(ny, 'href="${EVENTS_URL}#${s.id}"', 'href="${EVENTS_URL}${s.id}" target="_top"', "学校カード→イベントナビ");
-write("gas/nyushi.html", ERROR_BOX + ny);
+write("gas/nyushi.html", ERROR_BOX + ny.replace(/<script>\n\(async/, DATA_BOX + "<script>\n(async"));
 
 // ---- イベントナビ ----
 let ev = strip(read("events.html"));
@@ -67,9 +71,9 @@ ev = replaceOrFail(ev, '<a href="./" style=', `<a href="${link("")}" target="_to
 ev = replaceOrFail(ev, '<a href="nyushi.html">', `<a href="${link("nyushi")}" target="_top">`, "イベントナビ→入試ナビ");
 ev = replaceOrFail(ev,
   'try{ DATA=await (await fetch("data/events.json",{cache:"no-cache"})).json(); }',
-  "try{ DATA=<?!= dataJson ?>; if(!DATA) throw new Error(\"no data\"); }",
+  READ_BOX + "\ntry{ DATA=G.data; if(!DATA) throw new Error(\"データが空です\"); }",
   "行事データの読み込み");
-ev = replaceOrFail(ev, 'const h=decodeURIComponent(location.hash.slice(1));', 'const h=<?!= JSON.stringify(school) ?>;', "学校の絞り込み");
-write("gas/events.html", ERROR_BOX + ev);
+ev = replaceOrFail(ev, 'const h=decodeURIComponent(location.hash.slice(1));', 'const h=G.school;', "学校の絞り込み");
+write("gas/events.html", ERROR_BOX + ev.replace(/<script>\n\(async/, DATA_BOX + "<script>\n(async"));
 
 console.log("gas/ に top.html・nyushi.html・events.html を作りました");

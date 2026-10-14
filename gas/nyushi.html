@@ -153,15 +153,17 @@ footer a{color:var(--accent)}
   </footer>
 </div>
 
+<script type="application/json" id="gas-data">{"baseUrl":<?!= JSON.stringify(baseUrl) ?>,"school":<?!= JSON.stringify(school) ?>,"data":<?!= dataJson ?>}</script>
 <script>
 (async()=>{
 let D;
-try{ D=<?!= dataJson ?>; if(!D) throw new Error("no data"); }
+const G=JSON.parse(document.getElementById("gas-data").textContent);
+try{ D=G.data; if(!D) throw new Error("データが空です"); }
 catch(e){ document.getElementById("cards").innerHTML='<div class="card"><div class="empty">データを読み込めませんでした。ページを再読み込みしてください。</div></div>'; return; }
 const PREF_PAGE=D.prefPage;
 const PREF_PDF=D.pdfs.chushin.url;
 const PDF_LABEL=Object.fromEntries(Object.values(D.pdfs).map(p=>[p.url,p.label]));
-const EVENTS_URL=<?!= JSON.stringify(baseUrl + "?page=events&school=") ?>;
+const EVENTS_URL=G.baseUrl+"?page=events&school=";
 const PUB_ZENKI=D.publicSchedule.zenki, PUB_KOKI=D.publicSchedule.koki;
 const PUB_ZENKI_CONTENT=D.publicSchedule.zenkiContent, PUB_KOKI_CONTENT=D.publicSchedule.kokiContent;
 const PUB=D.publicSchools.map(s=>[s.id,s.name,s.depts.map(x=>[x.dept,x.zenki,x.zenkiTest,x.kokiInterview,x.note]),D.pdfs[s.pdf].url,s.note]);
