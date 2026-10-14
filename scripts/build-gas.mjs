@@ -29,9 +29,10 @@ const link = (page) => `<?= baseUrl ?>${page ? `?page=${page}` : ""}`;
 
 // 画面の組み立てで止まったとき、原因をページ上に表示する（GASの中では開発者ツールを見にくいため）
 // 画面に必要な値は、プログラムの中ではなくデータ用の箱にまとめて入れ、プログラム側で読み取る
-const DATA_BOX = `<script type="application/json" id="gas-data">{"baseUrl":<?!= JSON.stringify(baseUrl) ?>,"school":<?!= JSON.stringify(school) ?>,"data":<?!= dataJson ?>}</script>
+const DATA_BOX = `<script type="application/json" id="gas-data">{"baseUrl":<?!= JSON.stringify(baseUrl) ?>,"school":<?!= JSON.stringify(school) ?>,"data64":"<?!= Utilities.base64Encode(dataJson, Utilities.Charset.UTF_8) ?>"}</script>
 `;
-const READ_BOX = 'const G=JSON.parse(document.getElementById("gas-data").textContent);';
+// データは改行などが途中で変わらないよう、英数字だけの形（Base64）にして受け渡す
+const READ_BOX = 'const G=JSON.parse(document.getElementById("gas-data").textContent);G.data=JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(G.data64),c=>c.charCodeAt(0))));';
 const ERROR_BOX = `<script>
 (function(){
   function show(msg){

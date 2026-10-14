@@ -153,11 +153,11 @@ footer a{color:var(--accent)}
   </footer>
 </div>
 
-<script type="application/json" id="gas-data">{"baseUrl":<?!= JSON.stringify(baseUrl) ?>,"school":<?!= JSON.stringify(school) ?>,"data":<?!= dataJson ?>}</script>
+<script type="application/json" id="gas-data">{"baseUrl":<?!= JSON.stringify(baseUrl) ?>,"school":<?!= JSON.stringify(school) ?>,"data64":"<?!= Utilities.base64Encode(dataJson, Utilities.Charset.UTF_8) ?>"}</script>
 <script>
 (async()=>{
 let D;
-const G=JSON.parse(document.getElementById("gas-data").textContent);
+const G=JSON.parse(document.getElementById("gas-data").textContent);G.data=JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(G.data64),c=>c.charCodeAt(0))));
 try{ D=G.data; if(!D) throw new Error("データが空です"); }
 catch(e){ document.getElementById("cards").innerHTML='<div class="card"><div class="empty">データを読み込めませんでした。ページを再読み込みしてください。</div></div>'; return; }
 const PREF_PAGE=D.prefPage;
