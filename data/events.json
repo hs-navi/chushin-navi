@@ -54,8 +54,8 @@
       "name": "松本筑摩",
       "area": "松本市",
       "type": "公立",
-      "url": "https://www.pref.nagano.lg.jp/kyoiku/kyogaku/gyose/zenpan/tokei/gakuryoku/documents/r03koukai.html",
-      "note": "定時制（多部制・単位制）・通信制。学校の公式サイトが確認できないため、県教委の授業公開一覧などを出典にしています"
+      "url": "https://chikuma-hs.ed.jp/nyushi-info/",
+      "note": "定時制（多部制・単位制）・通信制。午前部・午後部、夜間部、通信制の行事を載せています"
     },
     {
       "id": "tagawa",
@@ -237,50 +237,52 @@
     },
     {
       "school": "chikuma",
-      "kind": "体験入学",
-      "title": "体験入学",
+      "kind": "学校説明会",
+      "title": "学校説明会（午前部・午後部）＋授業公開",
       "date": "2026-09-29",
-      "time": "",
-      "target": "",
-      "apply": "",
-      "secondary": true,
-      "src": "https://czemi.benesse.ne.jp/open/nyushi/koukou/20/20177.html",
-      "srcLabel": "進研ゼミ 高校情報（二次情報）"
+      "time": "受付9:00〜9:30、説明会9:40〜10:50、授業公開11:00〜12:40",
+      "target": "中学3年生と保護者・中学校職員",
+      "apply": "中学校を通して申込",
+      "deadline": "2026-09-18",
+      "src": "https://chikuma-hs.ed.jp/nyushi-info/",
+      "srcLabel": "松本筑摩 入試情報・学校説明会"
     },
     {
       "school": "chikuma",
       "kind": "公開授業",
-      "title": "授業公開（午前部・午後部／夜間部）",
+      "title": "第2回 公開授業（午前部・午後部）",
       "date": "2026-11-06",
-      "time": "午前部・午後部 11:00〜12:40／夜間部 17:50〜19:35",
-      "target": "",
-      "apply": "学校に確認",
-      "src": "https://www.pref.nagano.lg.jp/kyoiku/kyogaku/gyose/zenpan/tokei/gakuryoku/documents/documents/r8_koukai_kouki.pdf",
-      "srcLabel": "県教委 公開授業一覧（令和8年10月〜令和9年3月）"
+      "time": "受付10:55〜12:30、3時限11:00〜11:45・4時限11:55〜12:40",
+      "target": "どなたでも",
+      "apply": "申込不要",
+      "src": "https://chikuma-hs.ed.jp/wp-content/uploads/2026/10/R8授業公開11月-HP用.pdf",
+      "srcLabel": "松本筑摩 令和8年度第2回公開授業のお知らせ"
     },
     {
       "school": "chikuma",
       "kind": "体験入学",
-      "title": "体験入学（夜間部）",
+      "title": "体験入学（夜間部・公開授業も同時実施）",
       "date": "2026-11-06",
-      "time": "",
+      "time": "受付17:30〜17:50、全体説明17:50〜18:20、給食見学18:25、授業見学18:50〜19:10、全体会19:20〜",
       "target": "",
-      "apply": "学校に確認",
-      "secondary": true,
-      "src": "https://czemi.benesse.ne.jp/open/nyushi/koukou/20/20177.html",
-      "srcLabel": "進研ゼミ 高校情報（二次情報）"
+      "apply": "中学校を通して申込（詳細は10月初旬に中学校へ通知）",
+      "deadline": "2026-10-23",
+      "src": "https://chikuma-hs.ed.jp/yakan/3452/",
+      "srcLabel": "松本筑摩 夜間部体験入学について"
     },
     {
       "school": "chikuma",
       "kind": "体験入学",
       "title": "体験入学（通信制）",
       "date": "2026-11-24",
-      "time": "",
-      "target": "",
-      "apply": "学校に確認",
-      "secondary": true,
-      "src": "https://czemi.benesse.ne.jp/open/nyushi/koukou/20/20177.html",
-      "srcLabel": "進研ゼミ 高校情報（二次情報）"
+      "time": "受付9:30〜9:50、全体会10:00〜10:30、模擬スクーリング10:40〜11:30、個別相談11:30〜12:00",
+      "place": "松本筑摩高校 多目的ホールほか",
+      "target": "中信・南信地区の中学3年生（保護者の参加は任意）",
+      "apply": "Googleフォームで申込",
+      "deadline": "2026-11-05",
+      "deadlineTime": "12:00",
+      "src": "https://chikuma-hs.ed.jp/tushin/3434/",
+      "srcLabel": "松本筑摩 通信制 体験入学について"
     },
     {
       "school": "tagawa",
