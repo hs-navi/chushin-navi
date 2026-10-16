@@ -47,6 +47,7 @@
 
 ### data/nyushi.json
 - `updatedAt`：最終更新日（YYYY-MM-DD）。内容を変えた日に更新する。
+- `checkedAt`：確認日（毎日更新）。入試ナビ下部の「○年○月○日に確認した情報です」に表示される。
 - `publicSchedule`：公立共通の前期・後期日程（`d`, `end`, `t`, `n`, `k` = apply/exam/result）と検査内容の説明。
 - `publicSchools[]`：`id`, `name`, `pdf`（pdfs のキー）, `note`, `depts[]`（`dept`, `zenki`=前期募集枠, `zenkiTest`=前期の検査, `kokiInterview`=後期の面接, `note`）。`zenki` が「実施なし」で始まる学科は前期の日程を出さない。
 - `privateSchools[]`：`id`, `name`, `depts`（学科名の配列）, `status`（ok / warn）, `statusText`, `src`, `exams[]`（`name`, `sub`, `ev[]`, `content[]`）。令和9年度の要項で確認できたら `status: "ok"`, `statusText: "令和9年度要項で確認済"`。

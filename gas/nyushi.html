@@ -149,7 +149,7 @@ footer a{color:var(--accent)}
   </div>
 
   <footer>
-    出典：<a href="https://www.pref.nagano.lg.jp/kyoiku/koko/saiyo-nyuushi/shiken/ko/r9/r9naiyo.html" target="_blank" rel="noopener">長野県教育委員会「令和9年度 学校別実施内容」</a>、各私立高校の募集要項。<span id="updated"></span>時点の情報です。毎日自動で確認・更新しています。
+    出典：<a href="https://www.pref.nagano.lg.jp/kyoiku/koko/saiyo-nyuushi/shiken/ko/r9/r9naiyo.html" target="_blank" rel="noopener">長野県教育委員会「令和9年度 学校別実施内容」</a>、各私立高校の募集要項。<span id="updated"></span>に確認した情報です。毎日自動で確認しています。
   </footer>
 </div>
 
@@ -168,7 +168,7 @@ const PUB_ZENKI=D.publicSchedule.zenki, PUB_KOKI=D.publicSchedule.koki;
 const PUB_ZENKI_CONTENT=D.publicSchedule.zenkiContent, PUB_KOKI_CONTENT=D.publicSchedule.kokiContent;
 const PUB=D.publicSchools.map(s=>[s.id,s.name,s.depts.map(x=>[x.dept,x.zenki,x.zenkiTest,x.kokiInterview,x.note]),D.pdfs[s.pdf].url,s.note]);
 const PRIV=D.privateSchools;
-{const [y,m,d]=D.updatedAt.split("-").map(Number);document.getElementById("updated").textContent=`${y}年${m}月${d}日`;}
+{const [y,m,d]=D.checkedAt.split("-").map(Number);document.getElementById("updated").textContent=`${y}年${m}月${d}日`;}
 /* ---------- 共通処理 ---------- */
 const SCHOOLS = [
   ...PUB.map(([id,name,depts,pdf,note])=>({id,name,type:"公立",depts,pdf:pdf||PREF_PDF,note:note||""})),

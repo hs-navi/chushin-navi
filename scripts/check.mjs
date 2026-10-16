@@ -11,6 +11,7 @@ const load = (p) => {
 // ---- 入試ナビ ----
 const n = load("data/nyushi.json");
 if (n) {
+  if (!isDate(n.checkedAt)) errors.push("nyushi.json: checkedAt が日付になっていません");
   if (!isDate(n.updatedAt)) errors.push("nyushi.json: updatedAt が日付になっていません");
   for (const k of ["zenki", "koki"]) for (const e of n.publicSchedule[k]) {
     if (!isDate(e.d) || (e.end && !isDate(e.end))) errors.push(`nyushi.json publicSchedule.${k}: 日付が不正 ${JSON.stringify(e)}`);
