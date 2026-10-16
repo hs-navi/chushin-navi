@@ -324,10 +324,11 @@
       "kind": "体験入学",
       "title": "第2回 体験入学",
       "date": "2026-09-16",
-      "time": "",
+      "time": "午前の部 受付8:40〜9:00・体験終了12:00／午後の部 受付13:00〜13:20・体験終了16:20（参加人数により午前の部のみ）",
       "target": "中学生",
-      "apply": "",
-      "src": "https://www.nagano-c.ed.jp/matuko/0401welcome_jhs.html",
+      "apply": "申込制（申込締切 9/1）",
+      "deadline": "2026-09-01",
+      "src": "https://www.nagano-c.ed.jp/matuko/0401welcome_jhs/2026_0916_taiken_yoko.pdf",
       "srcLabel": "松本工業 中学生のみなさんへ"
     },
     {
@@ -336,11 +337,12 @@
       "title": "第2回 公開授業",
       "date": "2026-10-19",
       "end": "2026-10-21",
-      "time": "",
-      "target": "",
-      "apply": "詳細はチラシで確認",
-      "src": "https://www.nagano-c.ed.jp/matuko/0401welcome_jhs.html",
-      "srcLabel": "松本工業 中学生のみなさんへ"
+      "time": "各日12:40〜15:30（入退出自由）。10/19・20は15:20〜16:00 工業科説明会、16:00〜17:00 クラブ活動見学。10/20は12:50〜15:10 校内見学ツアーも",
+      "target": "中学生と保護者",
+      "apply": "授業見学は入退出自由。説明会・見学ツアーは事前申込制（中学生と保護者1名まで・10/9締切）",
+      "deadline": "2026-10-09",
+      "src": "https://www.nagano-c.ed.jp/matuko/0401welcome_jhs/2026koukaijugyo2.pdf",
+      "srcLabel": "松本工業 第2回公開授業チラシ"
     },
     {
       "school": "agatagaoka",
