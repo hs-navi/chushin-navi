@@ -175,7 +175,7 @@
       "area": "松本市",
       "type": "私立",
       "url": "https://www.matsusho-h.ed.jp/",
-      "note": ""
+      "note": "全日制・通信制の行事を載せています"
     },
     {
       "id": "kokusai",
@@ -183,7 +183,7 @@
       "area": "松本市",
       "type": "私立",
       "url": "https://m-kokusai.ac.jp/schedule/",
-      "note": ""
+      "note": "全日制・通信制の行事を載せています"
     },
     {
       "id": "daiichi",
@@ -992,6 +992,217 @@
       "deadline": "2026-10-16",
       "src": "https://hakuba-hs.ed.jp/admissions/open-campus",
       "srcLabel": "白馬 学校説明会・体験入学"
+    },
+    {
+      "school": "matsusho",
+      "kind": "学校説明会",
+      "title": "通信制 第3回 学校説明会",
+      "date": "2026-10-17",
+      "time": "13:00〜14:00（入室12:45〜）",
+      "place": "WEB（ZOOM）",
+      "target": "中学1〜3年生・編転入生・科目履修生・保護者",
+      "apply": "Web予約（予約サイト miraicompass）",
+      "deadline": "2026-10-15",
+      "src": "https://www.matsusho-h.ed.jp/entrance-exam/open-school.php",
+      "srcLabel": "松商学園 オープンスクール・入試説明会"
+    },
+    {
+      "school": "matsusho",
+      "kind": "学校説明会",
+      "title": "通信制 第4回 学校説明会",
+      "date": "2026-11-07",
+      "time": "13:00〜14:30（受付12:30〜）",
+      "place": "新村キャンパス（松本大学）",
+      "target": "中学1〜3年生・保護者・教職員等",
+      "apply": "Web予約（予約サイト miraicompass）",
+      "deadline": "2026-11-05",
+      "src": "https://www.matsusho-h.ed.jp/entrance-exam/open-school.php",
+      "srcLabel": "松商学園 オープンスクール・入試説明会"
+    },
+    {
+      "school": "matsusho",
+      "kind": "学校説明会",
+      "title": "通信制 後期授業見学会・学校説明会",
+      "date": "2026-12-03",
+      "time": "16:30〜18:00（受付16:00〜16:20）",
+      "place": "新村キャンパス（定員20組）",
+      "target": "中学1〜3年生・保護者・教職員等",
+      "apply": "Web予約（予約サイト miraicompass）",
+      "deadline": "2026-12-01",
+      "src": "https://www.matsusho-h.ed.jp/entrance-exam/open-school.php",
+      "srcLabel": "松商学園 オープンスクール・入試説明会"
+    },
+    {
+      "school": "matsusho",
+      "kind": "学校説明会",
+      "title": "通信制 後期授業見学会・学校説明会",
+      "date": "2026-12-04",
+      "time": "16:30〜18:00（受付16:00〜16:20）",
+      "place": "新村キャンパス（定員20組）",
+      "target": "中学1〜3年生・保護者・教職員等",
+      "apply": "Web予約（予約サイト miraicompass）",
+      "deadline": "2026-12-01",
+      "src": "https://www.matsusho-h.ed.jp/entrance-exam/open-school.php",
+      "srcLabel": "松商学園 オープンスクール・入試説明会"
+    },
+    {
+      "school": "matsusho",
+      "kind": "学校説明会",
+      "title": "通信制 第5回 学校説明会",
+      "date": "2026-12-19",
+      "time": "13:00〜14:30（受付12:30〜）",
+      "place": "新村キャンパス（松本大学）",
+      "target": "中学1〜3年生・保護者・教職員等",
+      "apply": "Web予約（予約サイト miraicompass）",
+      "deadline": "2026-12-17",
+      "src": "https://www.matsusho-h.ed.jp/entrance-exam/open-school.php",
+      "srcLabel": "松商学園 オープンスクール・入試説明会"
+    },
+    {
+      "school": "matsusho",
+      "kind": "学校説明会",
+      "title": "通信制 第6回 学校説明会",
+      "date": "2027-01-23",
+      "time": "13:00〜14:30（受付12:30〜）",
+      "place": "新村キャンパス（松本大学）",
+      "target": "中学1〜3年生・保護者・教職員等",
+      "apply": "Web予約（予約サイト miraicompass）",
+      "deadline": "2027-01-21",
+      "src": "https://www.matsusho-h.ed.jp/entrance-exam/open-school.php",
+      "srcLabel": "松商学園 オープンスクール・入試説明会"
+    },
+    {
+      "school": "matsusho",
+      "kind": "学校説明会",
+      "title": "通信制 第7回 学校説明会",
+      "date": "2027-02-13",
+      "time": "13:00〜14:30（受付12:30〜）",
+      "place": "新村キャンパス（松本大学）",
+      "target": "中学1〜3年生・保護者・教職員等",
+      "apply": "Web予約（予約サイト miraicompass）",
+      "deadline": "2027-02-11",
+      "src": "https://www.matsusho-h.ed.jp/entrance-exam/open-school.php",
+      "srcLabel": "松商学園 オープンスクール・入試説明会"
+    },
+    {
+      "school": "kokusai",
+      "kind": "体験入学",
+      "title": "通信制 体験入学（中学生対象）",
+      "date": "2026-11-07",
+      "time": "受付9:30〜、全体説明10:00〜、学習体験10:40〜11:10（歴史・生物・英語から選択）、マンガ/イラストクラブ体験・個別相談11:20〜、全体終了12:15予定",
+      "place": "松本国際高校 通信制（松本市村井町南）",
+      "target": "中学生",
+      "apply": "予約フォーム（予約必須・先着）",
+      "src": "https://matsukoku-tsushin.com/news/detail65/",
+      "srcLabel": "松本国際 通信制 体験入学会について"
+    },
+    {
+      "school": "kokusai",
+      "kind": "学校説明会",
+      "title": "通信制 学校見学会（松本校）",
+      "date": "2026-10-07",
+      "time": "受付13:45〜、見学14:00〜",
+      "place": "松本国際高校 通信制（松本市村井町南）",
+      "target": "保護者同伴（見学会への参加は受験の必須条件）",
+      "apply": "予約制（予約ページまたは電話 0263-88-2592）",
+      "src": "https://matsukoku-tsushin.com/news/detail58/",
+      "srcLabel": "松本国際 通信制 学校見学会のご案内"
+    },
+    {
+      "school": "kokusai",
+      "kind": "学校説明会",
+      "title": "通信制 学校見学会（松本校）",
+      "date": "2026-10-28",
+      "time": "受付13:45〜、見学14:00〜",
+      "place": "松本国際高校 通信制（松本市村井町南）",
+      "target": "保護者同伴（見学会への参加は受験の必須条件）",
+      "apply": "予約制（予約ページまたは電話 0263-88-2592）",
+      "src": "https://matsukoku-tsushin.com/news/detail58/",
+      "srcLabel": "松本国際 通信制 学校見学会のご案内"
+    },
+    {
+      "school": "kokusai",
+      "kind": "学校説明会",
+      "title": "通信制 学校見学会（松本校）",
+      "date": "2026-11-25",
+      "time": "受付13:45〜、見学14:00〜",
+      "place": "松本国際高校 通信制（松本市村井町南）",
+      "target": "保護者同伴（見学会への参加は受験の必須条件）",
+      "apply": "予約制（予約ページまたは電話 0263-88-2592）",
+      "src": "https://matsukoku-tsushin.com/news/detail58/",
+      "srcLabel": "松本国際 通信制 学校見学会のご案内"
+    },
+    {
+      "school": "kokusai",
+      "kind": "学校説明会",
+      "title": "通信制 学校見学会（松本校）",
+      "date": "2026-12-02",
+      "time": "受付13:45〜、見学14:00〜",
+      "place": "松本国際高校 通信制（松本市村井町南）",
+      "target": "保護者同伴（見学会への参加は受験の必須条件）",
+      "apply": "予約制（予約ページまたは電話 0263-88-2592）",
+      "src": "https://matsukoku-tsushin.com/news/detail58/",
+      "srcLabel": "松本国際 通信制 学校見学会のご案内"
+    },
+    {
+      "school": "kokusai",
+      "kind": "学校説明会",
+      "title": "通信制 学校見学会（松本校）",
+      "date": "2026-12-12",
+      "time": "受付9:45〜、見学10:00〜",
+      "place": "松本国際高校 通信制（松本市村井町南）",
+      "target": "保護者同伴（見学会への参加は受験の必須条件）",
+      "apply": "予約制（予約ページまたは電話 0263-88-2592）",
+      "src": "https://matsukoku-tsushin.com/news/detail58/",
+      "srcLabel": "松本国際 通信制 学校見学会のご案内"
+    },
+    {
+      "school": "kokusai",
+      "kind": "学校説明会",
+      "title": "通信制 学校見学会（松本校）",
+      "date": "2027-01-08",
+      "time": "受付13:45〜、見学14:00〜",
+      "place": "松本国際高校 通信制（松本市村井町南）",
+      "target": "保護者同伴（見学会への参加は受験の必須条件）",
+      "apply": "予約制（予約ページまたは電話 0263-88-2592）",
+      "src": "https://matsukoku-tsushin.com/news/detail58/",
+      "srcLabel": "松本国際 通信制 学校見学会のご案内"
+    },
+    {
+      "school": "kokusai",
+      "kind": "学校説明会",
+      "title": "通信制 学校見学会（松本校）",
+      "date": "2027-01-29",
+      "time": "受付13:45〜、見学14:00〜",
+      "place": "松本国際高校 通信制（松本市村井町南）",
+      "target": "保護者同伴（見学会への参加は受験の必須条件）",
+      "apply": "予約制（予約ページまたは電話 0263-88-2592）",
+      "src": "https://matsukoku-tsushin.com/news/detail58/",
+      "srcLabel": "松本国際 通信制 学校見学会のご案内"
+    },
+    {
+      "school": "kokusai",
+      "kind": "学校説明会",
+      "title": "通信制 学校見学会（松本校）",
+      "date": "2027-02-06",
+      "time": "受付9:45〜、見学10:00〜",
+      "place": "松本国際高校 通信制（松本市村井町南）",
+      "target": "保護者同伴（見学会への参加は受験の必須条件）",
+      "apply": "予約制（予約ページまたは電話 0263-88-2592）",
+      "src": "https://matsukoku-tsushin.com/news/detail58/",
+      "srcLabel": "松本国際 通信制 学校見学会のご案内"
+    },
+    {
+      "school": "kokusai",
+      "kind": "学校説明会",
+      "title": "通信制 学校見学会（松本校）",
+      "date": "2027-02-17",
+      "time": "受付13:45〜、見学14:00〜",
+      "place": "松本国際高校 通信制（松本市村井町南）",
+      "target": "保護者同伴（見学会への参加は受験の必須条件）",
+      "apply": "予約制（予約ページまたは電話 0263-88-2592）",
+      "src": "https://matsukoku-tsushin.com/news/detail58/",
+      "srcLabel": "松本国際 通信制 学校見学会のご案内"
     }
   ]
 }

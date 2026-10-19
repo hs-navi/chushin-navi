@@ -63,7 +63,7 @@ ny = replaceOrFail(ny,
   READ_BOX + "\ntry{ D=G.data; if(!D) throw new Error(\"データが空です\"); }",
   "入試データの読み込み");
 ny = replaceOrFail(ny, 'const EVENTS_URL="events.html";', 'const EVENTS_URL=G.baseUrl+"?page=events&school=";', "EVENTS_URL");
-ny = replaceOrFail(ny, 'href="${EVENTS_URL}#${s.id}"', 'href="${EVENTS_URL}${s.id}" target="_top"', "学校カード→イベントナビ");
+ny = replaceOrFail(ny, 'href="${EVENTS_URL}#${s.eventsId||s.id}"', 'href="${EVENTS_URL}${s.eventsId||s.id}" target="_top"', "学校カード→イベントナビ");
 write("gas/nyushi.html", ERROR_BOX + ny.replace(/<script>\n\(async/, DATA_BOX + "<script>\n(async"));
 
 // ---- イベントナビ ----

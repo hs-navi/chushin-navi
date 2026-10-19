@@ -172,14 +172,15 @@ const PRIV=D.privateSchools;
 /* ---------- 共通処理 ---------- */
 const SCHOOLS = [
   ...PUB.map(([id,name,depts,pdf,note])=>({id,name,type:"公立",depts,pdf:pdf||PREF_PDF,note:note||""})),
-  ...PRIV.map(p=>({...p,type:"私立"})),
+  ...PRIV.map(p=>({type:"私立",...p})),
 ];
 const byId = Object.fromEntries(SCHOOLS.map(s=>[s.id,s]));
-const deptName = (s,k)=>s.type==="公立"?s.depts[k][0]:s.depts[k];
+const isPub = s=>!s.exams; /* 前期・後期の公立共通日程に乗る学校（通信制は exams を持つ独自日程） */
+const deptName = (s,k)=>isPub(s)?s.depts[k][0]:s.depts[k];
 /* 選択肢：学科が複数あれば「校名（学科）」に分ける。値は "学校ID|学科番号" */
 const OPTIONS = SCHOOLS.flatMap(s=>s.depts.length>1
   ? s.depts.map((_,k)=>({value:`${s.id}|${k}`,s,k,label:`${s.name}（${deptName(s,k)}）`}))
-  : [{value:`${s.id}|0`,s,k:0,label:s.name}]);
+  : [{value:`${s.id}|0`,s,k:0,label:s.track?`${s.name}（${s.track}）`:s.name}]);
 const byValue = Object.fromEntries(OPTIONS.map(o=>[o.value,o]));
 const COLORS = ["var(--c1)","var(--c2)","var(--c3)"];
 const ROLES = ["第一希望","併願校 1","併願校 2"];
@@ -207,7 +208,7 @@ function fillSelects(){
 function hasZenki(s,k){return !/^実施なし/.test(s.depts[k][1])}
 
 function eventsFor(s,k){
-  if(s.type==="公立") return [...(hasZenki(s,k)?PUB_ZENKI:[]),...PUB_KOKI].map(e=>({...e}));
+  if(isPub(s)) return [...(hasZenki(s,k)?PUB_ZENKI:[]),...PUB_KOKI].map(e=>({...e}));
   return s.exams.flatMap(x=>x.ev.map(e=>({...e})));
 }
 
@@ -218,7 +219,7 @@ function render(){
   picks.forEach((v,i)=>{ if(v&&byValue[v]&&!seen.has(v)){seen.add(v);const o=byValue[v];chosen.push({s:o.s,k:o.k,label:o.label,i})} });
 
   // ルール注意
-  const pubs=chosen.filter(c=>c.s.type==="公立");
+  const pubs=chosen.filter(c=>isPub(c.s));
   const rules=document.getElementById("rules");
   if(pubs.length>=2){
     rules.hidden=false;
@@ -250,12 +251,12 @@ function render(){
   // カード
   const cards=document.getElementById("cards");
   if(!chosen.length){cards.innerHTML=`<div class="card"><div class="empty">学校を選ぶと入試内容が表示されます。</div></div>`;return}
-  cards.innerHTML=chosen.map(c=>c.s.type==="公立"?pubCard(c):privCard(c)).join("");
+  cards.innerHTML=chosen.map(c=>isPub(c.s)?pubCard(c):privCard(c)).join("");
 }
 
 function head(s,k,i,pill){
-  const dept=s.depts.length>1?`（${esc(deptName(s,k))}）`:"";
-  return `<div class="card-head"><div class="row"><span class="role" style="background:${COLORS[i]}">${ROLES[i]}</span><span class="pill">${s.type}</span>${pill}</div><h3 style="font-size:1.25rem">${esc(s.name)}高校${dept}</h3>${s.note?`<div class="depts">${esc(s.note)}</div>`:""}<a class="evlink" href="${EVENTS_URL}${s.id}" target="_top">この学校の説明会・見学会を見る →</a></div>`;
+  const dept=s.track?`（${esc(s.track)}）`:s.depts.length>1?`（${esc(deptName(s,k))}）`:"";
+  return `<div class="card-head"><div class="row"><span class="role" style="background:${COLORS[i]}">${ROLES[i]}</span><span class="pill">${s.type}</span>${pill}</div><h3 style="font-size:1.25rem">${esc(s.name)}高校${dept}</h3>${s.note?`<div class="depts">${esc(s.note)}</div>`:""}<a class="evlink" href="${EVENTS_URL}${s.eventsId||s.id}" target="_top">この学校の説明会・見学会を見る →</a></div>`;
 }
 
 function pubCard({s,k,i}){
