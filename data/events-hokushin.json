@@ -400,6 +400,18 @@
       "srcLabel": "北部高校 第2回体験入学チラシ"
     },
     {
+      "school": "hokubu",
+      "kind": "学校説明会",
+      "title": "学校説明会",
+      "date": "2026-12-04",
+      "time": "要確認",
+      "place": "要確認",
+      "target": "中学生・保護者（公式ページの記載は「学校説明会」のみ。対象は要確認）",
+      "apply": "詳細は開催の1か月前までに各中学校宛に通知（公式ページより）",
+      "src": "https://hokubu-hs.ed.jp/junior-high-students/",
+      "srcLabel": "北部高校 中学生のみなさんへ"
+    },
+    {
       "school": "iiyama",
       "kind": "公開授業",
       "title": "第1回授業公開（SSH探究の日）",
@@ -1223,6 +1235,18 @@
       "apply": "授業公開は不要。運動クラブの体験入部のみ事前申込が必要（詳細は要項）",
       "src": "https://chosho-hs.ed.jp/wp-content/uploads/2026/09/R8_jugyoukoukai.pdf",
       "srcLabel": "授業公開のご案内"
+    },
+    {
+      "school": "nagano-shogyo",
+      "kind": "学校説明会",
+      "title": "入学者選抜（全日制）オンライン学校説明会（Zoom。内容は学校長あいさつ・学校概要・前期後期選抜募集・志願理由書・面接・在校生受験インタビュー動画・質疑応答）",
+      "date": "2026-11-11",
+      "time": "18:30〜19:10（18:00受付開始）",
+      "place": "オンライン（Zoom）。ミーティングID・パスコードは案内PDFに記載",
+      "target": "どなたでも参加可（案内PDFに記載）",
+      "apply": "事前申込の記載なし（Zoomで参加）。開始5〜10分前までに入室。録画・録音・画面撮影は禁止",
+      "src": "https://chosho-hs.ed.jp/wp-content/uploads/2026/10/R8_gakkousetumeikai.pdf",
+      "srcLabel": "令和9年度 入学者選抜（全日制）オンライン学校説明会 案内"
     },
     {
       "school": "nagano-shunei",

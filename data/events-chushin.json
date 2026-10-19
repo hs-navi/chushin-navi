@@ -386,14 +386,14 @@
     {
       "school": "toyoshina",
       "kind": "公開授業",
-      "title": "学校公開週間（授業・部活動の見学）",
+      "title": "学校公開週間（授業・ミニ学校説明会・部活動見学）",
       "date": "2026-10-21",
       "end": "2026-10-27",
-      "time": "",
+      "time": "10/21・23・26・27の4日間（10/22は実施なし）。13:30受付、13:45〜 5時限、14:45〜 6時限、16:00頃〜17:00 部活動見学",
       "target": "中学生と保護者",
-      "apply": "詳細はチラシで確認",
-      "src": "https://www.nagano-c.ed.jp/toyoko/admission-infomation.html",
-      "srcLabel": "豊科高校 受検生の方へ"
+      "apply": "事前申込不要",
+      "src": "https://www.nagano-c.ed.jp/toyoko/pdf/令和８年度学校公開週間ちらし.pdf",
+      "srcLabel": "豊科高校 令和8年度学校公開週間ちらし"
     },
     {
       "school": "akashina",
@@ -457,7 +457,7 @@
       "date": "2026-10-24",
       "time": "10:00〜14:00",
       "target": "地域のみなさん",
-      "apply": "",
+      "apply": "申込不要（入場無料）",
       "src": "https://www.nagano-c.ed.jp/hotakach/fair.html",
       "srcLabel": "穂高商業 穂商フェア"
     },
@@ -1180,14 +1180,15 @@
     {
       "school": "shinano-mutsumi",
       "kind": "体験入学",
-      "title": "中3生向け体験会（予定）",
+      "title": "中3生向け体験会「体験しよう！テラ・スコラ」",
       "date": "2026-11-20",
-      "time": "",
+      "time": "10:00〜16:20",
       "place": "信濃むつみ高校（松本市南松本）",
       "target": "中学3年生と保護者",
-      "apply": "申込の案内は 10/19頃に公開予定（1日最大18名）",
-      "src": "https://www.terra.ed.jp/archives/6639",
-      "srcLabel": "信濃むつみ 中3生向け体験会について"
+      "apply": "要予約（Googleフォーム）",
+      "src": "https://www.terra.ed.jp/archives/6671",
+      "srcLabel": "信濃むつみ 11/20 中3生向け体験会について",
+      "deadline": "2026-11-09"
     },
     {
       "school": "shinano-mutsumi",

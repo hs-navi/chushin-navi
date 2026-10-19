@@ -449,6 +449,42 @@
       "srcLabel": "県教委 公開授業一覧（令和8年10月〜令和9年3月）"
     },
     {
+      "school": "komorogijuku",
+      "kind": "公開授業",
+      "title": "公開授業（定時制）",
+      "date": "2026-10-30",
+      "time": "17:30〜19:05（1〜2時限）",
+      "place": "小諸義塾高校 定時制",
+      "target": "どなたでも（終了が遅いため保護者の付き添いか中学校教員の引率をお願いしたいとの注意あり）",
+      "apply": "要（詳細は学校HPに掲載とのこと。要確認）",
+      "src": "https://www.pref.nagano.lg.jp/kyoiku/kyogaku/gyose/zenpan/tokei/gakuryoku/documents/documents/r8_koukai_kouki.pdf",
+      "srcLabel": "県教委 公開授業一覧（令和8年10月〜令和9年3月）"
+    },
+    {
+      "school": "komorogijuku",
+      "kind": "公開授業",
+      "title": "公開授業（定時制）",
+      "date": "2026-11-27",
+      "time": "16:30〜19:05（1〜2時限）",
+      "place": "小諸義塾高校 定時制",
+      "target": "どなたでも（終了が遅いため保護者の付き添いか中学校教員の引率をお願いしたいとの注意あり）",
+      "apply": "要（詳細は学校HPに掲載とのこと。要確認）",
+      "src": "https://www.pref.nagano.lg.jp/kyoiku/kyogaku/gyose/zenpan/tokei/gakuryoku/documents/documents/r8_koukai_kouki.pdf",
+      "srcLabel": "県教委 公開授業一覧（令和8年10月〜令和9年3月）"
+    },
+    {
+      "school": "komorogijuku",
+      "kind": "体験入学",
+      "title": "体験入学（定時制・商業）",
+      "date": "2026-11-27",
+      "time": "要確認",
+      "place": "小諸義塾高校 定時制",
+      "target": "中学生",
+      "apply": "要確認（学校の案内を確認できていません）",
+      "src": "https://www.pref.nagano.lg.jp/kyoiku/kyogaku/documents/r8taiken_2toushin.pdf",
+      "srcLabel": "県教委 令和8年度体験入学実施日程一覧（第2通学区）"
+    },
+    {
       "school": "koumi",
       "kind": "体験入学",
       "title": "体験入学",
@@ -717,6 +753,18 @@
       "time": "17:30〜",
       "place": "野沢南高校 定時制",
       "target": "中学生・保護者",
+      "apply": "詳細は佐久地域の中学校に通知。要確認",
+      "src": "https://www.nagano-c.ed.jp/nominami/nonan-teiz/index.html",
+      "srcLabel": "野沢南 定時制HP"
+    },
+    {
+      "school": "nozawa-minami",
+      "kind": "学校説明会",
+      "title": "定時制説明会（教職員向け）",
+      "date": "2026-10-02",
+      "time": "17:30〜",
+      "place": "野沢南高校 定時制",
+      "target": "中学校教職員",
       "apply": "詳細は佐久地域の中学校に通知。要確認",
       "src": "https://www.nagano-c.ed.jp/nominami/nonan-teiz/index.html",
       "srcLabel": "野沢南 定時制HP"
@@ -1042,6 +1090,18 @@
       "kind": "学校説明会",
       "title": "第3回 学校説明会",
       "date": "2026-12-06",
+      "time": "13:00〜14:30ごろ",
+      "place": "さくら国際高等学校（上田市手塚）",
+      "target": "新入学・転入学・編入学を希望する生徒・保護者（中学生は学校に相談してから連絡）",
+      "apply": "事前に電話予約（0268-39-7707）",
+      "src": "https://sakura-kokusai.ed.jp/school-info-session/",
+      "srcLabel": "さくら国際 学校説明会"
+    },
+    {
+      "school": "sakura-kokusai",
+      "kind": "学校説明会",
+      "title": "第4回 学校説明会（公式ページの年表記が「2026年1月17日」のため年は要確認）",
+      "date": "2027-01-17",
       "time": "13:00〜14:30ごろ",
       "place": "さくら国際高等学校（上田市手塚）",
       "target": "新入学・転入学・編入学を希望する生徒・保護者（中学生は学校に相談してから連絡）",
