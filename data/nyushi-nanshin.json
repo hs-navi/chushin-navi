@@ -1,0 +1,482 @@
+{
+  "pdfs": {
+    "nanshin": {
+      "url": "https://www.pref.nagano.lg.jp/kyoiku/koko/saiyo-nyuushi/shiken/ko/r9/documents/r9-1-03.pdf",
+      "label": "学校別実施内容一覧（南信地区・PDF）"
+    }
+  },
+  "publicSchools": [
+    {
+      "id": "fujimi",
+      "name": "富士見",
+      "pdf": "nanshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（15分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        },
+        {
+          "dept": "園芸科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（15分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "chino",
+      "name": "茅野",
+      "pdf": "nanshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "40%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "suwa-jitsugyo",
+      "name": "諏訪実業",
+      "pdf": "nanshin",
+      "note": "令和9年度から商業科と会計情報科のくくり募集をやめ、各学科で募集します。令和9年度の募集学級数は後日発表されます。",
+      "depts": [
+        {
+          "dept": "商業科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        },
+        {
+          "dept": "会計情報科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        },
+        {
+          "dept": "家庭科（服飾）",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "suwa-seiryo",
+      "name": "諏訪清陵",
+      "pdf": "nanshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "suwa-futaba",
+      "name": "諏訪二葉",
+      "pdf": "nanshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "shimosuwa-koyo",
+      "name": "下諏訪向陽",
+      "pdf": "nanshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "okaya-higashi",
+      "name": "岡谷東",
+      "pdf": "nanshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": "健康スポーツコース・教養フロンティアコースで募集の観点が異なります"
+        }
+      ]
+    },
+    {
+      "id": "okaya-minami",
+      "name": "岡谷南",
+      "pdf": "nanshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "okaya-kogyo",
+      "name": "岡谷工業",
+      "pdf": "nanshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "工業科（機械工学）",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        },
+        {
+          "dept": "工業科（電気工学）",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        },
+        {
+          "dept": "工業科（電子機械）",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        },
+        {
+          "dept": "工業科（情報技術）",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "tatsuno",
+      "name": "辰野",
+      "pdf": "nanshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": "学際探究・地域探究・スポーツ探究のコースがあります"
+        },
+        {
+          "dept": "商業科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "kamiina-nogyo",
+      "name": "上伊那農業",
+      "pdf": "nanshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "農業科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（15分程度）",
+          "kokiInterview": "紙上面接",
+          "note": "つくるマネジメント・流通マネジメント・くらしマネジメントの3つで共通の募集枠"
+        }
+      ]
+    },
+    {
+      "id": "takato",
+      "name": "高遠",
+      "pdf": "nanshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（15分程度）",
+          "kokiInterview": "対面面接（10〜15分程度）",
+          "note": "芸術文化コースは、専攻（音楽・美術・書道）への意欲や関心を見る3分程度の自己表現があります"
+        }
+      ]
+    },
+    {
+      "id": "ina-kita",
+      "name": "伊那北",
+      "pdf": "nanshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "理数科",
+          "zenki": "90%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": "後期は数学・理科が1.5倍の傾斜配点"
+        }
+      ]
+    },
+    {
+      "id": "ina-yayoigaoka",
+      "name": "伊那弥生ヶ丘",
+      "pdf": "nanshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "akaho",
+      "name": "赤穂",
+      "pdf": "nanshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "商業科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）（志願理由書：各150字以内）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "komagane-kogyo",
+      "name": "駒ヶ根工業",
+      "pdf": "nanshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "工業科（機械・電気・情報技術）",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": "3つの専攻で共通の募集枠"
+        }
+      ]
+    },
+    {
+      "id": "matsukawa",
+      "name": "松川",
+      "pdf": "nanshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "50%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "iida",
+      "name": "飯田",
+      "pdf": "nanshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "理数科",
+          "zenki": "70%",
+          "zenkiTest": "個人面接（10〜15分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "iida-kazakoshi",
+      "name": "飯田風越",
+      "pdf": "nanshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "国際教養科",
+          "zenki": "90%",
+          "zenkiTest": "個人面接（15分程度）・日本語での質問と、身近な話題についての英語での質問",
+          "kokiInterview": "紙上面接",
+          "note": "後期は英語が2.0倍の傾斜配点"
+        }
+      ]
+    },
+    {
+      "id": "iida-oide-nagahime",
+      "name": "飯田OIDE長姫",
+      "pdf": "nanshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "工業科（機械工学）",
+          "zenki": "60%",
+          "zenkiTest": "個人面接",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "工業科（電子機械工学）",
+          "zenki": "60%",
+          "zenkiTest": "個人面接",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "工業科（電気電子工学）",
+          "zenki": "60%",
+          "zenkiTest": "個人面接",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "工業科（社会基盤工学）",
+          "zenki": "60%",
+          "zenkiTest": "個人面接",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "工業科（建築学）",
+          "zenki": "60%",
+          "zenkiTest": "個人面接",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "商業科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "shimoina-nogyo",
+      "name": "下伊那農業",
+      "pdf": "nanshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "栽培科学科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（15分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "地域資源科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（15分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "生物活用科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（15分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "achi",
+      "name": "阿智",
+      "pdf": "nanshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "50%",
+          "zenkiTest": "個人面接（15分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "anan",
+      "name": "阿南",
+      "pdf": "nanshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "40%",
+          "zenkiTest": "個人面接（15分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        }
+      ]
+    }
+  ],
+  "privateSchools": []
+}
