@@ -63,6 +63,14 @@ legend{font-size:.78rem;font-weight:700;color:var(--sub);letter-spacing:.08em;ma
 .cols2{display:grid;grid-template-columns:1fr 1fr;gap:0 8px}
 details.reg{border-top:1px solid var(--line);padding:4px 0}
 details.reg>summary{cursor:pointer;font-weight:700;padding:4px 0}
+.regsum{display:flex;align-items:center;gap:4px;list-style:none}
+.regsum::-webkit-details-marker{display:none}
+.regchk{display:flex;padding:8px;margin:-8px 0 -8px -8px;cursor:pointer}
+.regchk input{width:18px;height:18px;accent-color:var(--accent)}
+.regname{flex:1;padding:8px 0}
+.regname::before{content:"▸ ";font-size:.8em}
+details.reg[open] .regname::before{content:"▾ "}
+details.reg[open] .regname{font-weight:700}
 input[type=search]{font:inherit;width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink)}
 :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 main{display:grid;gap:18px;min-width:0}
@@ -191,7 +199,7 @@ for(const r of REGIONS){
   const rs=DATA.schools.filter(s=>s.region===r.id);
   const body=["県教委","公立","私立"].map(type=>{const list=rs.filter(s=>s.type===type); if(!list.length)return "";
     return `<div class="grp-head"><span><span class="dot" style="background:${typeColor(type)}"></span>${type}</span></div><div class="cols2">${list.map(s=>`<label class="chk"><input type="checkbox" id="s-${s.id}" value="${s.id}" data-region="${r.id}" checked>${esc(s.name)}</label>`).join("")}</div>`}).join("");
-  schoolsEl.insertAdjacentHTML("beforeend",`<details class="reg" data-region="${r.id}"><summary><label class="chk"><input type="checkbox" class="regbox" data-region="${r.id}" checked>${esc(r.name)}${r.status==="partial"?"（一部の学校）":""}（${rs.length}）</label></summary>${body}</details>`);
+  schoolsEl.insertAdjacentHTML("beforeend",`<details class="reg" data-region="${r.id}"><summary class="regsum"><label class="regchk"><input type="checkbox" class="regbox" data-region="${r.id}" checked aria-label="${esc(r.name)}をまとめて選ぶ"></label><span class="regname">${esc(r.name)}${r.status==="partial"?"（一部の学校）":""}（${rs.length}）</span></summary>${body}</details>`);
 }
 const schoolBoxes=()=>[...schoolsEl.querySelectorAll("input[type=checkbox]:not(.regbox)")];
 const syncRegBoxes=()=>schoolsEl.querySelectorAll(".regbox").forEach(rb=>{
