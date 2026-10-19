@@ -197,7 +197,7 @@ const schoolBoxes=()=>[...schoolsEl.querySelectorAll("input[type=checkbox]:not(.
 const syncRegBoxes=()=>schoolsEl.querySelectorAll(".regbox").forEach(rb=>{
   const bs=schoolBoxes().filter(b=>b.dataset.region===rb.dataset.region); const n=bs.filter(b=>b.checked).length;
   rb.checked=n===bs.length&&n>0; rb.indeterminate=n>0&&n<bs.length;});
-schoolsEl.addEventListener("change",e=>{const rb=e.target.closest(".regbox"); if(rb){schoolBoxes().filter(b=>b.dataset.region===rb.dataset.region).forEach(b=>b.checked=rb.checked)} syncRegBoxes()});
+schoolsEl.addEventListener("change",e=>{const rb=e.target.closest(".regbox"); if(rb){schoolBoxes().filter(b=>b.dataset.region===rb.dataset.region).forEach(b=>b.checked=rb.checked)} syncRegBoxes();render()});
 document.getElementById("all-on").onclick=()=>{schoolBoxes().forEach(b=>b.checked=true);syncRegBoxes();render()};
 document.getElementById("all-off").onclick=()=>{schoolBoxes().forEach(b=>b.checked=false);syncRegBoxes();render()};
 
