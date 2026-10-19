@@ -11,8 +11,8 @@ const CACHE_SECONDS = 600; // 10分間は同じデータを使い回す（アク
 
 const PAGES = {
   top:    { file: 'top',    title: '中信 高校進学ナビ',     data: null },
-  nyushi: { file: 'nyushi', title: '中信 入試ナビ',         data: 'nyushi.json' },
-  events: { file: 'events', title: '中信 高校イベントナビ', data: 'events.json' },
+  nyushi: { file: 'nyushi', title: '中信 入試ナビ',         data: 'nyushi' },
+  events: { file: 'events', title: '中信 高校イベントナビ', data: 'events' },
 };
 
 function doGet(e) {
@@ -23,12 +23,30 @@ function doGet(e) {
   const t = HtmlService.createTemplateFromFile(conf.file);
   t.baseUrl = ScriptApp.getService().getUrl();
   t.school = /^[a-z0-9-]{1,40}$/.test(params.school || '') ? params.school : '';
-  t.dataJson = conf.data ? (loadData_(conf.data) || 'null') : 'null'; // ページ側でBase64にして渡すので加工しない
+  t.area = /^[a-z0-9-]{1,20}$/.test(params.area || '') ? params.area : ''; // 地区の指定（例：?page=events&area=toshin）
+  t.dataJson = conf.data ? (loadRaw_(conf.data) || 'null') : 'null'; // ページ側でBase64にして渡すので加工しない
 
   return t.evaluate()
     .setTitle(conf.title)
     .addMetaTag('viewport', 'width=device-width, initial-scale=1')
     .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
+}
+
+/**
+ * 画面に渡すデータをまとめる。地区ごとのファイル（data/<種類>-<地区>.json）を読んで1つにする。
+ * 読めない地区があるときは、その地区を除いて表示する（全体を止めない）。
+ */
+function loadRaw_(kind) {
+  const regionsText = loadData_('regions.json');
+  const commonText = loadData_(kind + '.json');
+  if (!regionsText || !commonText) return null;
+  const regions = JSON.parse(regionsText);
+  const parts = {};
+  regions.filter(function (r) { return r.status !== 'preparing'; }).forEach(function (r) {
+    const text = loadData_(kind + '-' + r.id + '.json');
+    if (text) parts[r.id] = JSON.parse(text);
+  });
+  return JSON.stringify({ regions: regions, common: JSON.parse(commonText), parts: parts });
 }
 
 /** GitHub からデータを読む。読めなかったときは最後に読めたデータを使う。 */
@@ -42,7 +60,7 @@ function loadData_(name) {
     if (res.getResponseCode() === 200) {
       const text = res.getContentText('UTF-8');
       JSON.parse(text); // 壊れたデータを使わないための確認
-      cache.put(name, text, CACHE_SECONDS);
+      if (text.length < 30000) cache.put(name, text, CACHE_SECONDS); // CacheService は1件100KBまで（日本語は文字数×3バイト）。超える分はキャッシュしない
       try { props.setProperty('last_' + name, text); } catch (err) { /* 大きすぎる場合は保存しない */ }
       return text;
     }

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "hokushin",
+    "name": "北信",
+    "status": "preparing"
+  },
+  {
+    "id": "toshin",
+    "name": "東信",
+    "status": "partial"
+  },
+  {
+    "id": "chushin",
+    "name": "中信",
+    "status": "active"
+  },
+  {
+    "id": "nanshin",
+    "name": "南信",
+    "status": "preparing"
+  }
+]

@@ -54,8 +54,34 @@ h3{font-size:1.05rem;font-weight:700}
 .field{display:grid;gap:4px}
 .field label{font-size:.8rem;font-weight:700;color:var(--sub);letter-spacing:.06em;display:flex;align-items:center;gap:8px}
 .dot{width:10px;height:10px;border-radius:50%;display:inline-block;flex:none}
-select{font:inherit;font-size:1rem;line-height:1.4;min-height:46px;padding:10px 12px;box-sizing:border-box;border-radius:10px;border:1px solid var(--line);background:var(--paper);color:var(--ink);width:100%}
-select:focus-visible,button:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+button{font:inherit;color:inherit}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.slot{display:flex;gap:6px}
+.slot-btn{flex:1;min-width:0;min-height:46px;padding:8px 12px;box-sizing:border-box;border-radius:10px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font-size:1rem;line-height:1.4;text-align:left;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:8px}
+.slot-btn:hover{border-color:var(--accent)}
+.slot-btn .ph{color:var(--sub)}
+.slot-btn .chev{color:var(--sub);flex:none}
+.slot-btn .nm{min-width:0;overflow-wrap:anywhere}
+.slot-btn small{display:block;font-size:.74rem;color:var(--sub);line-height:1.2}
+.slot-x{flex:none;width:46px;min-height:46px;border-radius:10px;border:1px solid var(--line);background:var(--paper);cursor:pointer;color:var(--sub);font-size:1.1rem}
+.cover{grid-column:1/-1;font-size:.8rem;color:var(--sub)}
+dialog{border:1px solid var(--line);border-radius:16px;padding:0;background:var(--paper);color:var(--ink);width:min(640px,calc(100vw - 24px));max-height:calc(100vh - 40px)}
+dialog::backdrop{background:rgba(0,0,0,.45)}
+.dlg-in{display:grid;gap:10px;padding:16px;max-height:calc(100vh - 42px);grid-template-rows:auto auto auto auto minmax(0,1fr)}
+.dlg-head{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.dlg-close{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:6px 14px;cursor:pointer;font-weight:700}
+#dq{font:inherit;width:100%;box-sizing:border-box;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.chips .lab{font-size:.75rem;font-weight:700;color:var(--sub);margin-right:2px}
+.chip{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:6px 14px;font-size:.9rem;font-weight:700;cursor:pointer;min-height:36px}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.chip:disabled{opacity:.5;cursor:default}
+.dlist{overflow:auto;display:grid;gap:4px;align-content:start;min-height:120px}
+.dlist h3{font-size:.8rem;color:var(--sub);margin:10px 0 2px;padding-bottom:2px;border-bottom:1px solid var(--line)}
+.opt{display:flex;align-items:center;justify-content:space-between;gap:8px;text-align:left;width:100%;box-sizing:border-box;border:1px solid var(--line);background:var(--paper);border-radius:10px;padding:10px 12px;min-height:44px;cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft)}
+.opt:disabled{opacity:.5;cursor:default}
+.opt small{color:var(--sub);font-size:.74rem;flex:none}
 .rule{font-size:.82rem;color:var(--sub);background:var(--muted-bg);border-radius:10px;padding:10px 12px}
 .rule ul{margin:4px 0 0;padding-left:1.2em}
 section{display:grid;gap:12px}
@@ -119,19 +145,30 @@ footer a{color:var(--accent)}
 
   <div class="picker" role="group" aria-label="学校を選ぶ">
     <div class="field">
-      <label for="sel0"><span class="dot" style="background:var(--c1)"></span>第一希望の高校</label>
-      <select id="sel0"></select>
+      <label id="lb0"><span class="dot" style="background:var(--c1)"></span>第一希望の高校</label>
+      <div class="slot"><button type="button" class="slot-btn" id="sel0" aria-labelledby="lb0 sel0"></button><button type="button" class="slot-x" id="clr0" aria-label="第一希望をはずす" hidden>✕</button></div>
     </div>
     <div class="field">
-      <label for="sel1"><span class="dot" style="background:var(--c2)"></span>併願校 1</label>
-      <select id="sel1"></select>
+      <label id="lb1"><span class="dot" style="background:var(--c2)"></span>併願校 1</label>
+      <div class="slot"><button type="button" class="slot-btn" id="sel1" aria-labelledby="lb1 sel1"></button><button type="button" class="slot-x" id="clr1" aria-label="併願校1をはずす" hidden>✕</button></div>
     </div>
     <div class="field">
-      <label for="sel2"><span class="dot" style="background:var(--c3)"></span>併願校 2</label>
-      <select id="sel2"></select>
+      <label id="lb2"><span class="dot" style="background:var(--c3)"></span>併願校 2</label>
+      <div class="slot"><button type="button" class="slot-btn" id="sel2" aria-labelledby="lb2 sel2"></button><button type="button" class="slot-x" id="clr2" aria-label="併願校2をはずす" hidden>✕</button></div>
     </div>
+    <div id="cover" class="cover"></div>
     <div id="rules" class="rule" hidden></div>
   </div>
+
+  <dialog id="dlg" aria-labelledby="dlg-t">
+    <form method="dialog" class="dlg-in">
+      <div class="dlg-head"><h2 id="dlg-t"></h2><button class="dlg-close">閉じる</button></div>
+      <input type="search" id="dq" placeholder="学校名で探す（例：上田、深志）" autocomplete="off">
+      <div class="chips" id="dregions" role="group" aria-label="地区"></div>
+      <div class="chips" id="dtypes" role="group" aria-label="種別"></div>
+      <div class="dlist" id="dlist"></div>
+    </form>
+  </dialog>
 
   <div class="cols">
   <section aria-labelledby="h-tl">
@@ -152,21 +189,32 @@ footer a{color:var(--accent)}
 
 <script>
 (async()=>{
-let D;
-try{ D=await (await fetch("data/nyushi.json",{cache:"no-cache"})).json(); }
+let D, REGIONS;
+const getJson=async u=>{const r=await fetch(u,{cache:"no-cache"});if(!r.ok)throw new Error(u);return r.json()};
+async function loadRaw(kind){
+  const [regions,common]=await Promise.all([getJson("data/regions.json"),getJson(`data/${kind}.json`)]);
+  const act=regions.filter(r=>r.status!=="preparing");
+  const list=await Promise.all(act.map(r=>getJson(`data/${kind}-${r.id}.json`)));
+  return {regions,common,parts:Object.fromEntries(act.map((r,i)=>[r.id,list[i]]))};
+}
+try{ const RAW=await loadRaw("nyushi"); REGIONS=RAW.regions; D={...RAW.common,pdfs:{},publicSchools:[],privateSchools:[]};
+  for(const r of REGIONS){const p=RAW.parts[r.id]; if(!p)continue; Object.assign(D.pdfs,p.pdfs);
+    D.publicSchools.push(...p.publicSchools.map(s=>({...s,region:r.id}))); D.privateSchools.push(...p.privateSchools.map(s=>({...s,region:r.id})));} }
 catch(e){ document.getElementById("cards").innerHTML='<div class="card"><div class="empty">データを読み込めませんでした。ページを再読み込みしてください。</div></div>'; return; }
 const PREF_PAGE=D.prefPage;
-const PREF_PDF=D.pdfs.chushin.url;
+const PREF_PDF=Object.values(D.pdfs)[0].url;
+const AREA_PARAM=new URLSearchParams(location.search).get("area")||"";
+const RNAME=Object.fromEntries(REGIONS.map(r=>[r.id,r.name]));
 const PDF_LABEL=Object.fromEntries(Object.values(D.pdfs).map(p=>[p.url,p.label]));
 const EVENTS_URL="events.html";
 const PUB_ZENKI=D.publicSchedule.zenki, PUB_KOKI=D.publicSchedule.koki;
 const PUB_ZENKI_CONTENT=D.publicSchedule.zenkiContent, PUB_KOKI_CONTENT=D.publicSchedule.kokiContent;
-const PUB=D.publicSchools.map(s=>[s.id,s.name,s.depts.map(x=>[x.dept,x.zenki,x.zenkiTest,x.kokiInterview,x.note]),D.pdfs[s.pdf].url,s.note]);
+const PUB=D.publicSchools.map(s=>[s.id,s.name,s.depts.map(x=>[x.dept,x.zenki,x.zenkiTest,x.kokiInterview,x.note]),D.pdfs[s.pdf].url,s.note,s.region]);
 const PRIV=D.privateSchools;
 {const [y,m,d]=D.checkedAt.split("-").map(Number);document.getElementById("updated").textContent=`${y}年${m}月${d}日`;}
 /* ---------- 共通処理 ---------- */
 const SCHOOLS = [
-  ...PUB.map(([id,name,depts,pdf,note])=>({id,name,type:"公立",depts,pdf:pdf||PREF_PDF,note:note||""})),
+  ...PUB.map(([id,name,depts,pdf,note,region])=>({id,name,type:"公立",depts,pdf:pdf||PREF_PDF,note:note||"",region})),
   ...PRIV.map(p=>({type:"私立",...p})),
 ];
 const byId = Object.fromEntries(SCHOOLS.map(s=>[s.id,s]));
@@ -187,19 +235,6 @@ function md(d){const x=parse(d);return `${x.getMonth()+1}/${x.getDate()}`}
 function wd(d){return WD[parse(d).getDay()]}
 function esc(s){return String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
 
-function fillSelects(){
-  ["sel0","sel1","sel2"].forEach((id,i)=>{
-    const el=document.getElementById(id);
-    let h=`<option value="">${i===0?"選んでください":"（なし）"}</option>`;
-    for(const type of ["公立","私立"]){
-      h+=`<optgroup label="${type}">`;
-      OPTIONS.filter(o=>o.s.type===type).forEach(o=>h+=`<option value="${o.value}">${esc(o.label)}</option>`);
-      h+=`</optgroup>`;
-    }
-    el.innerHTML=h;
-  });
-}
-
 function hasZenki(s,k){return !/^実施なし/.test(s.depts[k][1])}
 
 function eventsFor(s,k){
@@ -208,7 +243,7 @@ function eventsFor(s,k){
 }
 
 function render(){
-  const picks=["sel0","sel1","sel2"].map(id=>document.getElementById(id).value);
+  const picks=PICKS;
   try{localStorage.setItem("nyushi-picks",JSON.stringify(picks))}catch(e){}
   const chosen=[]; const seen=new Set();
   picks.forEach((v,i)=>{ if(v&&byValue[v]&&!seen.has(v)){seen.add(v);const o=byValue[v];chosen.push({s:o.s,k:o.k,label:o.label,i})} });
@@ -251,7 +286,7 @@ function render(){
 
 function head(s,k,i,pill){
   const dept=s.track?`（${esc(s.track)}）`:s.depts.length>1?`（${esc(deptName(s,k))}）`:"";
-  return `<div class="card-head"><div class="row"><span class="role" style="background:${COLORS[i]}">${ROLES[i]}</span><span class="pill">${s.type}</span>${pill}</div><h3 style="font-size:1.25rem">${esc(s.name)}高校${dept}</h3>${s.note?`<div class="depts">${esc(s.note)}</div>`:""}<a class="evlink" href="${EVENTS_URL}#${s.eventsId||s.id}">この学校の説明会・見学会を見る →</a></div>`;
+  return `<div class="card-head"><div class="row"><span class="role" style="background:${COLORS[i]}">${ROLES[i]}</span><span class="pill">${esc(RNAME[s.region]||"")}</span><span class="pill">${s.type}</span>${pill}</div><h3 style="font-size:1.25rem">${esc(s.name)}高校${dept}</h3>${s.note?`<div class="depts">${esc(s.note)}</div>`:""}<a class="evlink" href="${EVENTS_URL}#${s.eventsId||s.id}">この学校の説明会・見学会を見る →</a></div>`;
 }
 
 function pubCard({s,k,i}){
@@ -279,10 +314,67 @@ function privCard({s,k,i}){
   return `<article class="card">${head(s,k,i,pill)}${ex}<div class="src">確認先：<a href="${s.src.url}" target="_blank" rel="noopener">${esc(s.src.label)}</a></div></article>`;
 }
 
-fillSelects();
+/* ---------- 学校の選択（地区・種別で絞り込み＋名前検索） ---------- */
+const cat=s=>s.track==="通信制"?"通信制":s.type;
+const CATS=["公立","私立","通信制"];
+let PICKS=["","",""], activeSlot=0;
+let selRegions=new Set(), selCats=new Set();
+const ACTIVE=REGIONS.filter(r=>r.status!=="preparing");
+if(AREA_PARAM&&ACTIVE.some(r=>r.id===AREA_PARAM)) selRegions=new Set([AREA_PARAM]);
+const $=id=>document.getElementById(id);
+const dlg=$("dlg");
+
+function paintSlots(){
+  PICKS.forEach((v,i)=>{
+    const o=byValue[v], btn=$("sel"+i);
+    btn.innerHTML=o?`<span class="nm">${esc(o.label)}<small>${esc(RNAME[o.s.region]||"")}・${esc(cat(o.s))}</small></span><span class="chev" aria-hidden="true">▾</span>`
+                  :`<span class="ph">${i===0?"選んでください":"（なし）"}</span><span class="chev" aria-hidden="true">▾</span>`;
+    $("clr"+i).hidden=!o;
+  });
+}
+function paintCover(){
+  const full=REGIONS.filter(r=>r.status==="active").map(r=>r.name), part=REGIONS.filter(r=>r.status==="partial").map(r=>r.name), prep=REGIONS.filter(r=>r.status==="preparing").map(r=>r.name);
+  $("cover").textContent=`掲載中：${[...full,...part.map(n=>n+"（一部の学校）")].join("、")}${prep.length?`　／　準備中：${prep.join("、")}`:""}`;
+}
+function chip(label,pressed,attrs){return `<button type="button" class="chip" aria-pressed="${pressed}" ${attrs}>${esc(label)}</button>`}
+function paintPicker(){
+  const q=$("dq").value.trim();
+  $("dregions").innerHTML=`<span class="lab">地区</span>`+chip("全県",selRegions.size===0,'data-r=""')
+    +REGIONS.map(r=>r.status==="preparing"?`<button type="button" class="chip" disabled aria-pressed="false">${esc(r.name)}（準備中）</button>`:chip(r.name+(r.status==="partial"?"（一部）":""),selRegions.has(r.id),`data-r="${r.id}"`)).join("");
+  $("dtypes").innerHTML=`<span class="lab">種別</span>`+chip("すべて",selCats.size===0,'data-c=""')+CATS.map(c=>chip(c,selCats.has(c),`data-c="${c}"`)).join("");
+  const taken=new Map(PICKS.map((v,i)=>[v,i]).filter(([v,i])=>v&&i!==activeSlot));
+  const rows=OPTIONS.filter(o=>(!selRegions.size||selRegions.has(o.s.region))&&(!selCats.size||selCats.has(cat(o.s)))&&(!q||o.label.includes(q)));
+  let h="";
+  for(const r of REGIONS){
+    const rr=rows.filter(o=>o.s.region===r.id); if(!rr.length)continue;
+    h+=`<h3>${esc(r.name)}（${rr.length}）</h3>`+rr.map(o=>{const t=taken.get(o.value);
+      return `<button type="button" class="opt" data-v="${o.value}"${t!==undefined?" disabled":""}><span>${esc(o.label)}</span><small>${esc(cat(o.s))}${t!==undefined?`・${ROLES[t]}で選択済み`:""}</small></button>`}).join("");
+  }
+  $("dlist").innerHTML=h||`<div class="empty">条件に合う学校がありません。地区や種別をゆるめてください。${REGIONS.some(r=>r.status==="preparing")?"準備中の地区は、順次追加します。":""}</div>`;
+}
+function openPicker(i){
+  activeSlot=i; $("dlg-t").textContent=ROLES[i]+"を選ぶ"; $("dq").value=""; paintPicker();
+  if(dlg.showModal) dlg.showModal(); else dlg.setAttribute("open","");
+  $("dq").focus();
+}
+[0,1,2].forEach(i=>{
+  $("sel"+i).addEventListener("click",()=>openPicker(i));
+  $("clr"+i).addEventListener("click",()=>{PICKS[i]="";paintSlots();render();$("sel"+i).focus()});
+});
+$("dq").addEventListener("input",paintPicker);
+$("dregions").addEventListener("click",e=>{const b=e.target.closest("[data-r]");if(!b)return;const r=b.dataset.r;
+  if(!r)selRegions.clear();else{selRegions.has(r)?selRegions.delete(r):selRegions.add(r)}
+  try{localStorage.setItem("nyushi-regions",JSON.stringify([...selRegions]))}catch(_){} paintPicker()});
+$("dtypes").addEventListener("click",e=>{const b=e.target.closest("[data-c]");if(!b)return;const c=b.dataset.c;
+  if(!c)selCats.clear();else{selCats.has(c)?selCats.delete(c):selCats.add(c)} paintPicker()});
+$("dlist").addEventListener("click",e=>{const b=e.target.closest(".opt");if(!b||b.disabled)return;
+  PICKS[activeSlot]=b.dataset.v; dlg.close(); paintSlots(); render(); $("sel"+activeSlot).focus()});
+
 let init=["agatagaoka|1","matsusho|0","kokusai|0"];
 try{const v=JSON.parse(localStorage.getItem("nyushi-picks")||"null");if(Array.isArray(v)&&v.some(x=>x&&byValue[x]))init=v}catch(e){}
-["sel0","sel1","sel2"].forEach((id,i)=>{const el=document.getElementById(id);if(init[i]&&byValue[init[i]])el.value=init[i];el.addEventListener("change",render)});
+try{const rg=JSON.parse(localStorage.getItem("nyushi-regions")||"null");if(!AREA_PARAM&&Array.isArray(rg))selRegions=new Set(rg.filter(x=>ACTIVE.some(r=>r.id===x)))}catch(e){}
+PICKS=[0,1,2].map(i=>init[i]&&byValue[init[i]]?init[i]:"");
+paintCover(); paintSlots();
 render();
 
 })();

@@ -54,6 +54,8 @@ legend{font-size:.78rem;font-weight:700;color:var(--sub);letter-spacing:.08em;ma
 .grp-head span{font-size:.8rem;font-weight:700}
 .linkbtn{font:inherit;font-size:.78rem;background:none;border:0;color:var(--accent);cursor:pointer;padding:2px 4px;text-decoration:underline}
 .cols2{display:grid;grid-template-columns:1fr 1fr;gap:0 8px}
+details.reg{border-top:1px solid var(--line);padding:4px 0}
+details.reg>summary{cursor:pointer;font-weight:700;padding:4px 0}
 input[type=search]{font:inherit;width:100%;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--paper);color:var(--ink)}
 :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
 main{display:grid;gap:18px;min-width:0}
@@ -137,7 +139,7 @@ footer{font-size:.8rem;color:var(--sub);display:grid;gap:4px}
 
     <section class="dir" aria-labelledby="dir-h">
       <h2 id="dir-h">学校ごとの中学生向けページ</h2>
-      <div class="tbl"><table><thead><tr><th>学校</th><th>地域</th><th>これからの行事</th><th>メモ</th></tr></thead><tbody id="dir"></tbody></table></div>
+      <div class="tbl"><table><thead><tr><th>学校</th><th>地区・市町村</th><th>これからの行事</th><th>メモ</th></tr></thead><tbody id="dir"></tbody></table></div>
     </section>
 
     <footer>
@@ -150,10 +152,20 @@ footer{font-size:.8rem;color:var(--sub);display:grid;gap:4px}
 
 <script>
 (async()=>{
-let DATA;
-try{ DATA=await (await fetch("data/events.json",{cache:"no-cache"})).json(); }
+let DATA, REGIONS;
+const getJson=async u=>{const r=await fetch(u,{cache:"no-cache"});if(!r.ok)throw new Error(u);return r.json()};
+async function loadRaw(kind){
+  const [regions,common]=await Promise.all([getJson("data/regions.json"),getJson(`data/${kind}.json`)]);
+  const act=regions.filter(r=>r.status!=="preparing");
+  const list=await Promise.all(act.map(r=>getJson(`data/${kind}-${r.id}.json`)));
+  return {regions,common,parts:Object.fromEntries(act.map((r,i)=>[r.id,list[i]]))};
+}
+try{ const RAW=await loadRaw("events"); REGIONS=RAW.regions; DATA={...RAW.common,schools:[],events:[]};
+  for(const r of REGIONS){const p=RAW.parts[r.id]; if(!p)continue; DATA.schools.push(...p.schools.map(s=>({...s,region:r.id}))); DATA.events.push(...p.events);} }
 catch(e){ document.getElementById("list").innerHTML='<div class="empty">データを読み込めませんでした。ページを再読み込みしてください。</div>'; return; }
 const byId = Object.fromEntries(DATA.schools.map(s=>[s.id,s]));
+const RNAME = Object.fromEntries(REGIONS.map(r=>[r.id,r.name]));
+const AREA_PARAM = new URLSearchParams(location.search).get("area")||"";
 const WD = ["日","月","火","水","木","金","土"];
 const today = new Date(); today.setHours(0,0,0,0);
 const parse = d=>{const [y,m,dd]=d.split("-").map(Number);return new Date(y,m-1,dd)};
@@ -169,18 +181,29 @@ document.getElementById("checked").textContent = `情報の確認日：${DATA.ch
 const kindsEl=document.getElementById("kinds");
 kindsEl.insertAdjacentHTML("beforeend", DATA.kinds.map((k,i)=>`<label class="chk"><input type="checkbox" id="k${i}" value="${esc(k)}" checked>${esc(k)}</label>`).join(""));
 const schoolsEl=document.getElementById("schools");
-for(const type of ["公立","私立","県教委"]){
-  const list=DATA.schools.filter(s=>s.type===type);
-  schoolsEl.insertAdjacentHTML("beforeend",`<div class="grp-head"><span><span class="dot" style="background:${typeColor(type)}"></span>${type}</span></div><div class="cols2">${list.map(s=>`<label class="chk"><input type="checkbox" id="s-${s.id}" value="${s.id}" checked>${esc(s.name)}</label>`).join("")}</div>`);
+for(const r of REGIONS){
+  if(r.status==="preparing"){schoolsEl.insertAdjacentHTML("beforeend",`<div class="grp-head"><span>${esc(r.name)}（準備中）</span></div>`);continue}
+  const rs=DATA.schools.filter(s=>s.region===r.id);
+  const body=["県教委","公立","私立"].map(type=>{const list=rs.filter(s=>s.type===type); if(!list.length)return "";
+    return `<div class="grp-head"><span><span class="dot" style="background:${typeColor(type)}"></span>${type}</span></div><div class="cols2">${list.map(s=>`<label class="chk"><input type="checkbox" id="s-${s.id}" value="${s.id}" data-region="${r.id}" checked>${esc(s.name)}</label>`).join("")}</div>`}).join("");
+  schoolsEl.insertAdjacentHTML("beforeend",`<details class="reg" data-region="${r.id}"><summary><label class="chk"><input type="checkbox" class="regbox" data-region="${r.id}" checked>${esc(r.name)}${r.status==="partial"?"（一部の学校）":""}（${rs.length}）</label></summary>${body}</details>`);
 }
-const schoolBoxes=()=>[...schoolsEl.querySelectorAll("input[type=checkbox]")];
-document.getElementById("all-on").onclick=()=>{schoolBoxes().forEach(b=>b.checked=true);render()};
-document.getElementById("all-off").onclick=()=>{schoolBoxes().forEach(b=>b.checked=false);render()};
+const schoolBoxes=()=>[...schoolsEl.querySelectorAll("input[type=checkbox]:not(.regbox)")];
+const syncRegBoxes=()=>schoolsEl.querySelectorAll(".regbox").forEach(rb=>{
+  const bs=schoolBoxes().filter(b=>b.dataset.region===rb.dataset.region); const n=bs.filter(b=>b.checked).length;
+  rb.checked=n===bs.length&&n>0; rb.indeterminate=n>0&&n<bs.length;});
+schoolsEl.addEventListener("change",e=>{const rb=e.target.closest(".regbox"); if(rb){schoolBoxes().filter(b=>b.dataset.region===rb.dataset.region).forEach(b=>b.checked=rb.checked)} syncRegBoxes()});
+document.getElementById("all-on").onclick=()=>{schoolBoxes().forEach(b=>b.checked=true);syncRegBoxes();render()};
+document.getElementById("all-off").onclick=()=>{schoolBoxes().forEach(b=>b.checked=false);syncRegBoxes();render()};
 
 // #学校ID で開いたらその学校だけ表示
 function applyHash(){
   const h=decodeURIComponent(location.hash.slice(1));
-  if(h && byId[h]){ schoolBoxes().forEach(b=>b.checked=(b.value===h)); document.getElementById("when-all").checked=false; document.getElementById("when-up").checked=true; }
+  if(h && byId[h]){ schoolBoxes().forEach(b=>b.checked=(b.value===h)); document.getElementById("when-all").checked=false; document.getElementById("when-up").checked=true;
+    const d=schoolsEl.querySelector(`details[data-region="${byId[h].region}"]`); if(d)d.open=true; }
+  else if(AREA_PARAM && REGIONS.some(r=>r.id===AREA_PARAM&&r.status!=="preparing")){ schoolBoxes().forEach(b=>b.checked=(b.dataset.region===AREA_PARAM));
+    const d=schoolsEl.querySelector(`details[data-region="${AREA_PARAM}"]`); if(d)d.open=true; }
+  syncRegBoxes();
 }
 applyHash();
 window.addEventListener("hashchange",()=>{applyHash();render()});
@@ -235,7 +258,7 @@ function render(){
   document.getElementById("dir").innerHTML=DATA.schools.filter(s=>schools.has(s.id)).map(s=>{
     const up=DATA.events.filter(e=>e.school===s.id&&days(e.end||e.date)>=0).sort((a,b)=>a.date.localeCompare(b.date));
     const nx=up.length?`${up.length}件（次：${md(up[0].date)} ${esc(up[0].title)}）`:"—";
-    return `<tr><td><span class="dot" style="background:${typeColor(s.type)}"></span><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}${s.type==="県教委"?"":"高校"}</a></td><td>${esc(s.area)}</td><td>${nx}</td><td>${esc(s.note)}</td></tr>`;
+    return `<tr><td><span class="dot" style="background:${typeColor(s.type)}"></span><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.name)}${s.type==="県教委"?"":"高校"}</a></td><td>${esc(RNAME[s.region]||"")}・${esc(s.area)}</td><td>${nx}</td><td>${esc(s.note)}</td></tr>`;
   }).join("");
 }
 render();

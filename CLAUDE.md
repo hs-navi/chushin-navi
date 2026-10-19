@@ -44,7 +44,20 @@
 - 校名は県の公式表記（「県ケ丘」「蟻ケ崎」の大きい「ケ」）。
 - ヘッダーに対象地域の説明文は入れない。
 
+## 地区とデータの分割（全県対応）
+
+- 対象は長野県全体。地区は北信・東信・中信・南信の4つ（県教委の教育事務所の区分）。
+- `data/regions.json`：地区の一覧。`status` は `active`（掲載中）／`partial`（一部の学校だけ掲載）／`preparing`（準備中。データを読み込まない）。順に増やす（東信→南信→北信）。
+- データは地区ごとのファイルに分ける。`data/nyushi.json`（共通：updatedAt・checkedAt・prefPage・publicSchedule）、`data/nyushi-<地区id>.json`（`pdfs`・`publicSchools`・`privateSchools`）、`data/events.json`（共通：checkedAt・kinds）、`data/events-<地区id>.json`（`schools`・`events`）。地区id は hokushin / toshin / chushin / nanshin。
+- 学校 id は全地区で重複させない。行事の `school` は同じ地区の `schools` に置く。
+- 地区を増やすときは、`regions.json` の status を変え、`nyushi-<id>.json` と `events-<id>.json` を作る。
+- 地区の指定：`nyushi.html?area=toshin`、`events.html?area=toshin`（GAS版は `?page=events&area=toshin`）で、その地区に絞った状態で開く。先生に渡すURLに使える。
+- 入試ナビの学校選択は、地区・種別（公立／私立／通信制）の絞り込みと学校名の検索つきのダイアログ。
+
 ## データ形式
+
+（以下のファイル名は、地区ごとのファイル `data/nyushi-<地区id>.json`・`data/events-<地区id>.json` に読み替える）
+
 
 ### data/nyushi.json
 - `updatedAt`：最終更新日（YYYY-MM-DD）。内容を変えた日に更新する。

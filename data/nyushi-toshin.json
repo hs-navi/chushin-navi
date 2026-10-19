@@ -1,0 +1,40 @@
+{
+  "pdfs": {
+    "toshin": {
+      "url": "https://www.pref.nagano.lg.jp/kyoiku/koko/saiyo-nyuushi/shiken/ko/r9/documents/r9-1-02.pdf",
+      "label": "学校別実施内容一覧（東信地区・PDF）"
+    }
+  },
+  "publicSchools": [
+    {
+      "id": "komorogijuku",
+      "name": "小諸義塾",
+      "pdf": "toshin",
+      "note": "東信地区の学校です。",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "50%",
+          "zenkiTest": "個人面接（7分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "音楽科",
+          "zenki": "90%",
+          "zenkiTest": "個人面接（5分程度）、実技検査：受検型Aは基礎楽典・聴音・コールユーブンゲン・専攻実技・共通ピアノ／受検型Bは専攻実技",
+          "kokiInterview": "対面面接",
+          "note": ""
+        },
+        {
+          "dept": "ビジネス科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（7分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    }
+  ],
+  "privateSchools": []
+}

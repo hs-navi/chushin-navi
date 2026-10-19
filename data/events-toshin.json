@@ -1,0 +1,58 @@
+{
+  "schools": [
+    {
+      "id": "komorogijuku",
+      "name": "小諸義塾",
+      "area": "小諸市",
+      "type": "公立",
+      "url": "https://www.komorogijuku-hs.ed.jp/archives/category/junior-high",
+      "note": ""
+    }
+  ],
+  "events": [
+    {
+      "school": "komorogijuku",
+      "kind": "体験入学",
+      "title": "体験入学（普通科・ビジネス科）",
+      "date": "2026-07-31",
+      "time": "",
+      "target": "中学生",
+      "apply": "",
+      "src": "https://www.komorogijuku-hs.ed.jp/archives/6942",
+      "srcLabel": "小諸義塾 中学生向け"
+    },
+    {
+      "school": "komorogijuku",
+      "kind": "公開授業",
+      "title": "公開授業（ビジネス科販売実習・普通科/音楽科探究中間発表会）",
+      "date": "2026-10-17",
+      "time": "10:00〜15:00",
+      "target": "どなたでも",
+      "apply": "申込不要",
+      "src": "https://www.pref.nagano.lg.jp/kyoiku/kyogaku/gyose/zenpan/tokei/gakuryoku/documents/documents/r8_koukai_kouki.pdf",
+      "srcLabel": "県教委 公開授業一覧（令和8年10月〜令和9年3月）"
+    },
+    {
+      "school": "komorogijuku",
+      "kind": "公開授業",
+      "title": "公開授業（ビジネス科販売実習）",
+      "date": "2026-10-18",
+      "time": "10:00〜15:00",
+      "target": "どなたでも",
+      "apply": "申込不要",
+      "src": "https://www.pref.nagano.lg.jp/kyoiku/kyogaku/gyose/zenpan/tokei/gakuryoku/documents/documents/r8_koukai_kouki.pdf",
+      "srcLabel": "県教委 公開授業一覧（令和8年10月〜令和9年3月）"
+    },
+    {
+      "school": "komorogijuku",
+      "kind": "公開授業",
+      "title": "公開授業（全教科・学科）",
+      "date": "2026-12-15",
+      "time": "8:50〜15:40（1〜6時限）",
+      "target": "どなたでも",
+      "apply": "申込不要",
+      "src": "https://www.pref.nagano.lg.jp/kyoiku/kyogaku/gyose/zenpan/tokei/gakuryoku/documents/documents/r8_koukai_kouki.pdf",
+      "srcLabel": "県教委 公開授業一覧（令和8年10月〜令和9年3月）"
+    }
+  ]
+}
