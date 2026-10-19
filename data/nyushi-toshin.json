@@ -7,6 +7,138 @@
   },
   "publicSchools": [
     {
+      "id": "ueda-chikuma",
+      "name": "上田千曲",
+      "pdf": "toshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "工業科（メカニカル工学）",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "工業科（電気）",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "工業科（建築）",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "商業科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "家庭科（生活福祉）",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "家庭科（食物栄養）",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ueda",
+      "name": "上田",
+      "pdf": "toshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "ueda-someyagaoka",
+      "name": "上田染谷丘",
+      "pdf": "toshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "国際教養科",
+          "zenki": "80%",
+          "zenkiTest": "個人面接（10分程度）・英語による口頭試問（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": "後期は国語・英語が1.25倍の傾斜配点"
+        }
+      ]
+    },
+    {
+      "id": "ueda-higashi",
+      "name": "上田東",
+      "pdf": "toshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "maruko-shugakukan",
+      "name": "丸子修学館",
+      "pdf": "toshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "総合学科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "tateshina",
+      "name": "蓼科",
+      "pdf": "toshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "50%",
+          "zenkiTest": "志願理由書（500字以上600字以内）・個人面接（10分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        }
+      ]
+    },
+    {
       "id": "komorogijuku",
       "name": "小諸義塾",
       "pdf": "toshin",
@@ -31,6 +163,124 @@
           "zenki": "60%",
           "zenkiTest": "個人面接（7分程度）",
           "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "karuizawa",
+      "name": "軽井沢",
+      "pdf": "toshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "saku-sogo-gijutsu",
+      "name": "佐久平総合技術",
+      "pdf": "toshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "農業科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": "食料マネジメント・生物サービス・食農クリエイトの3つで共通の募集枠"
+        },
+        {
+          "dept": "工業科（機械システム）",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "工業科（電気情報）",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "創造実践科",
+          "zenki": "50%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "iwamurada",
+      "name": "岩村田",
+      "pdf": "toshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nozawa-kita",
+      "name": "野沢北",
+      "pdf": "toshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "理数科",
+          "zenki": "90%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nozawa-minami",
+      "name": "野沢南",
+      "pdf": "toshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "koumi",
+      "name": "小海",
+      "pdf": "toshin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "50%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接（10分程度）",
           "note": ""
         }
       ]
