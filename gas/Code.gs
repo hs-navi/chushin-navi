@@ -1,5 +1,5 @@
 /**
- * 中信 高校進学ナビ（Google Apps Script 版）
+ * 長野県高校進学ナビ（Google Apps Script 版）
  *
  * 画面は top / nyushi / events の3つのHTMLファイル。
  * データは GitHub（hs-navi/chushin-navi）の data/*.json を毎回読み込むので、
@@ -10,9 +10,9 @@ const DATA_BASE = 'https://raw.githubusercontent.com/hs-navi/chushin-navi/main/d
 const CACHE_SECONDS = 600; // 10分間は同じデータを使い回す（アクセスが多いときの負担を減らす）
 
 const PAGES = {
-  top:    { file: 'top',    title: '中信 高校進学ナビ',     data: null },
-  nyushi: { file: 'nyushi', title: '中信 入試ナビ',         data: 'nyushi' },
-  events: { file: 'events', title: '中信 高校イベントナビ', data: 'events' },
+  top:    { file: 'top',    title: '長野県高校進学ナビ',     data: null },
+  nyushi: { file: 'nyushi', title: '長野県 入試ナビ',         data: 'nyushi' },
+  events: { file: 'events', title: '長野県 イベントナビ', data: 'events' },
 };
 
 function doGet(e) {
