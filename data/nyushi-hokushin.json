@@ -1,0 +1,483 @@
+{
+  "pdfs": {
+    "hokushin": {
+      "url": "https://www.pref.nagano.lg.jp/kyoiku/koko/saiyo-nyuushi/shiken/ko/r9/documents/r9-1-01.pdf",
+      "label": "学校別実施内容一覧（北信地区・PDF）"
+    }
+  },
+  "publicSchools": [
+    {
+      "id": "iiyama",
+      "name": "飯山",
+      "pdf": "hokushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "40%",
+          "zenkiTest": "個人面接",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "自然科学探究科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接",
+          "kokiInterview": "紙上面接",
+          "note": "自然科学探究科と人文科学探究科で共通の募集枠"
+        },
+        {
+          "dept": "人文科学探究科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接",
+          "kokiInterview": "紙上面接",
+          "note": "自然科学探究科と人文科学探究科で共通の募集枠"
+        },
+        {
+          "dept": "スポーツ科学科",
+          "zenki": "90%",
+          "zenkiTest": "個人面接・専攻種目別の実技検査（スキー・野球・剣道・陸上競技）",
+          "kokiInterview": "対面面接・専攻種目別の実技検査",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "shimotakai-norin",
+      "name": "下高井農林",
+      "pdf": "hokushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "地域創造農学科",
+          "zenki": "50%",
+          "zenkiTest": "個人面接",
+          "kokiInterview": "対面面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nakano-risshikan",
+      "name": "中野立志館",
+      "pdf": "hokushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "総合学科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nakano-nishi",
+      "name": "中野西",
+      "pdf": "hokushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "50%",
+          "zenkiTest": "個人面接",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "suzaka-higashi",
+      "name": "須坂東",
+      "pdf": "hokushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（約10分、2分程度の自己PRを含む）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "suzaka",
+      "name": "須坂",
+      "pdf": "hokushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "suzaka-sosei",
+      "name": "須坂創成",
+      "pdf": "hokushin",
+      "note": "令和9年度から園芸農学科・食品科学科・環境造園科を、食料生産科・環境創造科に変更します。令和9年度の募集学級数は後日発表されます。",
+      "depts": [
+        {
+          "dept": "食料生産科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10〜15分程度）",
+          "kokiInterview": "紙上面接",
+          "note": "食料生産科と環境創造科で共通の募集枠"
+        },
+        {
+          "dept": "環境創造科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10〜15分程度）",
+          "kokiInterview": "紙上面接",
+          "note": "食料生産科と環境創造科で共通の募集枠"
+        },
+        {
+          "dept": "創造工学科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10〜15分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "商業科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10〜15分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "hokubu",
+      "name": "北部",
+      "pdf": "hokushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "50%",
+          "zenkiTest": "個人面接",
+          "kokiInterview": "対面面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nagano-yoshida",
+      "name": "長野吉田",
+      "pdf": "hokushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nagano",
+      "name": "長野",
+      "pdf": "hokushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nagano-nishi",
+      "name": "長野西",
+      "pdf": "hokushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "国際教養科",
+          "zenki": "90%",
+          "zenkiTest": "個人面接（英語と日本語）・小論文B（英文資料などに関する総合的な質問に答えて自分の考えを論述。30分）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nagano-shogyo",
+      "name": "長野商業",
+      "pdf": "hokushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "商業科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": "商業科と会計科で共通の募集枠"
+        },
+        {
+          "dept": "会計科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": "商業科と会計科で共通の募集枠"
+        }
+      ]
+    },
+    {
+      "id": "nagano-higashi",
+      "name": "長野東",
+      "pdf": "hokushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "30%",
+          "zenkiTest": "個人面接（10分程度。自己PRを含み、実技は含まない）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nagano-kogyo",
+      "name": "長野工業",
+      "pdf": "hokushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "機械工学科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "電気電子工学科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "物質化学科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "情報工学科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "土木工学科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "建築学科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nagano-nishi-chujo",
+      "name": "長野西中条校",
+      "pdf": "hokushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "50%",
+          "zenkiTest": "個人面接",
+          "kokiInterview": "対面面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "shinonoi-saikyo",
+      "name": "篠ノ井犀峡校",
+      "pdf": "hokushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（15分程度）",
+          "kokiInterview": "対面面接（15分程度）",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "shiritsu-nagano",
+      "name": "市立長野",
+      "pdf": "hokushin",
+      "note": "長野市立の学校です。詳しくは長野市の「令和9年度 長野市立長野高等学校入学者選抜要項」で確認してください。",
+      "depts": [
+        {
+          "dept": "総合学科",
+          "zenki": "32%（長野市の入学者選抜要項で確認）",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "nagano-minami",
+      "name": "長野南",
+      "pdf": "hokushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "40%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "shinonoi",
+      "name": "篠ノ井",
+      "pdf": "hokushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "sarashina-nogyo",
+      "name": "更級農業",
+      "pdf": "hokushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "農業科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接",
+          "note": "地域園芸・植物活用・食農科学の3つで共通の募集枠"
+        }
+      ]
+    },
+    {
+      "id": "matsushiro",
+      "name": "松代",
+      "pdf": "hokushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        },
+        {
+          "dept": "商業科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "yashiro",
+      "name": "屋代",
+      "pdf": "hokushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        },
+        {
+          "dept": "理数科",
+          "zenki": "90%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "紙上面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "yashiro-minami",
+      "name": "屋代南",
+      "pdf": "hokushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "40%",
+          "zenkiTest": "個人面接",
+          "kokiInterview": "対面面接",
+          "note": ""
+        },
+        {
+          "dept": "ライフデザイン科",
+          "zenki": "60%",
+          "zenkiTest": "個人面接",
+          "kokiInterview": "対面面接",
+          "note": ""
+        }
+      ]
+    },
+    {
+      "id": "sakaki",
+      "name": "坂城",
+      "pdf": "hokushin",
+      "note": "",
+      "depts": [
+        {
+          "dept": "普通科",
+          "zenki": "40%",
+          "zenkiTest": "個人面接（10分程度）",
+          "kokiInterview": "対面面接",
+          "note": ""
+        }
+      ]
+    }
+  ],
+  "privateSchools": []
+}
