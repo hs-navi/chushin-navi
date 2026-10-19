@@ -391,6 +391,18 @@
     {
       "school": "komorogijuku",
       "kind": "体験入学",
+      "title": "体験入学（音楽科）",
+      "date": "2026-06-20",
+      "time": "要確認",
+      "place": "小諸義塾高校",
+      "target": "中学生",
+      "apply": "要確認（学校の案内を確認できていません）",
+      "src": "https://www.komorogijuku-hs.ed.jp/",
+      "srcLabel": "小諸義塾 行事日程（トップページ）・県教委 令和8年度体験入学実施日程一覧（第2通学区）"
+    },
+    {
+      "school": "komorogijuku",
+      "kind": "体験入学",
       "title": "体験入学（普通科・ビジネス科）",
       "date": "2026-07-31",
       "time": "普通科 8:40〜11:35（午前）／ビジネス科 13:00〜15:30（午後）",
@@ -440,25 +452,15 @@
     {
       "school": "komorogijuku",
       "kind": "公開授業",
-      "title": "公開授業（全教科・学科）",
-      "date": "2026-12-15",
-      "time": "8:50〜15:40（1〜6時限）",
-      "target": "どなたでも",
-      "apply": "申込不要",
-      "src": "https://www.pref.nagano.lg.jp/kyoiku/kyogaku/gyose/zenpan/tokei/gakuryoku/documents/documents/r8_koukai_kouki.pdf",
-      "srcLabel": "県教委 公開授業一覧（令和8年10月〜令和9年3月）"
-    },
-    {
-      "school": "komorogijuku",
-      "kind": "公開授業",
-      "title": "公開授業（定時制）",
+      "title": "定時制 学校説明会（中高連絡会）・公開授業",
       "date": "2026-10-30",
-      "time": "17:30〜19:05（1〜2時限）",
+      "time": "受付17:00〜17:30／学校説明会17:30〜18:15（中学校の進路指導担当・3学年担任対象）／公開授業18:20〜19:05／個別懇談19:15〜（希望者）",
       "place": "小諸義塾高校 定時制",
-      "target": "どなたでも（終了が遅いため保護者の付き添いか中学校教員の引率をお願いしたいとの注意あり）",
-      "apply": "要（詳細は学校HPに掲載とのこと。要確認）",
-      "src": "https://www.pref.nagano.lg.jp/kyoiku/kyogaku/gyose/zenpan/tokei/gakuryoku/documents/documents/r8_koukai_kouki.pdf",
-      "srcLabel": "県教委 公開授業一覧（令和8年10月〜令和9年3月）"
+      "target": "公開授業は中学校の進路指導担当・3学年担任・中学生・保護者など（中学生は在籍中学校を通じて申込、中学校卒業生は直接本校へ）。終了が遅いため保護者の付き添いか中学校教員の引率をお願いしたいとの注意あり",
+      "apply": "Googleフォーム・メール・FAXで申込",
+      "src": "https://www.nagano-c.ed.jp/kosho/teijihp/R8PDF/R8_gakkousetumeikaikeikaku.pdf",
+      "srcLabel": "小諸義塾 定時制 令和8年度 学校説明会（中高連絡会）・公開授業のご案内",
+      "deadline": "2026-10-23"
     },
     {
       "school": "komorogijuku",
@@ -468,7 +470,7 @@
       "time": "16:30〜19:05（1〜2時限）",
       "place": "小諸義塾高校 定時制",
       "target": "どなたでも（終了が遅いため保護者の付き添いか中学校教員の引率をお願いしたいとの注意あり）",
-      "apply": "要（詳細は学校HPに掲載とのこと。要確認）",
+      "apply": "要。県教委の一覧には載っているが、学校（定時制）の案内では同日は中学生体験入学（申込締切11/20）のみ確認。公開授業としての案内は確認できていません（要確認）",
       "src": "https://www.pref.nagano.lg.jp/kyoiku/kyogaku/gyose/zenpan/tokei/gakuryoku/documents/documents/r8_koukai_kouki.pdf",
       "srcLabel": "県教委 公開授業一覧（令和8年10月〜令和9年3月）"
     },
@@ -477,12 +479,24 @@
       "kind": "体験入学",
       "title": "体験入学（定時制・商業）",
       "date": "2026-11-27",
-      "time": "要確認",
+      "time": "受付16:00〜16:30／学校説明16:30〜17:10／体験学習Ⅰ（簿記）17:20〜17:45／体験学習Ⅱ（情報処理）17:50〜18:15／授業見学18:20〜19:05／個別懇談19:15〜19:30",
       "place": "小諸義塾高校 定時制",
-      "target": "中学生",
-      "apply": "要確認（学校の案内を確認できていません）",
-      "src": "https://www.pref.nagano.lg.jp/kyoiku/kyogaku/documents/r8taiken_2toushin.pdf",
-      "srcLabel": "県教委 令和8年度体験入学実施日程一覧（第2通学区）"
+      "target": "定時制課程への進学を希望する中学生と保護者、中学校職員（中学生は在籍中学校を通じて申込、中学校卒業生は直接本校へ。終了が遅いため保護者の付き添いか中学校教員の引率をお願いしたいとの注意あり）",
+      "apply": "Googleフォーム・メール・FAXで申込",
+      "src": "https://www.nagano-c.ed.jp/kosho/teijihp/R8PDF/R8_taikennyuugakuannai.pdf",
+      "srcLabel": "小諸義塾 定時制 令和8年度 中学生体験入学のご案内",
+      "deadline": "2026-11-20"
+    },
+    {
+      "school": "komorogijuku",
+      "kind": "公開授業",
+      "title": "公開授業（全教科・学科）",
+      "date": "2026-12-15",
+      "time": "8:50〜15:40（1〜6時限）",
+      "target": "どなたでも",
+      "apply": "申込不要",
+      "src": "https://www.pref.nagano.lg.jp/kyoiku/kyogaku/gyose/zenpan/tokei/gakuryoku/documents/documents/r8_koukai_kouki.pdf",
+      "srcLabel": "県教委 公開授業一覧（令和8年10月〜令和9年3月）"
     },
     {
       "school": "koumi",
@@ -675,6 +689,18 @@
     },
     {
       "school": "nozawa-minami",
+      "kind": "学校説明会",
+      "title": "定時制説明会（教職員向け）",
+      "date": "2026-10-02",
+      "time": "17:30〜",
+      "place": "野沢南高校 定時制",
+      "target": "中学校教職員",
+      "apply": "詳細は佐久地域の中学校に通知。要確認",
+      "src": "https://www.nagano-c.ed.jp/nominami/nonan-teiz/index.html",
+      "srcLabel": "野沢南 定時制HP"
+    },
+    {
+      "school": "nozawa-minami",
       "kind": "公開授業",
       "title": "公開授業（定時制）",
       "date": "2026-10-07",
@@ -753,18 +779,6 @@
       "time": "17:30〜",
       "place": "野沢南高校 定時制",
       "target": "中学生・保護者",
-      "apply": "詳細は佐久地域の中学校に通知。要確認",
-      "src": "https://www.nagano-c.ed.jp/nominami/nonan-teiz/index.html",
-      "srcLabel": "野沢南 定時制HP"
-    },
-    {
-      "school": "nozawa-minami",
-      "kind": "学校説明会",
-      "title": "定時制説明会（教職員向け）",
-      "date": "2026-10-02",
-      "time": "17:30〜",
-      "place": "野沢南高校 定時制",
-      "target": "中学校教職員",
       "apply": "詳細は佐久地域の中学校に通知。要確認",
       "src": "https://www.nagano-c.ed.jp/nominami/nonan-teiz/index.html",
       "srcLabel": "野沢南 定時制HP"
@@ -873,6 +887,18 @@
     },
     {
       "school": "sakuchosei",
+      "kind": "部活動体験",
+      "target": "",
+      "apply": "記載なし",
+      "src": "https://sakuchosei.ed.jp/exam/hs-session/",
+      "srcLabel": "佐久長聖 高校 学校説明会・オープンスクール",
+      "title": "陸上競技部クラブ体験",
+      "date": "2026-08-09",
+      "time": "8:30〜12:00",
+      "place": "佐久総合運動公園陸上競技場（佐久市）"
+    },
+    {
+      "school": "sakuchosei",
       "kind": "学校説明会",
       "title": "学校説明会（上越）",
       "date": "2026-08-22",
@@ -897,6 +923,18 @@
     },
     {
       "school": "sakuchosei",
+      "kind": "部活動体験",
+      "target": "",
+      "apply": "記載なし",
+      "src": "https://sakuchosei.ed.jp/exam/hs-session/",
+      "srcLabel": "佐久長聖 高校 学校説明会・オープンスクール",
+      "title": "女子サッカー部クラブ体験",
+      "date": "2026-09-05",
+      "time": "14:00〜16:00",
+      "place": "望月温泉みどりの村グラウンド（佐久市）"
+    },
+    {
+      "school": "sakuchosei",
       "kind": "学校説明会",
       "title": "学校説明会（東京・市ヶ谷）",
       "date": "2026-09-12",
@@ -918,6 +956,18 @@
       "apply": "事前Web申込",
       "src": "https://sakuchosei.ed.jp/exam/hs-session/",
       "srcLabel": "佐久長聖 高校 学校説明会・オープンスクール"
+    },
+    {
+      "school": "sakuchosei",
+      "kind": "部活動体験",
+      "target": "",
+      "apply": "記載なし",
+      "src": "https://sakuchosei.ed.jp/exam/hs-session/",
+      "srcLabel": "佐久長聖 高校 学校説明会・オープンスクール",
+      "title": "女子野球部クラブ体験",
+      "date": "2026-10-03",
+      "time": "13:30〜16:00",
+      "place": "千ヶ日向総合グラウンド（佐久穂町）"
     },
     {
       "school": "sakuchosei",
@@ -1319,7 +1369,7 @@
       "time": "要確認",
       "place": "上田千曲高校",
       "target": "中学生",
-      "apply": "要確認",
+      "apply": "詳細（実施要項・申込書）は11月上旬に学校定時制HPに掲載予定（要確認）",
       "src": "https://www.nagano-c.ed.jp/chikuma/infomation/j_school/index.html",
       "srcLabel": "上田千曲 中学生の皆さんへ"
     },
@@ -1331,7 +1381,7 @@
       "time": "要確認",
       "place": "上田千曲高校",
       "target": "中学生",
-      "apply": "要確認",
+      "apply": "詳細（実施要項・申込書）は12月上旬に学校定時制HPに掲載予定（要確認）",
       "src": "https://www.nagano-c.ed.jp/chikuma/infomation/j_school/index.html",
       "srcLabel": "上田千曲 中学生の皆さんへ"
     },

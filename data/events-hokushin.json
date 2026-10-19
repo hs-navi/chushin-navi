@@ -1700,7 +1700,7 @@
     {
       "school": "shinonoi",
       "kind": "その他",
-      "title": "文化祭「篠竹祭」一般公開（予定）",
+      "title": "文化祭「篠竹祭」一般公開",
       "date": "2026-07-04",
       "end": "2026-07-05",
       "time": "要確認",
@@ -1708,7 +1708,7 @@
       "target": "一般",
       "apply": "要確認",
       "src": "https://shino-hs.ed.jp/cyugaku",
-      "srcLabel": "篠ノ井高校 中学生の皆さんへ"
+      "srcLabel": "篠ノ井高校 中学生の皆さんへ（文化祭のお知らせ。7月4日・5日一般公開、今年度は終了と記載）"
     },
     {
       "school": "shinonoi",
@@ -2053,6 +2053,44 @@
       "apply": "要確認",
       "src": "https://www.nagano-c.ed.jp/yanami/7-3_show_presentation_info.html",
       "srcLabel": "屋代南高校 作品・学習発表会について"
+    },
+    {
+      "school": "nakano-nishi",
+      "kind": "その他",
+      "title": "文化祭「翔舞祭」一般公開（第42回）",
+      "date": "2026-07-04",
+      "end": "2026-07-05",
+      "time": "7/4 10:30〜15:45、7/5 9:30〜14:45（7/2・7/3は校内祭で一般公開なし）",
+      "place": "中野西高校",
+      "target": "保護者・地域の皆様",
+      "apply": "記載なし",
+      "src": "https://www.nagano-c.ed.jp/inuwashi/pdf/260630fes.pdf",
+      "srcLabel": "中野西高校 第42回翔舞祭のご案内（PDF）"
+    },
+    {
+      "school": "sarashina-nogyo",
+      "kind": "その他",
+      "title": "更農祭（文化祭）一般公開（第64回）",
+      "date": "2026-10-11",
+      "time": "一般公開の時刻は掲示のポスターまたはHPで確認（例年9:30〜14:30）",
+      "place": "更級農業高校",
+      "target": "どなたでも（中学生向けの学校見学等実施日に掲載）",
+      "apply": "不要（ご自由にお越しください）",
+      "src": "https://sarano-hs.ed.jp/wp-content/uploads/2026/09/r8taikenjissibi.pdf",
+      "srcLabel": "更級農業高校 2026年度 中学生対象の学校見学等実施日（PDF）"
+    },
+    {
+      "school": "suzaka-sosei",
+      "kind": "その他",
+      "title": "第10回 創成フェア（農業科・創造工学科・商業科の作品・取組の発表。一般公開）",
+      "date": "2026-10-17",
+      "end": "2026-10-18",
+      "time": "10:00〜15:00",
+      "place": "須坂創成高校",
+      "target": "どなたでも",
+      "apply": "記載なし",
+      "src": "https://sosei.ed.jp/news/1343/",
+      "srcLabel": "須坂創成高校 第10回 創成フェア開催について"
     }
   ]
 }
