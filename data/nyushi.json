@@ -72,5 +72,15 @@
       "一部の学科で傾斜配点（例：英語1.5倍）",
       "同じ学校内の別の学科を第2志望にできる場合あり"
     ]
+  },
+  "pdfs": {
+    "teiji": {
+      "url": "https://www.pref.nagano.lg.jp/kyoiku/koko/saiyo-nyuushi/shiken/ko/r9/documents/r9-1-05.pdf",
+      "label": "学校別実施内容一覧（定時制課程・PDF）"
+    },
+    "tabu": {
+      "url": "https://www.pref.nagano.lg.jp/kyoiku/koko/saiyo-nyuushi/shiken/ko/r9/documents/r9-1-06.pdf",
+      "label": "学校別実施内容一覧（定時制 多部制・単位制・PDF）"
+    }
   }
 }

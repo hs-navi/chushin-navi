@@ -69,6 +69,14 @@
           "zenkiTest": "個人面接（10分程度）",
           "kokiInterview": "対面面接（10分程度）",
           "note": ""
+        },
+        {
+          "dept": "定時制",
+          "zenki": "25%",
+          "zenkiTest": "個人面接（15分程度）・作文（50分・800字以内）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": "普通科。定時制課程",
+          "pdf": "teiji"
         }
       ]
     },
@@ -291,6 +299,14 @@
           "zenkiTest": "個人面接（10分程度）（志願理由書：各150字以内）",
           "kokiInterview": "紙上面接",
           "note": ""
+        },
+        {
+          "dept": "定時制",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "対面面接（20分程度）",
+          "note": "普通科。定時制課程。前期選抜は実施なし",
+          "pdf": "teiji"
         }
       ]
     },
@@ -415,6 +431,14 @@
           "zenkiTest": "個人面接",
           "kokiInterview": "紙上面接",
           "note": ""
+        },
+        {
+          "dept": "定時制",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": "普通科。定時制課程。前期選抜は実施なし",
+          "pdf": "teiji"
         }
       ]
     },
@@ -474,6 +498,35 @@
           "zenkiTest": "個人面接（15分程度）",
           "kokiInterview": "対面面接（10分程度）",
           "note": ""
+        }
+      ]
+    },
+    {
+      "id": "minowa-shinshu",
+      "name": "箕輪進修",
+      "pdf": "tabu",
+      "note": "多部制・単位制の学校です。日程や検査内容が全日制と異なる場合があるので、必ず原本で確認してください。",
+      "depts": [
+        {
+          "dept": "Ⅰ部・Ⅱ部",
+          "zenki": "50%",
+          "zenkiTest": "個人面接（15分程度）・志願理由書",
+          "kokiInterview": "対面面接（15分程度）",
+          "note": "普通科（単位制）。Ⅰ部とⅡ部をあわせて募集"
+        },
+        {
+          "dept": "Ⅲ部",
+          "zenki": "50%",
+          "zenkiTest": "個人面接（15分程度）・志願理由書",
+          "kokiInterview": "対面面接（15分程度）",
+          "note": "普通科（単位制）。夜間の授業"
+        },
+        {
+          "dept": "Ⅰ部（クリエイト工学科）",
+          "zenki": "50%",
+          "zenkiTest": "個人面接（15分程度）・志願理由書",
+          "kokiInterview": "対面面接（15分程度）",
+          "note": "工業科（単位制）"
         }
       ]
     }

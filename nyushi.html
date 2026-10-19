@@ -197,7 +197,7 @@ async function loadRaw(kind){
   const list=await Promise.all(act.map(r=>getJson(`data/${kind}-${r.id}.json`)));
   return {regions,common,parts:Object.fromEntries(act.map((r,i)=>[r.id,list[i]]))};
 }
-try{ const RAW=await loadRaw("nyushi"); REGIONS=RAW.regions; D={...RAW.common,pdfs:{},publicSchools:[],privateSchools:[]};
+try{ const RAW=await loadRaw("nyushi"); REGIONS=RAW.regions; D={...RAW.common,pdfs:{...(RAW.common.pdfs||{})},publicSchools:[],privateSchools:[]};
   for(const r of REGIONS){const p=RAW.parts[r.id]; if(!p)continue; Object.assign(D.pdfs,p.pdfs);
     D.publicSchools.push(...p.publicSchools.map(s=>({...s,region:r.id}))); D.privateSchools.push(...p.privateSchools.map(s=>({...s,region:r.id})));} }
 catch(e){ document.getElementById("cards").innerHTML='<div class="card"><div class="empty">データを読み込めませんでした。ページを再読み込みしてください。</div></div>'; return; }
@@ -209,7 +209,7 @@ const PDF_LABEL=Object.fromEntries(Object.values(D.pdfs).map(p=>[p.url,p.label])
 const EVENTS_URL="events.html";
 const PUB_ZENKI=D.publicSchedule.zenki, PUB_KOKI=D.publicSchedule.koki;
 const PUB_ZENKI_CONTENT=D.publicSchedule.zenkiContent, PUB_KOKI_CONTENT=D.publicSchedule.kokiContent;
-const PUB=D.publicSchools.map(s=>[s.id,s.name,s.depts.map(x=>[x.dept,x.zenki,x.zenkiTest,x.kokiInterview,x.note]),D.pdfs[s.pdf].url,s.note,s.region]);
+const PUB=D.publicSchools.map(s=>[s.id,s.name,s.depts.map(x=>[x.dept,x.zenki,x.zenkiTest,x.kokiInterview,x.note,x.pdf&&D.pdfs[x.pdf]?D.pdfs[x.pdf].url:""]),D.pdfs[s.pdf].url,s.note,s.region]);
 const PRIV=D.privateSchools;
 {const [y,m,d]=D.checkedAt.split("-").map(Number);document.getElementById("updated").textContent=`${y}年${m}月${d}日`;}
 /* ---------- 共通処理 ---------- */
@@ -299,7 +299,7 @@ function pubCard({s,k,i}){
       ${z?`<div class="content"><ul>${PUB_ZENKI_CONTENT.map(c=>`<li>${esc(c)}</li>`).join("")}</ul></div>`:""}</div>
     <div class="exam"><h3>後期選抜（一般） <small>検査日 3/9(火)</small></h3>
       <div class="content"><ul>${PUB_KOKI_CONTENT.map(c=>`<li>${esc(c)}</li>`).join("")}</ul></div></div>
-    <div class="src">原本：<a href="${s.pdf}" target="_blank" rel="noopener">${PDF_LABEL[s.pdf]}</a>／<a href="${PREF_PAGE}" target="_blank" rel="noopener">県教委 入試情報ページ</a></div>
+    <div class="src">原本：<a href="${d[5]||s.pdf}" target="_blank" rel="noopener">${PDF_LABEL[d[5]||s.pdf]}</a>／<a href="${PREF_PAGE}" target="_blank" rel="noopener">県教委 入試情報ページ</a></div>
   </article>`;
 }
 

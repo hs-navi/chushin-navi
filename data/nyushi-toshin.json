@@ -53,6 +53,14 @@
           "zenkiTest": "個人面接（10分程度）",
           "kokiInterview": "紙上面接",
           "note": ""
+        },
+        {
+          "dept": "定時制（工業科 機械）",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "対面面接（10分程度）・作文（600字程度・40分）",
+          "note": "定時制課程。前期選抜は実施なし",
+          "pdf": "teiji"
         }
       ]
     },
@@ -68,6 +76,14 @@
           "zenkiTest": "—",
           "kokiInterview": "紙上面接",
           "note": ""
+        },
+        {
+          "dept": "定時制",
+          "zenki": "50%",
+          "zenkiTest": "個人面接（15分程度）",
+          "kokiInterview": "対面面接（15分程度）",
+          "note": "普通科。定時制課程",
+          "pdf": "teiji"
         }
       ]
     },
@@ -164,6 +180,14 @@
           "zenkiTest": "個人面接（7分程度）",
           "kokiInterview": "紙上面接",
           "note": ""
+        },
+        {
+          "dept": "定時制（商業科）",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": "定時制課程。前期選抜は実施なし",
+          "pdf": "teiji"
         }
       ]
     },
@@ -267,6 +291,14 @@
           "zenkiTest": "—",
           "kokiInterview": "紙上面接",
           "note": ""
+        },
+        {
+          "dept": "定時制",
+          "zenki": "実施なし",
+          "zenkiTest": "—",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": "普通科。定時制課程。前期選抜は実施なし",
+          "pdf": "teiji"
         }
       ]
     },
@@ -282,6 +314,21 @@
           "zenkiTest": "個人面接（10分程度）",
           "kokiInterview": "対面面接（10分程度）",
           "note": ""
+        }
+      ]
+    },
+    {
+      "id": "tomi-seisho",
+      "name": "東御清翔",
+      "pdf": "tabu",
+      "note": "多部制・単位制の学校です。日程や検査内容が全日制と異なる場合があるので、必ず原本で確認してください。",
+      "depts": [
+        {
+          "dept": "午前部・午後部",
+          "zenki": "60%",
+          "zenkiTest": "個人面接（15分程度）・志願理由書（200字以内の記述を含む）",
+          "kokiInterview": "対面面接（10分程度）",
+          "note": "普通科（単位制）。午前部・午後部あわせて募集（くくり募集）"
         }
       ]
     }

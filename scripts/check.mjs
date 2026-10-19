@@ -29,9 +29,10 @@ if (n) {
     for (const s of p.publicSchools) {
       nCount++;
       if (ids.has(s.id)) errors.push(`nyushi-${rid}.json: id が重複 ${s.id}`); ids.add(s.id);
-      if (!p.pdfs[s.pdf]) errors.push(`nyushi-${rid}.json ${s.name}: pdf "${s.pdf}" が pdfs にありません`);
+      if (!p.pdfs[s.pdf] && !n.pdfs?.[s.pdf]) errors.push(`nyushi-${rid}.json ${s.name}: pdf "${s.pdf}" が pdfs にありません`);
       if (!s.depts?.length) errors.push(`nyushi-${rid}.json ${s.name}: 学科がありません`);
-      for (const d of s.depts) if (!/科|部$|学科/.test(d.dept)) errors.push(`nyushi-${rid}.json ${s.name}: 学科名「${d.dept}」は「〇〇科」の形にする`);
+      for (const d of s.depts) if (d.pdf && !(p.pdfs[d.pdf] || n.pdfs?.[d.pdf])) errors.push(`nyushi-${rid}.json ${s.name}: 学科「${d.dept}」の pdf "${d.pdf}" が pdfs にありません`);
+      for (const d of s.depts) if (!/科|部$|学科|定時制/.test(d.dept)) errors.push(`nyushi-${rid}.json ${s.name}: 学科名「${d.dept}」は「〇〇科」の形にする`);
       if (/[市町村]）?$/.test(s.name)) errors.push(`nyushi-${rid}.json ${s.name}: 校名に市町村名を付けない`);
     }
     for (const s of p.privateSchools) {

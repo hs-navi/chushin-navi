@@ -77,6 +77,7 @@
 
 ## 更新の手順
 
-1. 公式サイトを確認して JSON を書き換える。
+1. 公式サイトを確認して JSON を書き換える。全県を見るときは、地区ごとにサブエージェントを並行して動かし、各自は自分の地区のファイル（`events-<地区id>.json`・`nyushi-<地区id>.json`）だけを書き換える。共通のファイル（`events.json`・`nyushi.json`・`regions.json`）は最後にまとめて更新する。
 2. `node scripts/check.mjs` が OK になることを確認する。
 3. 変更点が分かるメッセージでコミットし、main に push する（GitHub Pages に数分で反映）。
+4. 毎日の更新用の指示文の案は `docs/daily-update-prompt.md`。
