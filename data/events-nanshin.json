@@ -465,12 +465,12 @@
       "kind": "公開授業",
       "title": "授業公開（3時限）",
       "date": "2026-10-23",
-      "time": "12:15～13:10（3時限）",
+      "time": "受付11:30〜12:10（正面玄関）、3時限12:15〜13:10。授業公開後に教育懇談会",
       "place": "飯田高校",
       "target": "中学生（その保護者含む）、本校保護者、学校評議員、地域の方、地域の中高教職員",
       "apply": "不要",
-      "src": "https://www.pref.nagano.lg.jp/kyoiku/kyogaku/gyose/zenpan/tokei/gakuryoku/documents/r03koukai.html",
-      "srcLabel": "県教委 令和8年度 公開授業一覧（前期・後期）"
+      "src": "https://iida-hs.ed.jp/1023%e6%8e%88%e6%a5%ad%e5%85%ac%e9%96%8b%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6/",
+      "srcLabel": "飯田高校 令和8年度 秋の授業公開および教育懇談会について（10/23）"
     },
     {
       "school": "iida-kazakoshi",
@@ -625,12 +625,12 @@
       "kind": "学校説明会",
       "title": "保護者説明会（全日制・令和9年度入学者選抜）",
       "date": "2026-11-20",
-      "time": "要確認",
-      "place": "要確認",
+      "time": "19:00〜20:30（全体説明会45分、個別相談コーナーは自由参加）",
+      "place": "飯田OIDE長姫高校 工業科棟4階プレゼンテーション室",
       "target": "全日制の中学生の保護者",
-      "apply": "要確認",
-      "src": "https://www.nagano-c.ed.jp/oideosa/05_chuugakusei.html",
-      "srcLabel": "飯田OIDE長姫 中学生の皆さんへ（開催予定として掲載）"
+      "apply": "中学校を通さず保護者が直接申込（Googleフォーム、郵送、または本校事務室へ持参）。夜間開催のため中学生のみの参加は不可",
+      "src": "https://www.nagano-c.ed.jp/oideosa/siryou/chugakusei/hogosyasetsumeikai/r08_hogosyasetsumeikai.pdf",
+      "srcLabel": "飯田OIDE長姫 令和8年度全日制中学生保護者向け説明会開催案内（PDF）"
     },
     {
       "school": "iidajoshi",
@@ -960,7 +960,8 @@
       "target": "地域の皆様向け案内（中学生の参加可否は要確認）",
       "apply": "要確認（案内PDFを参照）",
       "src": "https://matsukawa-hs.ed.jp/news/2026/04/15/4-18%e5%9c%9f%e5%85%ac%e9%96%8b%e6%8e%88%e6%a5%ad/",
-      "srcLabel": "松川高校 お知らせ 4/18授業公開"
+      "srcLabel": "松川高校 お知らせ 4/18授業公開",
+      "time": "受付12:15〜、4時限12:30〜13:20・5時限13:30〜14:20（PTA総会日）"
     },
     {
       "school": "matsukawa",
@@ -1166,6 +1167,32 @@
       "deadline": "2026-09-27",
       "src": "https://www.pref.nagano.lg.jp/nanshinkyo/sodan/documents/tikusui2.html",
       "srcLabel": "南信教育事務所 オンライン説明会"
+    },
+    {
+      "school": "pref-nanshin",
+      "kind": "その他",
+      "title": "ほんわか相談会（上伊那会場）　不登校傾向等の中学生・保護者向け進学個別相談会",
+      "date": "2026-10-15",
+      "time": "17:00〜19:30（相談時間は申込後に個別通知）",
+      "place": "伊那合同庁舎（伊那市荒井3497、5階受付）",
+      "target": "中学生・保護者（保護者のみも可）",
+      "apply": "ながの電子申請サービス（事前申込制）",
+      "deadline": "2026-09-27",
+      "src": "https://www.pref.nagano.lg.jp/nanshinkyo/sodan/documents/honwaka.html",
+      "srcLabel": "南信教育事務所 ほんわか相談会"
+    },
+    {
+      "school": "pref-nanshin",
+      "kind": "その他",
+      "title": "ほんわか相談会（諏訪会場）　不登校傾向等の中学生・保護者向け進学個別相談会",
+      "date": "2026-10-22",
+      "time": "17:00〜19:30（相談時間は申込後に個別通知）",
+      "place": "諏訪合同庁舎（諏訪市上川1-1644-10、5階受付）",
+      "target": "中学生・保護者（保護者のみも可）",
+      "apply": "事前申込制。オンライン申込（ながの電子申請サービス）は終了。希望する場合は南信教育事務所（0265-76-6860）へ電話で問い合わせ",
+      "deadline": "2026-10-11",
+      "src": "https://www.pref.nagano.lg.jp/nanshinkyo/sodan/documents/honwaka.html",
+      "srcLabel": "南信教育事務所 ほんわか相談会"
     },
     {
       "school": "shimoina-nogyo",

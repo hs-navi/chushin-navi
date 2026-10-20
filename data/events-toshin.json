@@ -863,6 +863,18 @@
     },
     {
       "school": "sakuchosei",
+      "src": "https://sakuchosei.ed.jp/exam/hs-session/",
+      "srcLabel": "佐久長聖 高校 学校説明会・オープンスクール",
+      "kind": "学校説明会",
+      "title": "海外子女・帰国子女向け オンライン学校説明会",
+      "date": "2026-05-19",
+      "time": "10:00〜11:00",
+      "place": "オンライン",
+      "target": "海外子女・帰国子女",
+      "apply": "記載なし（公式ページでは申込受付終了表示）"
+    },
+    {
+      "school": "sakuchosei",
       "kind": "学校説明会",
       "title": "学校説明会（東京・品川）",
       "date": "2026-06-20",
@@ -884,6 +896,18 @@
       "apply": "事前Web申込",
       "src": "https://sakuchosei.ed.jp/exam/hs-session/",
       "srcLabel": "佐久長聖 高校 学校説明会・オープンスクール"
+    },
+    {
+      "school": "sakuchosei",
+      "src": "https://sakuchosei.ed.jp/exam/hs-session/",
+      "srcLabel": "佐久長聖 高校 学校説明会・オープンスクール",
+      "kind": "学校説明会",
+      "title": "帰国生のための学校説明会・相談会（東京）",
+      "date": "2026-07-31",
+      "time": "12:00〜16:00",
+      "place": "東京都立産業貿易センター台東館（東京都）",
+      "target": "帰国生",
+      "apply": "記載なし（公式ページでは申込受付終了表示）"
     },
     {
       "school": "sakuchosei",
@@ -1014,7 +1038,7 @@
       "kind": "その他",
       "title": "寮のある学校合同相談会（東京）",
       "date": "2026-11-01",
-      "time": "12:30〜16:30",
+      "time": "13:00〜17:00",
       "place": "AP東京八重洲（東京都）",
       "target": "",
       "apply": "申込不要",
