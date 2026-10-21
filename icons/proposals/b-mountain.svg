@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#1f5f8b"/>
+  <!-- 山並み -->
+  <path d="M40 392 L178 196 L246 288 L330 156 L472 392 Z" fill="#ffffff"/>
+  <!-- 雪の稜線の影 -->
+  <path d="M330 156 L372 222 L350 214 L330 236 L306 208 L290 220 Z" fill="#d6e6f1"/>
+  <path d="M178 196 L210 242 L192 236 L176 254 L160 232 L150 238 Z" fill="#d6e6f1"/>
+  <!-- 前へ進む道 -->
+  <path d="M120 472 C 210 420, 250 380, 300 318" fill="none" stroke="#e3a37c" stroke-width="34" stroke-linecap="round"/>
+  <path d="M276 300 L 330 286 L 318 342 Z" fill="#e3a37c"/>
+  <rect y="392" width="512" height="120" fill="none"/>
+</svg>

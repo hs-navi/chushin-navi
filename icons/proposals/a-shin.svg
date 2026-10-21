@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#1f5f8b"/>
+  <text x="256" y="262" text-anchor="middle" dominant-baseline="central" font-family="Noto Sans CJK JP, 'Hiragino Sans', sans-serif" font-weight="900" font-size="340" fill="#ffffff">進</text>
+  <rect x="150" y="430" width="212" height="22" rx="11" fill="#e3a37c"/>
+</svg>
