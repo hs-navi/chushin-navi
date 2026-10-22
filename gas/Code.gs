@@ -7,7 +7,6 @@
  */
 
 const DATA_BASE = 'https://raw.githubusercontent.com/hs-navi/chushin-navi/main/data/';
-const FAVICON_URL = 'https://hs-navi.github.io/chushin-navi/icons/favicon-32.png'; // タブのアイコン（GitHub Pages に置いたPNG）
 const CACHE_SECONDS = 600; // 10分間は同じデータを使い回す（アクセスが多いときの負担を減らす）
 
 const PAGES = {
@@ -30,7 +29,6 @@ function doGet(e) {
   return t.evaluate()
     .setTitle(conf.title)
     .addMetaTag('viewport', 'width=device-width, initial-scale=1')
-    .setFaviconUrl(FAVICON_URL)
     .setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
 }
 
