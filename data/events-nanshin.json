@@ -374,11 +374,14 @@
       "kind": "学校説明会",
       "title": "学校説明会",
       "date": "2026-11-14",
-      "time": "要確認",
-      "place": "要確認",
-      "apply": "中学校を通じて申込（締切は要確認）",
-      "src": "https://www.chino-hs.ed.jp/topics/970/",
-      "srcLabel": "茅野高校 お知らせ"
+      "time": "9:00受付、9:20〜10:00 説明会（学校概要・入学者選抜説明、質疑）、10:00〜個別相談（事前申込者のみ）",
+      "place": "茅野高校 石楠花会館",
+      "apply": "中学校ごとに、参加生徒の氏名・保護者参加・個別懇談の有無を所定のファイルに入力し、メール（chino-hs@pref.nagano.lg.jp、件名「学校説明会参加申込み」）に添付して送付",
+      "src": "https://www.chino-hs.ed.jp/future-students/guidance/",
+      "srcLabel": "茅野高校 学校説明会・体験入学（中学生の方へ）",
+      "target": "中学生・保護者・中学校の先生",
+      "deadline": "2026-11-09",
+      "deadlineTime": "17:00"
     },
     {
       "school": "fujimi",
