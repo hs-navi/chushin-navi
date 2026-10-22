@@ -9,11 +9,11 @@
     <!-- 手前の地面 -->
     <rect y="404" width="512" height="108" fill="#174a6e"/>
     <!-- 道しるべの支柱 -->
-    <rect x="240" y="214" width="32" height="232" rx="10" fill="#1d2a33"/>
-    <rect x="200" y="436" width="112" height="18" rx="9" fill="#1d2a33"/>
+    <rect x="245" y="282" width="22" height="160" rx="8" fill="#1d2a33"/>
+    <rect x="214" y="434" width="84" height="14" rx="7" fill="#1d2a33"/>
     <!-- 案内板（入試ナビ：右向き） -->
-    <path d="M134 238 H356 L398 274 L356 310 H134 Z" fill="#7db7e0" stroke="#1d2a33" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M182 300 H322 L350 324 L322 348 H182 Z" fill="#7db7e0" stroke="#1d2a33" stroke-width="7" stroke-linejoin="round"/>
     <!-- 案内板（イベントナビ：左向き） -->
-    <path d="M378 324 H156 L114 360 L156 396 H378 Z" fill="#e3a37c" stroke="#1d2a33" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M330 358 H190 L162 382 L190 406 H330 Z" fill="#e3a37c" stroke="#1d2a33" stroke-width="7" stroke-linejoin="round"/>
   </g>
 </svg>
