@@ -1,0 +1,13 @@
+{
+  "name": "長野県高校進学ナビ",
+  "short_name": "高校進学ナビ",
+  "lang": "ja",
+  "start_url": "../",
+  "display": "standalone",
+  "background_color": "#1f5f8b",
+  "theme_color": "#1f5f8b",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}

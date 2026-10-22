@@ -18,6 +18,8 @@ function strip(html) {
     .replace(/<meta charset[^>]*>\s*/i, "")
     .replace(/<meta name="viewport"[^>]*>\s*/i, "")
     .replace(/<title>.*?<\/title>\s*/i, "")
+    .replace(/<link rel="(?:icon|apple-touch-icon|manifest)"[^>]*>\s*/gi, "") // アイコンは Code.gs の setFaviconUrl で設定する
+    .replace(/<meta name="theme-color"[^>]*>\s*/i, "")
     .replace(/<\/?head>\s*/gi, "")
     .replace(/<\/?body>\s*/gi, "");
 }

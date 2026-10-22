@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs><clipPath id="r"><rect width="512" height="512" rx="112"/></clipPath></defs>
+  <g clip-path="url(#r)">
+    <rect width="512" height="512" fill="#1f5f8b"/>
+    <!-- 山並み -->
+    <path d="M-10 404 L150 196 L236 300 L340 150 L522 404 Z" fill="#ffffff"/>
+    <path d="M340 150 L384 214 L362 208 L340 230 L316 204 L298 216 Z" fill="#d6e6f1"/>
+    <path d="M150 196 L184 240 L166 234 L150 252 L134 230 L122 236 Z" fill="#d6e6f1"/>
+    <!-- 手前の地面 -->
+    <rect y="404" width="512" height="108" fill="#174a6e"/>
+    <!-- 道しるべの支柱 -->
+    <rect x="245" y="282" width="22" height="160" rx="8" fill="#1d2a33"/>
+    <rect x="214" y="434" width="84" height="14" rx="7" fill="#1d2a33"/>
+    <!-- 案内板（入試ナビ：右向き） -->
+    <path d="M182 300 H322 L350 324 L322 348 H182 Z" fill="#7db7e0" stroke="#1d2a33" stroke-width="7" stroke-linejoin="round"/>
+    <!-- 案内板（イベントナビ：左向き） -->
+    <path d="M330 358 H190 L162 382 L190 406 H330 Z" fill="#e3a37c" stroke="#1d2a33" stroke-width="7" stroke-linejoin="round"/>
+  </g>
+</svg>
