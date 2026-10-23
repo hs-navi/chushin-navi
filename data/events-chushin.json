@@ -288,6 +288,17 @@
       "srcLabel": "田川高校 入試情報"
     },
     {
+      "school": "tagawa",
+      "kind": "公開授業",
+      "title": "授業公開（5・6時限。保護者向け授業参観と併せて実施）",
+      "date": "2026-10-08",
+      "time": "13:10〜14:50",
+      "target": "どなたでも",
+      "apply": "申込不要",
+      "src": "https://www.pref.nagano.lg.jp/kyoiku/kyogaku/gyose/zenpan/tokei/gakuryoku/documents/documents/r8_koukai_kouki.pdf",
+      "srcLabel": "県教委 公開授業一覧（令和8年10月〜令和9年3月）"
+    },
+    {
       "school": "azusagawa",
       "kind": "公開授業",
       "title": "公開授業週間",
@@ -377,11 +388,12 @@
       "kind": "学校説明会",
       "title": "秋季 公開授業・学校説明会（クラブ見学・体験）",
       "date": "2026-11-05",
-      "time": "受付12:05、説明会12:40〜13:30、公開授業13:40〜15:30",
+      "time": "受付12:05、説明会12:40〜13:30、公開授業13:40〜15:30、クラブ見学・体験15:40〜16:30（体験は事前申込者のみ）",
       "target": "中学生・保護者・中学校の先生",
-      "apply": "中学校を通して事前申込（クラブ体験も要申込）",
-      "src": "https://www.nagano-c.ed.jp/kikyo/openclass.html",
-      "srcLabel": "塩尻志学館 公開授業・学校説明会"
+      "apply": "中学校を通して事前申込（クラブ体験も要申込。中学校から高校への提出は10/30まで）",
+      "src": "https://www.nagano-c.ed.jp/kikyo/img/R8TaikenNyugakuSetumeikai_yokou.pdf",
+      "srcLabel": "塩尻志学館 学校説明会と公開授業について（案内）",
+      "deadline": "2026-10-30"
     },
     {
       "school": "toyoshina",
@@ -505,6 +517,19 @@
       "apply": "Googleフォームから申込",
       "src": "https://kisoseiho-hs.ed.jp/2026/08/31/%e3%80%90%e5%85%a8%e5%9b%bd%e5%8b%9f%e9%9b%86%e3%80%91%e7%a7%8b%e3%81%ae%e3%82%aa%e3%83%bc%e3%83%97%e3%83%b3%e3%83%8f%e3%82%a4%e3%82%b9%e3%82%af%e3%83%bc%e3%83%ab/",
       "srcLabel": "木曽青峰 お知らせ"
+    },
+    {
+      "school": "kisoseiho",
+      "kind": "体験入学",
+      "title": "定時制 体験入学",
+      "date": "2026-10-09",
+      "time": "18:00〜20:00",
+      "target": "",
+      "apply": "中学校を通して申込（10/2正午まで）",
+      "deadline": "2026-10-02",
+      "deadlineTime": "12:00",
+      "src": "https://kisoseiho-hs.ed.jp/2026/05/19/%e4%bb%a4%e5%92%8c8%e5%b9%b4%e5%ba%a6%e4%bd%93%e9%a8%93%e5%85%a5%e5%ad%a6%e3%81%ab%e9%96%a2%e3%81%97%e3%81%a6/",
+      "srcLabel": "木曽青峰 令和8年度体験入学に関して"
     },
     {
       "school": "sonan",

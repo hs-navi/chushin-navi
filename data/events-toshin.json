@@ -393,12 +393,12 @@
       "kind": "体験入学",
       "title": "体験入学（音楽科）",
       "date": "2026-06-20",
-      "time": "要確認",
+      "time": "要確認（学校ページに終了の記載。時間は未掲載）",
       "place": "小諸義塾高校",
       "target": "中学生",
-      "apply": "要確認（学校の案内を確認できていません）",
-      "src": "https://www.komorogijuku-hs.ed.jp/",
-      "srcLabel": "小諸義塾 行事日程（トップページ）・県教委 令和8年度体験入学実施日程一覧（第2通学区）"
+      "apply": "各中学校の進路担当の先生を通じて申込（5月中旬に県内中学校へ郵送。実施済み）",
+      "src": "https://www.komorogijuku-hs.ed.jp/music-tokusetsu",
+      "srcLabel": "小諸義塾 音楽科特設ページ（お知らせ）"
     },
     {
       "school": "komorogijuku",
@@ -1549,6 +1549,114 @@
       "deadline": "2026-11-20",
       "src": "https://uedanishi.ed.jp/examinee/schedule/",
       "srcLabel": "上田西 学校見学会・体験会情報（詳細は未掲載）"
+    },
+    {
+      "school": "komorogijuku",
+      "kind": "学校説明会",
+      "title": "音楽科説明会",
+      "date": "2026-10-10",
+      "time": "受付9:00〜／説明会9:20〜11:00（ミニコンサート9:25〜、学校説明10:10〜）／吹奏楽部見学11:10〜11:50・体験レッスン・個別相談11:10〜16:00（希望者）",
+      "place": "小諸義塾高校（音楽科）",
+      "target": "中学生と保護者（中学1・2年生も参加可）",
+      "apply": "各中学校の進路担当の先生を通じて申込（申込は締切済み。実施済み）",
+      "src": "https://www.komorogijuku-hs.ed.jp/music-tokusetsu",
+      "srcLabel": "小諸義塾 音楽科説明会 実施要項（音楽科特設ページ）"
+    },
+    {
+      "school": "komorogijuku",
+      "kind": "その他",
+      "title": "音楽科受験講習会",
+      "date": "2026-11-14",
+      "time": "要確認（時間は未掲載）",
+      "place": "要確認",
+      "target": "音楽科を受験する中学生",
+      "apply": "各中学校の進路担当の先生を通じて申込（10/13に県内中学校へ郵送済み）。県外からの参加希望はメールで連絡",
+      "src": "https://www.komorogijuku-hs.ed.jp/music-tokusetsu",
+      "srcLabel": "小諸義塾 音楽科特設ページ（お知らせ）"
+    },
+    {
+      "school": "code-academy",
+      "kind": "学校説明会",
+      "title": "オンライン学校説明会",
+      "date": "2026-06-15",
+      "time": "18:00〜18:30",
+      "place": "オンライン",
+      "target": "新入学・転入学に関心のある生徒と保護者",
+      "apply": "申込フォームから事前申込（締切は前日19時）",
+      "src": "https://www.code.ac.jp/news?category=%E5%AD%A6%E6%A0%A1%E8%AA%AC%E6%98%8E%E4%BC%9A",
+      "srcLabel": "コードアカデミー 新着・説明会"
+    },
+    {
+      "school": "code-academy",
+      "kind": "学校説明会",
+      "title": "オンライン進学相談会",
+      "date": "2026-08-10",
+      "time": "16:00〜16:40",
+      "place": "オンライン",
+      "target": "新入学・転入学に関心のある生徒と保護者",
+      "apply": "申込フォームから事前申込（締切は前日19時）",
+      "src": "https://www.code.ac.jp/news?category=%E5%AD%A6%E6%A0%A1%E8%AA%AC%E6%98%8E%E4%BC%9A",
+      "srcLabel": "コードアカデミー 新着・説明会"
+    },
+    {
+      "school": "code-academy",
+      "kind": "学校説明会",
+      "title": "オンライン相談会",
+      "date": "2026-10-01",
+      "time": "18:00〜18:40",
+      "place": "オンライン",
+      "target": "新入学・転入学に関心のある生徒と保護者",
+      "apply": "申込フォームから事前申込（締切は前日19時）",
+      "src": "https://www.code.ac.jp/news?category=%E5%AD%A6%E6%A0%A1%E8%AA%AC%E6%98%8E%E4%BC%9A",
+      "srcLabel": "コードアカデミー 新着・説明会"
+    },
+    {
+      "school": "ueda-chikuma",
+      "kind": "部活動体験",
+      "title": "野球班体験",
+      "date": "2026-07-29",
+      "time": "10:30〜12:30（バッティング練習・守備練習）",
+      "place": "上田千曲高校 グラウンド",
+      "target": "体験入学に参加する希望者",
+      "apply": "体験入学のGoogleフォームに加え、学校ごとの野球班体験入部専用申込用紙で事前申込（要予約）。公式ページは曜日を「火」と書いているが日付は7/29",
+      "src": "https://www.nagano-c.ed.jp/chikuma/infomation/j_school/index.html",
+      "srcLabel": "上田千曲 中学生の皆さんへ（体験入学）"
+    },
+    {
+      "school": "uedanishi",
+      "kind": "学校説明会",
+      "title": "中学校の先生向け学校説明会（佐久会場）",
+      "date": "2026-08-27",
+      "time": "要確認（時間は未掲載）",
+      "place": "佐久会場",
+      "target": "中学校の先生",
+      "apply": "要確認",
+      "src": "https://uedanishi.ed.jp/examinee/schedule/",
+      "srcLabel": "上田西 学校見学会・体験会情報"
+    },
+    {
+      "school": "uedanishi",
+      "kind": "学校説明会",
+      "title": "中学校の先生向け学校説明会（長野会場）",
+      "date": "2026-08-28",
+      "time": "要確認（時間は未掲載）",
+      "place": "長野会場",
+      "target": "中学校の先生",
+      "apply": "要確認",
+      "src": "https://uedanishi.ed.jp/examinee/schedule/",
+      "srcLabel": "上田西 学校見学会・体験会情報"
+    },
+    {
+      "school": "uedanishi",
+      "kind": "学校説明会",
+      "title": "中学校の先生向け学校説明会（上田会場）",
+      "date": "2026-08-31",
+      "time": "要確認（時間は未掲載）",
+      "place": "上田会場",
+      "target": "中学校の先生",
+      "apply": "要確認",
+      "src": "https://uedanishi.ed.jp/examinee/schedule/",
+      "srcLabel": "上田西 学校見学会・体験会情報"
     }
   ]
 }
