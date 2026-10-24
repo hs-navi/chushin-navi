@@ -1578,6 +1578,18 @@
       "school": "code-academy",
       "kind": "学校説明会",
       "title": "オンライン学校説明会",
+      "date": "2026-05-27",
+      "time": "18:00〜18:30",
+      "place": "オンライン",
+      "target": "新入学・転入学に関心のある生徒と保護者",
+      "apply": "申込フォームから事前申込（締切は前日19時）",
+      "src": "https://www.code.ac.jp/news?category=%E5%AD%A6%E6%A0%A1%E8%AA%AC%E6%98%8E%E4%BC%9A",
+      "srcLabel": "コードアカデミー 新着・説明会"
+    },
+    {
+      "school": "code-academy",
+      "kind": "学校説明会",
+      "title": "オンライン学校説明会",
       "date": "2026-06-15",
       "time": "18:00〜18:30",
       "place": "オンライン",
