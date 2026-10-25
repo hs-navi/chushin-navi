@@ -668,13 +668,14 @@
       "kind": "オープンスクール",
       "title": "第3回 オープンスクール（学校説明・入試説明）",
       "date": "2026-11-07",
-      "time": "受付9:00、学校説明9:30〜10:15、体験・見学10:30〜12:30",
+      "time": "受付9:00〜9:30、全体説明9:30〜10:15、体験授業10:30〜12:30（科コース系列ごと）、個別相談12:30〜",
+      "place": "本校体育館ほか",
       "target": "中学生と保護者",
-      "apply": "Web予約",
+      "apply": "Web予約（本校HP「入試イベント」から。志望学科・コース・系列と保護者氏名を記入）。食物科の一般入試A方式は、この回か12/1の学校見学会のどちらかへの参加が受験条件",
       "deadline": "2026-10-30",
       "deadlineTime": "17:00",
-      "src": "https://mirai-compass.net/usr/mtmt1h/event/evtIndex.jsf",
-      "srcLabel": "松本第一 イベント予約ページ"
+      "src": "https://www.matsumoto1-h.ed.jp/news/admissions/20106/",
+      "srcLabel": "松本第一 第3回オープンスクールのご案内"
     },
     {
       "school": "daiichi",
@@ -683,7 +684,7 @@
       "date": "2026-12-01",
       "time": "",
       "target": "中学生と保護者",
-      "apply": "Web予約（11/9 9:00から受付）",
+      "apply": "Web予約（11/9 9:00から受付）。食物科の一般入試A方式は、11/7の第3回オープンスクールか、この見学会のどちらかへの参加が受験条件（松本第一 10/16付お知らせ）",
       "deadline": "2026-11-24",
       "deadlineTime": "17:00",
       "src": "https://mirai-compass.net/usr/mtmt1h/event/evtIndex.jsf",
