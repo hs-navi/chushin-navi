@@ -1369,21 +1369,22 @@
       "time": "受付13:00〜／授業 13:00〜15:20（4〜6時限）／クラブ見学 15:50〜17:00",
       "place": "上田千曲高校",
       "target": "中学3年生・中学校教職員・在校生の保護者",
-      "apply": "要確認（案内に申込の記載なし）",
+      "apply": "要確認（案内に申込の記載なし）。当日のクラブ活動状況は学校が資料で公開（卓球班・バドミントン班（男女）は当日大会等のため活動なし）",
       "src": "https://www.nagano-c.ed.jp/chikuma/img/R08_1030koukaijyugyou_annai.pdf",
       "srcLabel": "上田千曲 公開授業のご案内"
     },
     {
       "school": "ueda-chikuma",
       "kind": "学校説明会",
-      "title": "学校見学会（定時制・工業（機械））",
+      "title": "定時制 体験入学（工業（機械））",
       "date": "2026-11-04",
       "time": "17:35〜17:55受付／18:00〜18:30説明会／18:40〜19:40授業見学／19:40〜個別相談（希望者）",
-      "place": "上田千曲高校 会議室ほか",
-      "target": "中学生",
-      "apply": "中学校を通じて申込（中学校既卒者は申込用紙を郵送・FAX・メール。用紙は準備中）",
-      "src": "https://www.nagano-c.ed.jp/chikuma/infomation/j_school/index.html",
-      "srcLabel": "上田千曲 中学生の皆さんへ"
+      "place": "上田千曲高校 会議室・各教室ほか",
+      "target": "中学生（定時制への入学希望者と保護者、引率職員）。夜間のため、中学生は必ず保護者の同伴か中学校の先生の引率が必要",
+      "apply": "中学校で参加者をとりまとめ、所定の申込用紙をメールまたはFAXで送信（中学校既卒・高校在籍・中退の方は個人用の申込用紙）",
+      "src": "https://www.nagano-c.ed.jp/chikuma/teiji/00top/R8　中学校宛お知らせ.pdf",
+      "srcLabel": "上田千曲 定時制 令和8年度 体験入学の開催について（お知らせ）",
+      "deadline": "2026-10-26"
     },
     {
       "school": "ueda-chikuma",
@@ -1453,9 +1454,9 @@
       "time": "要確認",
       "place": "上田染谷丘高校",
       "target": "中学3年生",
-      "apply": "要確認",
-      "src": "https://www.pref.nagano.lg.jp/kyoiku/kyogaku/documents/r8taiken_2toushin.pdf",
-      "srcLabel": "県教委 令和8年度体験入学実施日程一覧（第2通学区）"
+      "apply": "要確認（申込方法は公式サイトに掲載なし。学校サイトに7/25開催の報告あり）",
+      "src": "https://uedasomeya.ed.jp/notice/体験入学/",
+      "srcLabel": "上田染谷丘 お知らせ「体験入学」（開催報告）"
     },
     {
       "school": "ueda-someyagaoka",

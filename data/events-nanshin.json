@@ -365,9 +365,10 @@
       "time": "8:40受付〜13:00（クラブ体験は事前申込者のみ11:20〜）",
       "place": "茅野高校 小体育館等",
       "target": "中学校及び義務教育学校の生徒",
-      "apply": "中学校ごとに申込書（様式1）をメールで chino-hs@pref.nagano.lg.jp へ送付。締切は要確認",
-      "src": "https://www.chino-hs.ed.jp/future-students/guidance/",
-      "srcLabel": "茅野高校 学校説明会・体験入学"
+      "apply": "中学校ごとに申込書（様式1）をメールで chino-hs@pref.nagano.lg.jp へ送付。同意書（様式2）は保護者が記入し当日受付へ提出",
+      "src": "https://www.chino-hs.ed.jp/wp/wp-content/uploads/2026/05/【別紙1】体験入学申込みについて-1.pdf",
+      "srcLabel": "茅野高校 令和8年度体験入学申込みについて（別紙1）",
+      "deadline": "2026-07-06"
     },
     {
       "school": "chino",
@@ -825,9 +826,9 @@
       "time": "受付8:30〜（9:00ホームルーム、授業見学、体験授業10:25〜11:25、昼食、12:30〜13:30クラブ体験・見学）",
       "place": "伊那西高校",
       "target": "中学3年生の女子生徒・保護者・中学校の先生（上伊那地区以外の人はどの日でも参加可）",
-      "apply": "イベント予約サイト（mirai-compass）から申込。日付は「中学生の皆様へ」ページによる（体験入学ページには9/10・9/11と別の日付の記載があり要確認）",
-      "src": "https://www.inanishi.net/eventinformation",
-      "srcLabel": "伊那西 中学生の皆様へ／一日体験入学（年の表記なし）"
+      "apply": "イベント予約サイト（mirai-compass）から申込（イベント名に「9月9日(水)，10日(木)」と記載）",
+      "src": "https://mirai-compass.net/usr/innsh/event/evtIndex.jsf",
+      "srcLabel": "伊那西 イベント予約サイト（mirai-compass）／一日体験入学(9月9日(水)，10日(木))"
     },
     {
       "school": "inanishi",
@@ -837,9 +838,9 @@
       "time": "受付8:30〜（9:00ホームルーム、授業見学、体験授業10:25〜11:25、昼食、12:30〜13:30クラブ体験・見学）",
       "place": "伊那西高校",
       "target": "中学3年生の女子生徒・保護者・中学校の先生（上伊那地区以外の人はどの日でも参加可）",
-      "apply": "イベント予約サイト（mirai-compass）から申込。日付は「中学生の皆様へ」ページによる（体験入学ページには9/10・9/11と別の日付の記載があり要確認）",
-      "src": "https://www.inanishi.net/eventinformation",
-      "srcLabel": "伊那西 中学生の皆様へ／一日体験入学（年の表記なし）"
+      "apply": "イベント予約サイト（mirai-compass）から申込（イベント名に「9月9日(水)，10日(木)」と記載）",
+      "src": "https://mirai-compass.net/usr/innsh/event/evtIndex.jsf",
+      "srcLabel": "伊那西 イベント予約サイト（mirai-compass）／一日体験入学(9月9日(水)，10日(木))"
     },
     {
       "school": "inanishi",
@@ -1467,6 +1468,17 @@
       "deadline": "2026-07-16",
       "src": "https://takatohs.i-school.jp/file/2305",
       "srcLabel": "高遠高校 令和8年度体験入学要項"
+    },
+    {
+      "school": "takato",
+      "kind": "公開授業",
+      "title": "秋の公開授業",
+      "date": "2026-11-06",
+      "time": "9:15〜12:05（1〜3時限）",
+      "place": "高遠高校 各教室",
+      "apply": "事前申込は不要（当日、生徒玄関から入り机上の受付用紙に記入。上履き持参）",
+      "src": "https://takatohs.i-school.jp/chugakusei",
+      "srcLabel": "高遠高校 体験入学・公開授業（令和8年度秋の公開授業のご案内）"
     },
     {
       "school": "tatsuno",

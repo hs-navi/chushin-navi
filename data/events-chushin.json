@@ -774,6 +774,7 @@
       "target": "",
       "apply": "Web予約",
       "deadline": "2026-11-11",
+      "deadlineTime": "23:59",
       "src": "https://mirai-compass.net/usr/eksrnh/event/evtIndex.jsf",
       "srcLabel": "エクセラン イベント予約ページ"
     },
@@ -786,6 +787,7 @@
       "target": "",
       "apply": "Web予約",
       "deadline": "2026-11-18",
+      "deadlineTime": "23:59",
       "src": "https://mirai-compass.net/usr/eksrnh/event/evtIndex.jsf",
       "srcLabel": "エクセラン イベント予約ページ"
     },
@@ -1219,7 +1221,7 @@
       "kind": "体験入学",
       "title": "中3生向け体験会「体験しよう！テラ・スコラ」",
       "date": "2026-11-20",
-      "time": "10:00〜16:20",
+      "time": "10:00〜16:20（3つの枠から選択。1・2限10:00〜11:50、3・4限12:30〜14:20、5・6限14:30〜16:20）",
       "place": "信濃むつみ高校（松本市南松本）",
       "target": "中学3年生と保護者",
       "apply": "要予約（Googleフォーム）",
