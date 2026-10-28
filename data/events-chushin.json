@@ -374,14 +374,15 @@
     {
       "school": "misuzugaoka",
       "kind": "学校説明会",
-      "title": "地域公開授業・学校説明会",
+      "title": "学校説明会（地域公開授業と併せて実施）",
       "date": "2026-12-03",
-      "time": "受付9:30、授業見学10:05〜12:05、学校概要12:10〜12:30",
-      "target": "",
-      "apply": "個人でWebフォームから申込",
-      "deadline": "2026-11-06",
-      "src": "https://misuzu-hs.ed.jp/information/14940",
-      "srcLabel": "美須々ケ丘 お知らせ"
+      "time": "受付13:20〜、学校説明会13:40〜14:20",
+      "target": "生徒及び保護者",
+      "apply": "URLまたはQRコードのGoogleフォームから申込",
+      "deadline": "2026-11-27",
+      "src": "https://misuzu-hs.ed.jp/information/18548",
+      "srcLabel": "美須々ケ丘 12月3日 学校説明会のご案内",
+      "place": "本校 視聴覚室"
     },
     {
       "school": "shiojiri",
