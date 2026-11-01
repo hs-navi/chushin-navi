@@ -5,7 +5,7 @@
       "name": "長野県教育委員会",
       "area": "松本市",
       "type": "県教委",
-      "url": "https://www.pref.nagano.lg.jp/chushinkyo/documents/orientation.html",
+      "url": "https://www.pref.nagano.lg.jp/kyoiku/kokoro/shido/kokoshingakukai.html",
       "note": "不登校などの生徒・保護者向けの高校進学説明会"
     },
     {
@@ -211,8 +211,8 @@
       "place": "松本合同庁舎",
       "target": "不登校や不登校傾向などの中学生と保護者",
       "apply": "申込不要",
-      "src": "https://www.pref.nagano.lg.jp/chushinkyo/documents/orientation.html",
-      "srcLabel": "中信教育事務所"
+      "src": "https://www.pref.nagano.lg.jp/kyoiku/kokoro/shido/documents/r8kokoshingakusetumei.pdf",
+      "srcLabel": "県教委 心の支援課（高校進学説明会）"
     },
     {
       "school": "pref",
@@ -223,8 +223,8 @@
       "place": "松本合同庁舎（松本市島立1020）",
       "target": "不登校や不登校傾向などの中学生と保護者（既卒生も可）",
       "apply": "申込不要（当日、出席カードを提出）",
-      "src": "https://www.pref.nagano.lg.jp/chushinkyo/documents/orientation.html",
-      "srcLabel": "中信教育事務所"
+      "src": "https://www.pref.nagano.lg.jp/kyoiku/kokoro/shido/documents/r8kokoshingakusetumei.pdf",
+      "srcLabel": "県教委 心の支援課（高校進学説明会）"
     },
     {
       "school": "chikuma",
