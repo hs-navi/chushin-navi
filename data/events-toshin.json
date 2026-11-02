@@ -690,11 +690,11 @@
     {
       "school": "nozawa-minami",
       "kind": "学校説明会",
-      "title": "定時制説明会（教職員向け）",
+      "title": "定時制説明会",
       "date": "2026-10-02",
       "time": "17:30〜",
       "place": "野沢南高校 定時制",
-      "target": "中学校教職員",
+      "target": "中学生・保護者（学校ページの記載。以前は中学校教職員向けと記載していた）",
       "apply": "詳細は佐久地域の中学校に通知。要確認",
       "src": "https://www.nagano-c.ed.jp/nominami/nonan-teiz/index.html",
       "srcLabel": "野沢南 定時制HP"
