@@ -348,6 +348,18 @@
     },
     {
       "school": "agatagaoka",
+      "kind": "公開授業",
+      "title": "中学生対象の授業公開（探究科生徒との座談会あり）",
+      "date": "2026-07-13",
+      "end": "2026-07-17",
+      "time": "9:55〜11:45、13:40〜15:30（15:40〜探究科座談会は13・14・17日のみ）",
+      "target": "中学生",
+      "apply": "各中学校の先生を通じて申込",
+      "src": "https://kenryo.ed.jp/wp/wp-content/uploads/2026/06/f9b948bfe980565fea0f30e2b3b65593-1.pdf",
+      "srcLabel": "県ケ丘 令和8年度 中学生対象の授業公開の日程"
+    },
+    {
+      "school": "agatagaoka",
       "kind": "学校説明会",
       "title": "探究科（自然探究科・国際探究科）説明会",
       "date": "2026-11-07",
@@ -437,7 +449,7 @@
       "kind": "公開授業",
       "title": "授業公開（全教科）",
       "date": "2026-10-27",
-      "time": "12:45〜15:20（4〜6時限）",
+      "time": "12:45〜15:20（4〜6時限）（※県教委の9/28版一覧では13:00〜14:50・4〜5時限）",
       "target": "",
       "apply": "事前に教頭へ申込（0263-62-4388）",
       "src": "https://www.nagano-c.ed.jp/aksn-hs/information/R8_JyugyoKokaiHenkou.pdf",
@@ -517,8 +529,8 @@
       "time": "10:00〜13:00",
       "target": "全国から募集",
       "apply": "Googleフォームから申込",
-      "src": "https://kisoseiho-hs.ed.jp/2026/08/31/%e3%80%90%e5%85%a8%e5%9b%bd%e5%8b%9f%e9%9b%86%e3%80%91%e7%a7%8b%e3%81%ae%e3%82%aa%e3%83%bc%e3%83%97%e3%83%b3%e3%83%8f%e3%82%a4%e3%82%b9%e3%82%af%e3%83%bc%e3%83%ab/",
-      "srcLabel": "木曽青峰 お知らせ"
+      "src": "https://kisoseiho-hs.ed.jp/mirai-ryugaku/",
+      "srcLabel": "木曽青峰 地域みらい留学（秋のオープンハイスクール）"
     },
     {
       "school": "kisoseiho",
@@ -725,7 +737,7 @@
       "date": "2026-11-07",
       "time": "9:30〜11:30（受付9:00〜）",
       "target": "",
-      "apply": "Web予約",
+      "apply": "Web予約（受付終了）",
       "src": "https://mirai-compass.net/usr/tsojrh/event/evtIndex.jsf",
       "srcLabel": "東京都市大学塩尻 イベント予約ページ",
       "deadline": "2026-11-04",
