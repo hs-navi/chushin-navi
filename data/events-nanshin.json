@@ -849,7 +849,7 @@
       "date": "2026-11-14",
       "time": "9:00〜14:00（プログラムⅠ 授業見学・学校紹介 9:40〜11:25〔受付9:40〜10:40〕、Ⅱ 体験授業 11:50〜12:30〔受付11:20〜11:40〕、Ⅲ クラブ体験・個別相談会 13:00〜14:00〔受付12:20〜12:40〕。希望に応じて組み合わせ可）",
       "apply": "イベント予約サイト（mirai-compass）から申込（受付は2026-10-06から）",
-      "deadline": "2026-11-06",
+      "deadline": "2026-11-09",
       "deadlineTime": "17:00",
       "src": "https://mirai-compass.net/usr/innsh/event/evtIndex.jsf",
       "srcLabel": "伊那西 イベント予約（mirai-compass）",
@@ -1028,6 +1028,18 @@
       "apply": "不要",
       "src": "https://www.pref.nagano.lg.jp/kyoiku/kyogaku/gyose/zenpan/tokei/gakuryoku/documents/r03koukai.html",
       "srcLabel": "県教委 令和8年度 公開授業一覧（前期・後期）"
+    },
+    {
+      "school": "matsukawa",
+      "kind": "学校説明会",
+      "title": "授業公開・進学相談会・部活動見学会",
+      "date": "2026-12-03",
+      "time": "受付13:50〜14:20、授業公開14:30〜15:20、進学相談会15:30〜15:50（大会議室）、部活動見学16:00〜16:30（希望者）",
+      "place": "松川高校 各教室、体育施設他（受付は正面玄関）",
+      "target": "関係中学校の3年生・保護者、中学校教職員",
+      "apply": "事前の申込は不要（上履き持参。受付簿に記入）",
+      "src": "https://matsukawa-hs.ed.jp/wp-content/uploads/2026/11/R８松川高校進学相談会案内.pdf",
+      "srcLabel": "松川高校 授業公開・進学相談会・部活動見学会について（ご案内）"
     },
     {
       "school": "minowa-shinshu",
