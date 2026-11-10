@@ -1090,26 +1090,26 @@
     {
       "school": "sakuchosei",
       "kind": "学校説明会",
-      "title": "入試説明会（2026年度入試分析・2027年度入試について）",
+      "title": "第1回 入試説明会（在校生体験談・2026年度入試分析・2027年度入試について・Web出願について）",
       "date": "2026-11-28",
       "time": "10:00〜11:10",
       "place": "佐久長聖高等学校（佐久市岩村田）",
       "target": "",
-      "apply": "事前Web申込",
-      "src": "https://sakuchosei.ed.jp/exam/hs-session/",
-      "srcLabel": "佐久長聖 高校 学校説明会・オープンスクール"
+      "apply": "事前Web申込（申込フォームから）。個別相談もあり。第1回と第2回の内容は同じ。上履き・下足入れを持参",
+      "src": "https://sakuchosei.ed.jp/hs-news/entrance-exam-info-session-sh/",
+      "srcLabel": "佐久長聖 入試説明会を開催します"
     },
     {
       "school": "sakuchosei",
       "kind": "学校説明会",
-      "title": "入試説明会（2026年度入試分析・2027年度入試について）",
+      "title": "第2回 入試説明会（在校生体験談・2026年度入試分析・2027年度入試について・Web出願について）",
       "date": "2026-12-05",
       "time": "10:00〜11:10",
       "place": "佐久長聖高等学校（佐久市岩村田）",
       "target": "",
-      "apply": "事前Web申込",
-      "src": "https://sakuchosei.ed.jp/exam/hs-session/",
-      "srcLabel": "佐久長聖 高校 学校説明会・オープンスクール"
+      "apply": "事前Web申込（申込フォームから）。個別相談もあり。第1回と第2回の内容は同じ。上履き・下足入れを持参",
+      "src": "https://sakuchosei.ed.jp/hs-news/entrance-exam-info-session-sh/",
+      "srcLabel": "佐久長聖 入試説明会を開催します"
     },
     {
       "school": "sakura-kokusai",
