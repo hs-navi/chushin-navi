@@ -479,6 +479,19 @@
     },
     {
       "school": "minaminou",
+      "kind": "公開授業",
+      "title": "公開授業（2〜3時限）",
+      "date": "2026-09-28",
+      "time": "受付9:45〜11:40、公開授業10:05〜11:55（2〜3時限目・出入り自由）",
+      "place": "本校（生徒昇降口で受付）",
+      "target": "本校の学びに興味関心をもつ生徒と保護者",
+      "apply": "QRコードのGoogleフォームから生徒個人で申込（9/18まで）",
+      "deadline": "2026-09-18",
+      "src": "https://www.nagano-c.ed.jp/nanno-hs/pdf/R8koukai.pdf",
+      "srcLabel": "南安曇農業 公開授業のご案内（8/21）"
+    },
+    {
+      "school": "minaminou",
       "kind": "その他",
       "title": "卒業論文発表会（予定）",
       "date": "2027-01-30",
@@ -696,13 +709,13 @@
       "kind": "公開授業",
       "title": "第2回 学校見学会（授業公開・学校説明・入試説明）",
       "date": "2026-12-01",
-      "time": "",
+      "time": "受付9:30〜9:50（体育館前）、全体説明9:50〜10:30、施設見学10:30〜11:00、各科・コース説明・個別相談11:00〜12:00",
       "target": "中学生と保護者",
-      "apply": "Web予約（11/9 9:00から受付）。食物科の一般入試A方式は、11/7の第3回オープンスクールか、この見学会のどちらかへの参加が受験条件（松本第一 10/16付お知らせ）",
+      "apply": "Web予約（本校HPの「入試イベント」から。申込期間 11/9〜11/24）。食物科の一般入試A方式は、11/7の第3回オープンスクールか、この見学会のどちらかへの参加が受験条件",
       "deadline": "2026-11-24",
       "deadlineTime": "17:00",
-      "src": "https://mirai-compass.net/usr/mtmt1h/event/evtIndex.jsf",
-      "srcLabel": "松本第一 イベント予約ページ"
+      "src": "https://www.matsumoto1-h.ed.jp/news/admissions/20199/",
+      "srcLabel": "松本第一 第2回学校見学会（12/1）のお知らせ"
     },
     {
       "school": "tcu",
@@ -786,7 +799,7 @@
       "date": "2026-11-14",
       "time": "9:00〜12:00",
       "target": "",
-      "apply": "Web予約",
+      "apply": "Web予約（受付終了）",
       "deadline": "2026-11-11",
       "deadlineTime": "23:59",
       "src": "https://mirai-compass.net/usr/eksrnh/event/evtIndex.jsf",

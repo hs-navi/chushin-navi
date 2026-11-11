@@ -406,10 +406,11 @@
       "date": "2026-12-04",
       "time": "受付 18:00〜18:10／説明会・進学相談 18:10〜19:00",
       "place": "要確認",
-      "target": "中学生・保護者（保護者の方と必ず一緒に参加。公式ページより）",
-      "apply": "詳細は開催の1か月前までに各中学校宛に通知（公式ページより）",
-      "src": "https://hokubu-hs.ed.jp/junior-high-students/",
-      "srcLabel": "北部高校 中学生のみなさんへ"
+      "target": "中学生・保護者（保護者の方と一緒に参加）",
+      "apply": "チラシのQRコードから申込（問い合わせは中学校の先生を通じて北部高校へ）",
+      "src": "https://hokubu-hs.ed.jp/wp/wp-content/uploads/2026/11/%EF%BC%92%EF%BC%90%EF%BC%92%EF%BC%96%E5%AD%A6%E6%A0%A1%E8%AA%AC%E6%98%8E%E4%BC%9A.pdf",
+      "srcLabel": "北部高校 2026 学校説明会チラシ（PDF）",
+      "deadline": "2026-11-30"
     },
     {
       "school": "iiyama",
@@ -676,7 +677,7 @@
       "kind": "学校説明会",
       "title": "学校説明会（定時制）",
       "date": "2026-11-13",
-      "time": "受付18:00〜18:30、全体説明18:30〜19:00、授業見学19:05〜",
+      "time": "受付18:00〜18:30、全体説明18:30〜19:00、授業見学19:05〜、懇談会・授業見学19:55〜",
       "place": "長野工業高校",
       "target": "中学3年生・中学卒業生と保護者、中学校教員",
       "apply": "申込書をメールで送付（中学校ごとにまとめて）",
@@ -1359,6 +1360,19 @@
       "apply": "事前申込の記載なし（Zoomで参加）。開始5〜10分前までに入室。録画・録音・画面撮影は禁止",
       "src": "https://chosho-hs.ed.jp/wp-content/uploads/2026/10/R8_gakkousetumeikai.pdf",
       "srcLabel": "令和9年度 入学者選抜（全日制）オンライン学校説明会 案内"
+    },
+    {
+      "school": "nagano-shogyo",
+      "kind": "公開授業",
+      "title": "定時制 公開授業（全教科）",
+      "date": "2026-11-30",
+      "end": "2026-12-04",
+      "time": "15:20〜20:30（特設授業〜4時限）",
+      "place": "長野商業高校",
+      "target": "中学生・保護者、中学校の先生",
+      "apply": "事前に電話で申込（定時制直通 026-234-1357）。学校見学も随時受付（電話で事前申込）",
+      "src": "https://chosho-hs.ed.jp/wp-content/uploads/2026/11/teijikoukaijugyou-1.pdf",
+      "srcLabel": "長野商業 定時制公開授業について（ご案内）"
     },
     {
       "school": "nagano-shunei",
