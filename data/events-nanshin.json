@@ -1238,6 +1238,30 @@
       "srcLabel": "南信教育事務所 ほんわか相談会"
     },
     {
+      "school": "pref-nanshin",
+      "kind": "その他",
+      "title": "不登校や不登校傾向等の中学生・保護者のための高校進学説明会（飯田会場・第1回）",
+      "date": "2026-10-23",
+      "time": "相談時間 17:00〜19:30",
+      "place": "飯田合同庁舎（飯田市）",
+      "target": "不登校や不登校傾向等の中学生・保護者",
+      "apply": "要確認（詳細は南信教育事務所飯田事務所 0265-53-0461 へ問い合わせ）",
+      "src": "https://www.pref.nagano.lg.jp/kyoiku/kokoro/shido/documents/r8kokoshingakusetumei.pdf",
+      "srcLabel": "県教委 不登校や不登校傾向等の中学生・保護者のための高校進学説明会（PDF）"
+    },
+    {
+      "school": "pref-nanshin",
+      "kind": "その他",
+      "title": "不登校や不登校傾向等の中学生・保護者のための高校進学説明会（飯田会場・第2回）",
+      "date": "2026-11-06",
+      "time": "相談時間 17:00〜19:30",
+      "place": "飯田合同庁舎（飯田市）",
+      "target": "不登校や不登校傾向等の中学生・保護者",
+      "apply": "要確認（詳細は南信教育事務所飯田事務所 0265-53-0461 へ問い合わせ）",
+      "src": "https://www.pref.nagano.lg.jp/kyoiku/kokoro/shido/documents/r8kokoshingakusetumei.pdf",
+      "srcLabel": "県教委 不登校や不登校傾向等の中学生・保護者のための高校進学説明会（PDF）"
+    },
+    {
       "school": "shimoina-nogyo",
       "kind": "公開授業",
       "title": "授業公開",

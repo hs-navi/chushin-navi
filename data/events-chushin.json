@@ -53,7 +53,7 @@
       "name": "田川",
       "area": "塩尻市",
       "type": "公立",
-      "url": "https://www.nagano-c.ed.jp/tagawahs/entrance_examination.html",
+      "url": "https://tagawa-hs.ed.jp/junior-high/",
       "note": ""
     },
     {
@@ -284,8 +284,8 @@
       "target": "中学生と保護者",
       "apply": "中学校を通して申込（中学校からの申込締切）",
       "deadline": "2026-10-26",
-      "src": "https://www.nagano-c.ed.jp/tagawahs/entrance_examination.html",
-      "srcLabel": "田川高校 入試情報"
+      "src": "https://tagawa-hs.ed.jp/junior-high/",
+      "srcLabel": "田川高校 中学生のみなさんへ（体験入学）"
     },
     {
       "school": "tagawa",
@@ -1259,26 +1259,26 @@
     {
       "school": "shinano-mutsumi",
       "kind": "体験入学",
-      "title": "中3生向け体験会（予定）",
+      "title": "中3生向け体験会「体験しよう！テラ・スコラ」",
       "date": "2026-12-14",
-      "time": "",
+      "time": "10:00〜16:20（3つの枠から選択。1・2限10:00〜11:50 英語コミュニケーションⅡ／化学、3・4限12:30〜14:20 英語コミュニケーションⅠ／科学と人間生活、5・6限14:30〜16:20 中国語Ⅰ／物理基礎）",
       "place": "信濃むつみ高校（松本市南松本）",
       "target": "中学3年生と保護者",
-      "apply": "申込の案内は 11/12頃に公開予定（1日最大18名）",
-      "src": "https://www.terra.ed.jp/archives/6639",
-      "srcLabel": "信濃むつみ 中3生向け体験会について"
+      "apply": "要予約（Googleフォーム。1日最大18名）。締切はチラシで12/4と読めるが要確認",
+      "src": "https://www.terra.ed.jp/archives/6688",
+      "srcLabel": "信濃むつみ 12/14・12/24 中3生向け体験会について"
     },
     {
       "school": "shinano-mutsumi",
       "kind": "体験入学",
-      "title": "中3生向け体験会（予定）",
+      "title": "中3生向け体験会「体験しよう！テラ・スコラ」",
       "date": "2026-12-24",
-      "time": "",
+      "time": "10:00〜16:20（3つの枠から選択。1・2限10:00〜11:50 化学基礎／英語コミュニケーションⅡ、3・4限12:30〜14:20 総合・台湾／家庭基礎、5・6限14:30〜16:20 英語コミュニケーションⅠ／世界とわたしのベーシックⅠ）",
       "place": "信濃むつみ高校（松本市南松本）",
       "target": "中学3年生と保護者",
-      "apply": "申込の案内は 11/12頃に公開予定（1日最大18名）",
-      "src": "https://www.terra.ed.jp/archives/6639",
-      "srcLabel": "信濃むつみ 中3生向け体験会について"
+      "apply": "要予約（Googleフォーム。1日最大18名）。締切はチラシで12/15と読めるが要確認",
+      "src": "https://www.terra.ed.jp/archives/6688",
+      "srcLabel": "信濃むつみ 12/14・12/24 中3生向け体験会について"
     },
     {
       "school": "shinano-mutsumi",
