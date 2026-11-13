@@ -1391,24 +1391,24 @@
       "kind": "学校説明会",
       "title": "定時制 第1回学校見学会",
       "date": "2026-12-03",
-      "time": "要確認",
+      "time": "要確認（授業見学は全学年2時限目の授業）",
       "place": "上田千曲高校",
-      "target": "中学生",
-      "apply": "詳細（実施要項・申込書）は11月上旬に学校定時制HPに掲載予定（要確認）",
-      "src": "https://www.nagano-c.ed.jp/chikuma/infomation/j_school/index.html",
-      "srcLabel": "上田千曲 中学生の皆さんへ"
+      "target": "来年度 定時制への入学希望者と保護者、引率職員（中学生は中学校を通じて申込）",
+      "apply": "授業見学だけなら申込不要（正面玄関で受付）。説明会・個別懇談会への参加は申込が必要。実施要項・申込書は11月上旬に定時制HPに掲載予定（要確認）",
+      "src": "https://www.nagano-c.ed.jp/chikuma/teiji/00top/top2026b2%20kengakukai.html",
+      "srcLabel": "上田千曲 定時制 2026年度 授業公開のご案内"
     },
     {
       "school": "ueda-chikuma",
       "kind": "学校説明会",
       "title": "定時制 第2回学校見学会",
       "date": "2027-01-14",
-      "time": "要確認",
+      "time": "要確認（授業見学は全学年2時限目の授業）",
       "place": "上田千曲高校",
-      "target": "中学生",
-      "apply": "詳細（実施要項・申込書）は12月上旬に学校定時制HPに掲載予定（要確認）",
-      "src": "https://www.nagano-c.ed.jp/chikuma/infomation/j_school/index.html",
-      "srcLabel": "上田千曲 中学生の皆さんへ"
+      "target": "来年度 定時制への入学希望者と保護者、引率職員（中学生は中学校を通じて申込）",
+      "apply": "授業見学だけなら申込不要（正面玄関で受付）。説明会・個別懇談会への参加は申込が必要。実施要項・申込書は12月上旬に定時制HPに掲載予定（要確認）",
+      "src": "https://www.nagano-c.ed.jp/chikuma/teiji/00top/top2026b2%20kengakukai.html",
+      "srcLabel": "上田千曲 定時制 2026年度 授業公開のご案内"
     },
     {
       "school": "ueda-higashi",

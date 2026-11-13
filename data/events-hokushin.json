@@ -304,7 +304,7 @@
       "time": "16:00〜17:30の間で約30分",
       "place": "要確認（ページに記載なし）",
       "target": "中学3年生とその保護者（生徒のみ、保護者のみも可）",
-      "apply": "ページの「お申込みはこちら」から（9/30〜11/18）。第1〜第3希望日を入力。ページには「実施日が埋まったため終了」と表示",
+      "apply": "ページの「お申込みはこちら」から（9/30 9:00〜11/18 12:00）。第1〜第3希望日を入力し、対応できる日時がメールで届く。日時の変更・キャンセルは前日17:00までに連絡。行事等の関係で実施できない日もある",
       "deadline": "2026-11-18",
       "deadlineTime": "12:00",
       "src": "https://bgh.gakuen-nagano.ac.jp/preparation/preparation_high/",
@@ -980,11 +980,11 @@
       "title": "【通信制】学校説明会・入試相談会",
       "date": "2026-12-12",
       "time": "10:30〜11:30（受付10:00〜）",
-      "place": "長野日本大学高等学校（本校）",
+      "place": "長野日本大学 通信制校舎の予定（人数によっては隣接校舎の大教室）",
       "target": "通信制への入学を検討中の中学3年生、転入学・編入学を希望する高校生・高校既卒者（どなたでも参加可）",
-      "apply": "Web出願志願者サイト（https://lsg.mescius.com/nagano-nichidai/app/）の説明会予約から。締切は要確認",
-      "src": "https://www.nagano-nichidai.ed.jp/tsushin/tsushin_wp/wp-content/themes/tsushin/files/%E4%BB%A4%E5%92%8C%EF%BC%99%E5%B9%B4%E5%BA%A6%E9%80%9A%E4%BF%A1%E5%88%B6%E7%94%9F%E5%BE%92%E5%8B%9F%E9%9B%86%E8%A6%81%E9%A0%85%E4%BB%A4%E5%92%8C8%E5%B9%B47%E6%9C%88%E6%8E%B2%E8%BC%89%E7%89%88.pdf",
-      "srcLabel": "長野日本大学 令和9年度通信制生徒募集要項（学校説明会日程）"
+      "apply": "Web出願志願者サイト（https://lsg.mescius.com/nagano-nichidai/app/）の説明会予約から。定員80名（子どもと保護者を合わせた人数。申込超過のため40名から増枠）。締切は要確認",
+      "src": "https://www.nagano-nichidai.ed.jp/tsushin/topics/2026/11/486/",
+      "srcLabel": "長野日本大学 通信制 令和9年度4月ご入学希望の皆様へ（2026/11/13）。時間は令和9年度通信制生徒募集要項"
     },
     {
       "school": "nagano-nichidai",
@@ -992,11 +992,11 @@
       "title": "【通信制】学校説明会・入試相談会",
       "date": "2027-02-06",
       "time": "10:30〜11:30（受付10:00〜）",
-      "place": "長野日本大学高等学校（本校）",
+      "place": "長野日本大学 通信制校舎の予定（人数によっては隣接校舎の大教室）",
       "target": "通信制への入学を検討中の中学3年生、転入学・編入学を希望する高校生・高校既卒者（どなたでも参加可）",
-      "apply": "Web出願志願者サイト（https://lsg.mescius.com/nagano-nichidai/app/）の説明会予約から。締切は要確認",
-      "src": "https://www.nagano-nichidai.ed.jp/tsushin/tsushin_wp/wp-content/themes/tsushin/files/%E4%BB%A4%E5%92%8C%EF%BC%99%E5%B9%B4%E5%BA%A6%E9%80%9A%E4%BF%A1%E5%88%B6%E7%94%9F%E5%BE%92%E5%8B%9F%E9%9B%86%E8%A6%81%E9%A0%85%E4%BB%A4%E5%92%8C8%E5%B9%B47%E6%9C%88%E6%8E%B2%E8%BC%89%E7%89%88.pdf",
-      "srcLabel": "長野日本大学 令和9年度通信制生徒募集要項（学校説明会日程）"
+      "apply": "Web出願志願者サイト（https://lsg.mescius.com/nagano-nichidai/app/）の説明会予約から。最終の説明会。定員80名（子どもと保護者を合わせた人数。申込超過のため40名から増枠）。締切は要確認",
+      "src": "https://www.nagano-nichidai.ed.jp/tsushin/topics/2026/11/486/",
+      "srcLabel": "長野日本大学 通信制 令和9年度4月ご入学希望の皆様へ（2026/11/13）。時間は令和9年度通信制生徒募集要項"
     },
     {
       "school": "nagano-nichidai",

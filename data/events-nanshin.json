@@ -858,12 +858,15 @@
     {
       "school": "inanishi",
       "kind": "学校説明会",
-      "title": "進学相談説明会",
+      "title": "第1回 進学相談説明会",
       "date": "2026-12-12",
-      "time": "詳細未発表（「詳細はお待ちください」）",
-      "apply": "詳細未発表",
-      "src": "https://www.inanishi.net/eventinformation",
-      "srcLabel": "伊那西 中学生の皆様へ（年の表記なし。令和8年度の行事として掲載）"
+      "time": "9:00〜13:00",
+      "target": "中学生・保護者（保護者向けに教育方針やサポート体制の説明あり）",
+      "apply": "イベント予約サイト（mirai-compass）から申込（受付は2026-11-14から）",
+      "deadline": "2026-12-04",
+      "deadlineTime": "23:59",
+      "src": "https://mirai-compass.net/usr/innsh/event/evtIndex.jsf",
+      "srcLabel": "伊那西 イベント予約（mirai-compass）"
     },
     {
       "school": "inanishi",
