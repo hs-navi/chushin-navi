@@ -860,13 +860,13 @@
       "kind": "学校説明会",
       "title": "第1回 進学相談説明会",
       "date": "2026-12-12",
-      "time": "9:00〜13:00",
+      "time": "受付9:30〜、学校説明会10:30〜（生徒による学校紹介、コース説明・入試説明など）、クラブ体験11:10〜12:30（希望者のみ。弓道・卓球・バスケットボール・陸上競技・新体操・合唱・演劇・マルチメディア・書道・インターアクト・英語研究・折り紙工芸）、個別説明会11:10〜13:00（予約サイトの表示は9:00〜13:00）",
       "target": "中学生・保護者（保護者向けに教育方針やサポート体制の説明あり）",
-      "apply": "イベント予約サイト（mirai-compass）から申込（受付は2026-11-14から）",
+      "apply": "イベント予約サイト（mirai-compass）から申込（受付は2026-11-15から）",
       "deadline": "2026-12-04",
       "deadlineTime": "23:59",
-      "src": "https://mirai-compass.net/usr/innsh/event/evtIndex.jsf",
-      "srcLabel": "伊那西 イベント予約（mirai-compass）"
+      "src": "https://www.inanishi.net/eventinformation",
+      "srcLabel": "伊那西 中学生の皆様へ（イベント情報）・イベント予約（mirai-compass）"
     },
     {
       "school": "inanishi",
