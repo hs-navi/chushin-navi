@@ -1435,8 +1435,8 @@
       "target": "中学3年生とその保護者",
       "apply": "Web申込（https://lsg.mescius.com/shinonoigakuen/App）。1月入試（推薦選抜試験）を専願で出願する場合は学校説明会への参加が条件",
       "deadline": "2026-11-09",
-      "src": "https://shinonoi-gakuen.ac.jp/nagano-shun_ei/2026/11/02/3314/",
-      "srcLabel": "長野俊英 第2回学校説明会について（チラシPDFで詳細確認）"
+      "src": "https://shinonoi-gakuen.ac.jp/nagano-shun_ei/wp-content/uploads/2026/10/%E3%83%81%E3%83%A9%E3%82%B7.pdf",
+      "srcLabel": "長野俊英 第2回学校説明会チラシ（PDF）"
     },
     {
       "school": "nagano-shunei",
@@ -1479,14 +1479,15 @@
     {
       "school": "nagano-shunei",
       "kind": "学校説明会",
-      "title": "第3回 学校説明会",
+      "title": "第3回 学校説明会（学校説明会〈ガイダンス〉・個別相談・短期留学＆海外進学説明会・アドバンスコース説明会・ニュース検定説明会・校内見学。午前の部・午後の部）",
       "date": "2026-12-12",
-      "time": "要確認",
-      "place": "長野俊英高校（長野市篠ノ井御幣川1045）",
-      "target": "要確認",
-      "apply": "要確認（Web申込の予定。詳細は後日案内）",
-      "src": "https://shinonoi-gakuen.ac.jp/nagano-shun_ei/wp-content/uploads/2026/10/%E3%83%81%E3%83%A9%E3%82%B7.pdf",
-      "srcLabel": "長野俊英 第2回学校説明会チラシ（PDF）"
+      "time": "午前の部：9:00受付・個別相談、9:30〜10:20ガイダンス、10:30〜個別相談・各説明会・校内見学（希望者）／午後の部：13:00受付・個別相談、13:30〜14:20ガイダンス、14:30〜15:30個別相談・各説明会・校内見学（希望者）",
+      "place": "長野俊英高校（長野市篠ノ井御幣川1045）。駐車スペースなし（公共交通機関で来校）",
+      "target": "中学3年生とその保護者",
+      "apply": "Web申込（https://lsg.mescius.com/shinonoigakuen/App）。申込期間は11/16〜12/7。1月入試（推薦選抜試験）を希望する場合は学校説明会（ガイダンス・個別相談）への参加が出願条件。ガイダンスの内容は第2回と同様",
+      "deadline": "2026-12-07",
+      "src": "https://shinonoi-gakuen.ac.jp/nagano-shun_ei/wp-content/uploads/2026/11/%E7%AC%AC%EF%BC%93%E5%9B%9E%E5%AD%A6%E6%A0%A1%E8%AA%AC%E6%98%8E%E4%BC%9A%EF%BC%88%E3%83%81%E3%83%A9%E3%82%B7%EF%BC%89.pdf",
+      "srcLabel": "長野俊英 第3回学校説明会チラシ（PDF）"
     },
     {
       "school": "nagano-shunei",
@@ -1509,8 +1510,8 @@
       "place": "長野俊英高校（長野市篠ノ井御幣川1045）",
       "target": "要確認",
       "apply": "要確認（詳細は後日案内）",
-      "src": "https://shinonoi-gakuen.ac.jp/nagano-shun_ei/wp-content/uploads/2026/10/%E3%83%81%E3%83%A9%E3%82%B7.pdf",
-      "srcLabel": "長野俊英 第2回学校説明会チラシ（PDF）"
+      "src": "https://shinonoi-gakuen.ac.jp/nagano-shun_ei/wp-content/uploads/2026/11/%E7%AC%AC%EF%BC%93%E5%9B%9E%E5%AD%A6%E6%A0%A1%E8%AA%AC%E6%98%8E%E4%BC%9A%EF%BC%88%E3%83%81%E3%83%A9%E3%82%B7%EF%BC%89.pdf",
+      "srcLabel": "長野俊英 第3回学校説明会チラシ（PDF）"
     },
     {
       "school": "nagano-shunei",
