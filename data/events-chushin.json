@@ -599,11 +599,11 @@
       "date": "2026-11-21",
       "time": "受付9:15〜10:00、入試説明10:00〜11:30（対面・松商学園高校体育館）、質問会・校舎見学・寮説明会11:30〜12:30（希望者）",
       "target": "中学3年生と保護者",
-      "apply": "Web予約（予約サイト miraicompass。予約サイトの受付期間は11/19 23:59まで。学校の案内ページでは申込締切11/18）",
+      "apply": "Web予約（予約サイト miraicompass。予約サイトの受付期間は11/20 8:59まで。学校の案内ページでは申込締切11/18）",
       "src": "https://mirai-compass.net/usr/mtsgh/event/evtIndex.jsf",
       "srcLabel": "松商学園 イベント予約ページ（全日制）",
-      "deadline": "2026-11-19",
-      "deadlineTime": "23:59"
+      "deadline": "2026-11-20",
+      "deadlineTime": "8:59"
     },
     {
       "school": "matsusho",
@@ -637,7 +637,7 @@
       "date": "2026-11-21",
       "time": "受付9:30〜9:55、説明会10:00〜11:00、個別相談会11:00〜11:40・施設自由見学11:00〜12:00（希望者）",
       "target": "中学3年生と保護者（どちらか一方も可）",
-      "apply": "Web予約",
+      "apply": "Web予約（受付終了）",
       "deadline": "2026-11-19",
       "deadlineTime": "20:00",
       "src": "https://mirai-compass.net/usr/matkokuh/event/evtIndex.jsf",
