@@ -767,9 +767,9 @@
       "time": "17:30〜",
       "place": "野沢南高校 定時制",
       "target": "中学生・保護者",
-      "apply": "詳細は佐久地域の中学校に通知。要確認",
-      "src": "https://www.nagano-c.ed.jp/nominami/nonan-teiz/index.html",
-      "srcLabel": "野沢南 定時制HP"
+      "apply": "中学校を通して申込（佐久地域の中学校には案内を送付済み）。佐久地域の中学生以外は定時制（0267-63-4105、13:00〜）へ直接連絡",
+      "src": "https://sites.google.com/g.nagano-c.ed.jp/nozawaminami-t-nyushi",
+      "srcLabel": "野沢南 定時制HP（入試関係）"
     },
     {
       "school": "nozawa-minami",
@@ -779,9 +779,9 @@
       "time": "17:30〜",
       "place": "野沢南高校 定時制",
       "target": "中学生・保護者",
-      "apply": "詳細は佐久地域の中学校に通知。要確認",
-      "src": "https://www.nagano-c.ed.jp/nominami/nonan-teiz/index.html",
-      "srcLabel": "野沢南 定時制HP"
+      "apply": "中学校を通して申込（佐久地域の中学校には案内を送付済み）。佐久地域の中学生以外は定時制（0267-63-4105、13:00〜）へ直接連絡",
+      "src": "https://sites.google.com/g.nagano-c.ed.jp/nozawaminami-t-nyushi",
+      "srcLabel": "野沢南 定時制HP（入試関係）"
     },
     {
       "school": "saku-sogo-gijutsu",
@@ -1167,7 +1167,7 @@
       "time": "13:00受付開始〜13:30説明会〜14:30ごろ（個別相談14:30〜、希望者）",
       "place": "さくら国際高等学校（上田市手塚）",
       "target": "新入学・転入学・編入学を希望する生徒・保護者（中学生は学校に相談してから連絡）",
-      "apply": "事前に電話予約（0268-39-7707）",
+      "apply": "事前に電話予約（0268-39-7707）。11/25 12:30〜13:00は電話工事のため電話・FAXが不通",
       "src": "https://sakura-kokusai.ed.jp/school-info-session/",
       "srcLabel": "さくら国際 学校説明会"
     },

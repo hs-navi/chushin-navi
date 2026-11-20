@@ -599,11 +599,11 @@
       "date": "2026-11-21",
       "time": "受付9:15〜10:00、入試説明10:00〜11:30（対面・松商学園高校体育館）、質問会・校舎見学・寮説明会11:30〜12:30（希望者）",
       "target": "中学3年生と保護者",
-      "apply": "Web予約（予約サイト miraicompass。予約サイトの受付期間は11/20 8:59まで。学校の案内ページでは申込締切11/18）",
+      "apply": "Web予約（受付終了。予約サイト miraicompass の受付期間は11/20 8:20まで。学校の案内ページでは申込締切11/18）",
       "src": "https://mirai-compass.net/usr/mtsgh/event/evtIndex.jsf",
       "srcLabel": "松商学園 イベント予約ページ（全日制）",
       "deadline": "2026-11-20",
-      "deadlineTime": "8:59"
+      "deadlineTime": "8:20"
     },
     {
       "school": "matsusho",
@@ -612,10 +612,11 @@
       "date": "2026-12-12",
       "time": "10:00〜11:30（WEB開催）",
       "target": "中学3年生と保護者",
-      "apply": "Web予約（予約サイト miraicompass）",
+      "apply": "Web予約（予約サイト miraicompass。受付期間は12/10 23:59まで）",
       "src": "https://www.matsusho-h.ed.jp/entrance-exam/open-school.php",
       "srcLabel": "松商学園 オープンスクール・入試説明会",
-      "deadline": "2026-12-10"
+      "deadline": "2026-12-10",
+      "deadlineTime": "23:59"
     },
     {
       "school": "kokusai",
@@ -1332,7 +1333,7 @@
       "time": "9:30〜12:00（受付9:15〜）",
       "place": "信濃むつみ高校（松本市南松本）",
       "target": "入学を希望する人（保護者等も必ず参加）",
-      "apply": "エントリー後、参加申込書を郵送または持参（定員20組・受付順）",
+      "apply": "定員に達したため受付終了（2027年度入学希望の人は1月以降のオープンキャンパスへ。2026年度入学希望の人は電話で相談）",
       "deadline": "2026-12-04",
       "src": "https://www.terra.ed.jp/archives/6684",
       "srcLabel": "信濃むつみ 12/7のオープンキャンパスについて"
@@ -1345,7 +1346,7 @@
       "time": "14:00〜16:30（受付13:45〜）",
       "place": "信濃むつみ高校（松本市南松本）",
       "target": "入学を希望する人（保護者等も必ず参加）",
-      "apply": "エントリー後、参加申込書を郵送または持参（定員20組・受付順）",
+      "apply": "定員に達したため受付終了（2027年度入学希望の人は1月以降のオープンキャンパスへ。2026年度入学希望の人は電話で相談）",
       "deadline": "2026-12-04",
       "src": "https://www.terra.ed.jp/archives/6684",
       "srcLabel": "信濃むつみ 12/7のオープンキャンパスについて"
@@ -1355,13 +1356,13 @@
       "kind": "オープンスクール",
       "title": "オープンキャンパス（入学プログラムの一部）",
       "date": "2027-01-05",
-      "time": "14:00〜（約2.5時間・受付13:45〜）",
+      "time": "14:00〜16:30（受付13:45〜）",
       "place": "信濃むつみ高校（松本市南松本）",
       "target": "入学を希望する人（保護者等も必ず参加）",
       "apply": "エントリー後、参加申込書を郵送または持参（定員20組・受付順）",
       "deadline": "2027-01-04",
-      "src": "https://www.terra.ed.jp/wp-content/uploads/2026/07/2027TSdays_schedule.pdf",
-      "srcLabel": "信濃むつみ テラ・スコラDays スケジュール（2027年度入学生）"
+      "src": "https://www.terra.ed.jp/archives/6706",
+      "srcLabel": "信濃むつみ 1/5のオープンキャンパスについて"
     },
     {
       "school": "shinano-mutsumi",
