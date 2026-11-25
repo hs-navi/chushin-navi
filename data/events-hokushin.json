@@ -1006,9 +1006,9 @@
       "time": "10:30〜16:00（開場10:15）",
       "place": "長野日大学園校舎",
       "target": "どなたでも参加可（観覧無料）",
-      "apply": "記載なし（観覧無料。公式のお知らせに申込の記載なし）",
-      "src": "https://www.nagano-nichidai.ed.jp/topics/2026/10/3384/",
-      "srcLabel": "長野日本大学 【イベント情報】11月29日（日）『文化部の本気みてくだ祭』を開催します！"
+      "apply": "記載なし（観覧無料。公式のお知らせに申込の記載なし）。当日は上履きを持参",
+      "src": "https://www.nagano-nichidai.ed.jp/topics/2026/11/3426/",
+      "srcLabel": "長野日本大学 【一般の方の来校大歓迎！】11月29日（日）に『文化部の本気みてくだ祭（さい）』を開催します！"
     },
     {
       "school": "nagano-nishi",
@@ -1801,6 +1801,18 @@
       "deadline": "2026-09-25",
       "src": "https://www.nagano-c.ed.jp/nourinn/pages/tojuniorhs/opensc.html",
       "srcLabel": "下高井農林高校 オープンスクール2026"
+    },
+    {
+      "school": "shimotakai-norin",
+      "kind": "その他",
+      "title": "農林カフェ（課題研究の成果発表・農林産の食材を使った料理の提供、熊鈴・バンブーキャンドルのワークショップ、動物ふれあいコーナー）",
+      "date": "2026-11-29",
+      "time": "11:30〜14:30",
+      "place": "下高井農林高校（木島平村穂高2975）",
+      "target": "記載なし（一般の来場を案内。参加費無料）",
+      "apply": "記載なし（参加費無料）。試食は温そば・おやき・農林卵プリン・クラフトコーラ・子供食堂弁当の5品から2品で先着200名、体験は熊鈴・バンブーキャンドル・動物ふれあい＋農林ゆで卵の3つから1つで140名限定",
+      "src": "https://www.nagano-c.ed.jp/nourinn/pages/topics/2026/t20261125.html",
+      "srcLabel": "下高井農林高校 TOPICS「農林カフェ開催のご案内」"
     },
     {
       "school": "shimotakai-norin",
