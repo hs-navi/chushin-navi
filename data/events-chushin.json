@@ -765,12 +765,12 @@
       "date": "2026-11-28",
       "time": "9:30〜11:30（受付9:00〜）。今年度最後の入試説明会",
       "target": "本校に興味をお持ちの中学生と保護者",
-      "apply": "Web予約",
-      "src": "https://mirai-compass.net/usr/tsojrh/event/evtIndex.jsf",
-      "srcLabel": "東京都市大学塩尻 イベント予約ページ",
+      "apply": "Web予約（予約サイト miraicompass。締切は11/25）。持ち物は受付票・上履き・下足を入れる袋",
+      "src": "https://www.tcu-shiojiri.ed.jp/information/middle_school_student/2026/11/post_623.php",
+      "srcLabel": "都市大塩尻 入試説明会のお申し込みを受け付けています",
       "deadline": "2026-11-25",
       "deadlineTime": "23:59",
-      "place": "本校講堂（駐車場なし。公共交通機関で）"
+      "place": "本校講堂（駐車場なし。公共交通機関で。最寄り駅はJR塩尻駅・徒歩約15〜20分）"
     },
     {
       "school": "tcu",
